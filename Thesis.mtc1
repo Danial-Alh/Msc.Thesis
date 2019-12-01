@@ -1,21 +1,24 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1-1}مقدمه}{\reset@font\mtcSfont 1}{section.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-1.1}پیش‌نیازها}{\reset@font\mtcSSfont 1}{subsection.1.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-1-1}پیش‌نیازها}{\reset@font\mtcSSfont 1}{subsection.1.1.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {KL}}{\reset@font\mtcSSSfont 2}{section*.4}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {KL} معکوس}{\reset@font\mtcSSSfont 2}{section*.5}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {Jensen Shannon}}{\reset@font\mtcSSSfont 2}{section*.6}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {Total Variation}}{\reset@font\mtcSSSfont 2}{section*.7}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {Wasserstein}}{\reset@font\mtcSSSfont 2}{section*.8}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2-1}معماری‌های پایه متداول}{\reset@font\mtcSfont 2}{section.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-1.1}خودرمزنگار وردشی}{\reset@font\mtcSSfont 2}{subsection.1.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تکنیک پارامتریزه‌سازی مجدد{}}{\reset@font\mtcSSSfont 4}{section*.10}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-1.2}شبکه‌های تخاصمی مولد}{\reset@font\mtcSSfont 4}{subsection.1.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-1.3}خودرمزنگار تخاصمی}{\reset@font\mtcSSfont 4}{subsection.1.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-1.4}خودرمزنگار واسرشتاین }{\reset@font\mtcSSfont 6}{subsection.1.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3-1}مدل‌های پایه تولید متن}{\reset@font\mtcSfont 8}{section.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-1.1} فضای نهان؛ داشتن یا نداشتن}{\reset@font\mtcSSfont 9}{subsection.1.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-1.2}جبر معلم}{\reset@font\mtcSSfont 9}{subsection.1.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-1.3}خودرمزنگار وردشی}{\reset@font\mtcSSfont 10}{subsection.1.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-1.4}شبکه‌های تخاصمی مولد}{\reset@font\mtcSSfont 11}{subsection.1.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-1}تولید متن به صورت شرطی}{\reset@font\mtcSfont 12}{section.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-1.1}مدل‌های شرطی ساده}{\reset@font\mtcSSfont 12}{subsection.1.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-1.2}شبکه‌ خودرمزنگار وردشی شرطی ۲}{\reset@font\mtcSSfont 13}{subsection.1.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2-1}مدل زبانی با فضای نهان یا بدون فضای نهان؟}{\reset@font\mtcSfont 2}{section.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3-1}مدل‌های زبانی بدون فضای نهان}{\reset@font\mtcSfont 3}{section.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-3-1}مدل زبانی پایه (جبر معلم{})}{\reset@font\mtcSSfont 3}{subsection.1.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-3-1}مدل زبانی با استفاده از شبکه‌های تخاصمی مولد{}}{\reset@font\mtcSSfont 4}{subsection.1.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-1}مدل‌های زبانی با فضای نهان}{\reset@font\mtcSfont 6}{section.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-4-1}خودرمزنگار وردشی{}}{\reset@font\mtcSSfont 6}{subsection.1.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تکنیک پارامتریزه‌سازی مجدد{}}{\reset@font\mtcSSSfont 7}{section*.13}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تکنیک پارامتریزه‌سازی مجدد{}}{\reset@font\mtcSSSfont 7}{section*.14}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-4-1}عوامل صفر شدن \lr {KL}}{\reset@font\mtcSSfont 8}{subsection.1.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تحلیل با استفاده از دیدگاه نظریه اطلاعاتی}{\reset@font\mtcSSSfont 8}{section*.16}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode عقب ماندن شبکه کدگذار{} در تخمین توزیع پسین واقعی}{\reset@font\mtcSSSfont 9}{section*.17}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-4-1}راه حل‌های حاشیه‌ای برای رفع مشکل صفر شدن \lr {KL}}{\reset@font\mtcSSfont 11}{subsection.1.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-4-1}خودرمزنگار تخاصمی}{\reset@font\mtcSSfont 12}{subsection.1.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-4-1}خودرمزنگار واسرشتاین }{\reset@font\mtcSSfont 14}{subsection.1.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5-1}تولید متن به صورت شرطی}{\reset@font\mtcSfont 17}{section.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-5-1}مدل‌های شرطی ساده}{\reset@font\mtcSSfont 17}{subsection.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-5-1}شبکه‌ خودرمزنگار وردشی شرطی ۲}{\reset@font\mtcSSfont 17}{subsection.1.5.2}}

@@ -69,7 +69,7 @@
 %minitoc - \usepackage{mtcoff} to disable
 %=======================================================
 %\tightmtctrue % use less space between minitoc lines
-\setcounter{minitocdepth}{1} % show just sections
+\setcounter{minitocdepth}{1} % show just s
 \setlength{\mtcindent}{12pt} % two-side indentation 
 \renewcommand{\mtcfont}{\small\rm} % font size
 \renewcommand{\mtcSfont}{\small\rm} % Section entries font
@@ -135,6 +135,8 @@
 % numbering style definition
 \renewcommand{\thechapter}{\arabic{chapter}}
 \renewcommand{\thesection}{\arabic{section}-\arabic{chapter}}
+\renewcommand{\thesubsection}{\arabic{subsection}-\arabic{section}-\arabic{chapter}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}-\arabic{subsection}-\arabic{section}-\arabic{chapter}}
 \renewcommand{\thetable}{\arabic{table}-\arabic{chapter}}
 \renewcommand{\thefigure}{\arabic{figure}-\arabic{chapter}}
 
