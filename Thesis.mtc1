@@ -20,6 +20,13 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-4-1}راه حل‌های حاشیه‌ای برای رفع مشکل صفر شدن \lr {KL}}{\reset@font\mtcSSfont 12}{subsection.1.4.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-4-1}خودرمزنگار تخاصمی}{\reset@font\mtcSSfont 13}{subsection.1.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-4-1}خودرمزنگار واسرشتاین }{\reset@font\mtcSSfont 15}{subsection.1.4.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5-1}تولید متن به صورت شرطی}{\reset@font\mtcSfont 18}{section.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-5-1}مدل‌های شرطی ساده}{\reset@font\mtcSSfont 18}{subsection.1.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-5-1}شبکه‌ خودرمزنگار وردشی شرطی ۲}{\reset@font\mtcSSfont 18}{subsection.1.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6-4-1}دیگر روش‌های جلوگیری از صفر شدن فاصله \lr {KL}}{\reset@font\mtcSSfont 18}{subsection.1.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7-4-1}شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{\reset@font\mtcSSfont 18}{subsection.1.4.7}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مفاهیم پایه}{\reset@font\mtcSSSfont 18}{section*.24}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {Elementwise}{درایه‌گرا{}}}{\reset@font\mtcSSSfont 19}{section*.25}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خطی}{\reset@font\mtcSSSfont 19}{section*.26}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های اتصالی}{\reset@font\mtcSSSfont 19}{section*.27}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خود برگشتی{}}{\reset@font\mtcSSSfont 19}{section*.28}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5-1}تولید متن به صورت شرطی}{\reset@font\mtcSfont 19}{section.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-5-1}مدل‌های شرطی ساده}{\reset@font\mtcSSfont 20}{subsection.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-5-1}شبکه‌ خودرمزنگار وردشی شرطی ۲}{\reset@font\mtcSSfont 20}{subsection.1.5.2}}

@@ -2098,6 +2098,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:درایه‌گرا{}}{}%
+{%
+\gls@defglossaryentry{en:درایه‌گرا{}}%
+{%
+name={Elementwise},%
+sort={Elementwise},%
+type={e2p-terms},%
+first={Elementwise},%
+firstplural={Elementwises},%
+text={Elementwise},%
+plural={Elementwises},%
+description={درایه‌گرا{}},%
+descriptionplural={درایه‌گرا{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:درایه‌گرا{}}{}%
+{%
+\gls@defglossaryentry{fa:درایه‌گرا{}}%
+{%
+name={\elementwise {}},%
+sort={\elementwise {}},%
+type={p2e-terms},%
+first={درایه‌گرا{}},%
+firstplural={درایه‌گرا{}‌ها},%
+text={درایه‌گرا{}},%
+plural={درایه‌گرا{}‌ها},%
+description={Elementwise},%
+descriptionplural={Elementwise},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:خودرمزنگار وردشی}{}%
 {%
 \gls@defglossaryentry{en:خودرمزنگار وردشی}%
