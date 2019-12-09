@@ -2158,19 +2158,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:خودرمزنگار وردشی}{}%
+\ifglsentryexists{en:اتصالی{}}{}%
 {%
-\gls@defglossaryentry{en:خودرمزنگار وردشی}%
+\gls@defglossaryentry{en:اتصالی{}}%
 {%
-name={Variational autoencoder},%
-sort={Variational autoencoder},%
+name={Coupling},%
+sort={Coupling},%
 type={e2p-terms},%
-first={Variational autoencoder},%
-firstplural={Variational autoencoders},%
-text={Variational autoencoder},%
-plural={Variational autoencoders},%
-description={خودرمزنگار وردشی},%
-descriptionplural={خودرمزنگار وردشی},%
+first={Coupling},%
+firstplural={Couplings},%
+text={Coupling},%
+plural={Couplings},%
+description={اتصالی{}},%
+descriptionplural={اتصالی{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2188,17 +2188,257 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:خودرمزنگار وردشی}{}%
+\ifglsentryexists{fa:اتصالی{}}{}%
 {%
-\gls@defglossaryentry{fa:خودرمزنگار وردشی}%
+\gls@defglossaryentry{fa:اتصالی{}}%
 {%
-name={خودرمزنگار وردشی},%
-sort={خودرمزنگار وردشی},%
+name={\coupling {}},%
+sort={\coupling {}},%
 type={p2e-terms},%
-first={خودرمزنگار وردشی},%
-firstplural={خودرمزنگار وردشی‌ها},%
-text={خودرمزنگار وردشی},%
-plural={خودرمزنگار وردشی‌ها},%
+first={اتصالی{}},%
+firstplural={اتصالی{}‌ها},%
+text={اتصالی{}},%
+plural={اتصالی{}‌ها},%
+description={Coupling},%
+descriptionplural={Coupling},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:شرطی‌کننده{}}{}%
+{%
+\gls@defglossaryentry{en:شرطی‌کننده{}}%
+{%
+name={Conditioner},%
+sort={Conditioner},%
+type={e2p-terms},%
+first={Conditioner},%
+firstplural={Conditioners},%
+text={Conditioner},%
+plural={Conditioners},%
+description={شرطی‌کننده{}},%
+descriptionplural={شرطی‌کننده{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:شرطی‌کننده{}}{}%
+{%
+\gls@defglossaryentry{fa:شرطی‌کننده{}}%
+{%
+name={\conditioner {}},%
+sort={\conditioner {}},%
+type={p2e-terms},%
+first={شرطی‌کننده{}},%
+firstplural={شرطی‌کننده{}‌ها},%
+text={شرطی‌کننده{}},%
+plural={شرطی‌کننده{}‌ها},%
+description={Conditioner},%
+descriptionplural={Conditioner},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:ماتریس مثلثی بلوکی{}}{}%
+{%
+\gls@defglossaryentry{en:ماتریس مثلثی بلوکی{}}%
+{%
+name={Block triangular matrix},%
+sort={Block triangular matrix},%
+type={e2p-terms},%
+first={Block triangular matrix},%
+firstplural={Block triangular matrixs},%
+text={Block triangular matrix},%
+plural={Block triangular matrixs},%
+description={ماتریس مثلثی بلوکی{}},%
+descriptionplural={ماتریس مثلثی بلوکی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:ماتریس مثلثی بلوکی{}}{}%
+{%
+\gls@defglossaryentry{fa:ماتریس مثلثی بلوکی{}}%
+{%
+name={\blocktrimatrix {}},%
+sort={\blocktrimatrix {}},%
+type={p2e-terms},%
+first={ماتریس مثلثی بلوکی{}},%
+firstplural={ماتریس مثلثی بلوکی{}‌ها},%
+text={ماتریس مثلثی بلوکی{}},%
+plural={ماتریس مثلثی بلوکی{}‌ها},%
+description={Block triangular matrix},%
+descriptionplural={Block triangular matrix},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:واحد پردازش‌گر گرافیک{}}{}%
+{%
+\gls@defglossaryentry{en:واحد پردازش‌گر گرافیک{}}%
+{%
+name={Graphics Processsing Unit},%
+sort={Graphics Processsing Unit},%
+type={e2p-terms},%
+first={Graphics Processsing Unit},%
+firstplural={Graphics Processsing Units},%
+text={Graphics Processsing Unit},%
+plural={Graphics Processsing Units},%
+description={واحد پردازش‌گر گرافیک{}},%
+descriptionplural={واحد پردازش‌گر گرافیک{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:واحد پردازش‌گر گرافیک{}}{}%
+{%
+\gls@defglossaryentry{fa:واحد پردازش‌گر گرافیک{}}%
+{%
+name={\gpu {}},%
+sort={\gpu {}},%
+type={p2e-terms},%
+first={واحد پردازش‌گر گرافیک{}},%
+firstplural={واحد پردازش‌گر گرافیک{}‌ها},%
+text={واحد پردازش‌گر گرافیک{}},%
+plural={واحد پردازش‌گر گرافیک{}‌ها},%
+description={Graphics Processsing Unit},%
+descriptionplural={Graphics Processsing Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:خودرمزنگار وردشی{}}{}%
+{%
+\gls@defglossaryentry{en:خودرمزنگار وردشی{}}%
+{%
+name={Variational autoencoder},%
+sort={Variational autoencoder},%
+type={e2p-terms},%
+first={Variational autoencoder},%
+firstplural={Variational autoencoders},%
+text={Variational autoencoder},%
+plural={Variational autoencoders},%
+description={خودرمزنگار وردشی{}},%
+descriptionplural={خودرمزنگار وردشی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:خودرمزنگار وردشی{}}{}%
+{%
+\gls@defglossaryentry{fa:خودرمزنگار وردشی{}}%
+{%
+name={\vae {}},%
+sort={\vae {}},%
+type={p2e-terms},%
+first={خودرمزنگار وردشی{}},%
+firstplural={خودرمزنگار وردشی{}‌ها},%
+text={خودرمزنگار وردشی{}},%
+plural={خودرمزنگار وردشی{}‌ها},%
 description={Variational autoencoder},%
 descriptionplural={Variational autoencoder},%
 symbol={\relax },%
