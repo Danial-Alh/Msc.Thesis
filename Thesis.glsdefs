@@ -2398,6 +2398,186 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:تخمین‌گر عمومی{}}{}%
+{%
+\gls@defglossaryentry{en:تخمین‌گر عمومی{}}%
+{%
+name={Universal approximator},%
+sort={Universal approximator},%
+type={e2p-terms},%
+first={Universal approximator},%
+firstplural={Universal approximators},%
+text={Universal approximator},%
+plural={Universal approximators},%
+description={تخمین‌گر عمومی{}},%
+descriptionplural={تخمین‌گر عمومی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تخمین‌گر عمومی{}}{}%
+{%
+\gls@defglossaryentry{fa:تخمین‌گر عمومی{}}%
+{%
+name={\univapprox {}},%
+sort={\univapprox {}},%
+type={p2e-terms},%
+first={تخمین‌گر عمومی{}},%
+firstplural={تخمین‌گر عمومی{}‌ها},%
+text={تخمین‌گر عمومی{}},%
+plural={تخمین‌گر عمومی{}‌ها},%
+description={Universal approximator},%
+descriptionplural={Universal approximator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:هم‌نسبی{}}{}%
+{%
+\gls@defglossaryentry{en:هم‌نسبی{}}%
+{%
+name={Affine},%
+sort={Affine},%
+type={e2p-terms},%
+first={Affine},%
+firstplural={Affines},%
+text={Affine},%
+plural={Affines},%
+description={هم‌نسبی{}},%
+descriptionplural={هم‌نسبی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:هم‌نسبی{}}{}%
+{%
+\gls@defglossaryentry{fa:هم‌نسبی{}}%
+{%
+name={\affine {}},%
+sort={\affine {}},%
+type={p2e-terms},%
+first={هم‌نسبی{}},%
+firstplural={هم‌نسبی{}‌ها},%
+text={هم‌نسبی{}},%
+plural={هم‌نسبی{}‌ها},%
+description={Affine},%
+descriptionplural={Affine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تکه‌ای چند جمله‌ای}{}%
+{%
+\gls@defglossaryentry{en:تکه‌ای چند جمله‌ای}%
+{%
+name={Piece-wise polynomial},%
+sort={Piece-wise polynomial},%
+type={e2p-terms},%
+first={Piece-wise polynomial},%
+firstplural={Piece-wise polynomials},%
+text={Piece-wise polynomial},%
+plural={Piece-wise polynomials},%
+description={تکه‌ای چند جمله‌ای},%
+descriptionplural={تکه‌ای چند جمله‌ای},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تکه‌ای چند جمله‌ای}{}%
+{%
+\gls@defglossaryentry{fa:تکه‌ای چند جمله‌ای}%
+{%
+name={تکه‌ای چند جمله‌ای},%
+sort={تکه‌ای چند جمله‌ای},%
+type={p2e-terms},%
+first={تکه‌ای چند جمله‌ای},%
+firstplural={تکه‌ای چند جمله‌ای‌ها},%
+text={تکه‌ای چند جمله‌ای},%
+plural={تکه‌ای چند جمله‌ای‌ها},%
+description={Piece-wise polynomial},%
+descriptionplural={Piece-wise polynomial},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:خودرمزنگار وردشی{}}{}%
 {%
 \gls@defglossaryentry{en:خودرمزنگار وردشی{}}%

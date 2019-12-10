@@ -471,9 +471,9 @@ $f : \bb{R}^D \rightarrow \bb{R}^D$
 \trans{\blocktrimatrix{}}{Block triangular matrix}
 است که یکی از بلوک‌های آن ماتریس همانی و دیگری $\text{D}\hat{\bff{f}}$ است. بنابراین دترمینان  تابع $\bff{f}$ دترمینان برابر تابع $\hat{\bff{f}}$ است.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\textheight]{images/flow-survey1.png}
+	\includegraphics[width=.7\textwidth]{images/flow-survey1.png}
 	\caption{
 	}
 \end{figure}
@@ -497,15 +497,37 @@ y_t = \hat{\bff{f}}(x_t; \Theta_t(x_{1:t-1}))
   یک تابع پیچیده از $\bb{R}^{t-1}$ به فضای پارامترهای تابع $\bff{f}$ و $\Theta_1$ یک تابع ثابت است. در اینجا نیز به $\Theta_t$ یک \conditioner{} گفته می‌شود.
   \\
  از آنجا که $y_t$ تنها تابعی از $x_{1:t-1}$ است، ماتریس ژاکوبین این تابع نیز مثلثی بوده و بنابراین دترمینان آن از ضرب المان‌های قطری آن بدست می‌آید. با داشتن تابع معکوس $\hat{\bff{f}}$، معکوس تابع $\bff{f}$ قابل محاسبه است؛ اما از آنجا که ساختار \autoregressive{} بر روی ابعاد حاکم است، بنابراین  باید هر بعد به صورت ترتیبی از ابعاد قبل به دست آید و درنتیجه نمی‌توان از پتانسیل موازی‌سازی 
- \trans{\gpu{}}{Graphics Processsing Unit}
+ \trans{\gpu{}}{Graphics Processing Unit}
  بهره برد. به منظور موازی‌سازی در جهت نمونه‌گیری، می‌توان از ساختار شبکه‌های \lr{MADE} بهره برد که در ادامه توضیح داده خواهد شد.
- در صورت استفاده از ساختار شبکه \lr{MADE} در $\hat{\bff{f}}$، به آن \lr{Masked Autoregressive Flow} گفته می‌شود.
+ در صورت استفاده از ساختار شبکه \lr{MADE} در $\Theta$، به آن \lr{Masked Autoregressive Flow (MAF)} گفته می‌شود.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.5\textwidth]{images/flow-survey2.png}
+    \caption{
+    }
+\end{figure}
+
 مدل‌سازی تابع \autoregressive{} 
 $\bff{f}$
 را می‌توان به صورت زیر نیز تعریف کرد:
+\begin{align}
+y_t = \hat{\bff{f}}(x_t; \Theta_t(y_{1:t-1}))
+\end{align}
+که در واقع عکس روش \lr{MAF} است. به همین دلیل این روش را \lr{Inverse Autoregressive Flow (IAF)} می‌نامند. در واقع در \lr{MAF} رفتن از توزیع پایه به توزیع نهایی کُند و رفتن از توزیع نهایی به توزیع پایه سریع است؛ در حالی که \lr{IAF} نمونه‌برداری سریع اما جریان نرمال‌کننده کندی دارد و بایستی بسته به نیاز از آن‌ها بهره برد. 
+نکته قابل ذکر در مورد دسته \autoregressive{}  از \normalizingflownets{} این است که در  بعضی موارد اثبات شده است که این خانواده از توابع، توانایی مدل کردن هر تابعی را داشته و به اصطلاح یک
+\trans{\univapprox{}}{Universal approximator}
+هستند.
+\subsubsection{لایه‌های \coupling{}}
+تا به اینجا در مورد خانواده‌های مختلف \normalizingflownets{} صحبت شد. در تمام آن‌ها از توابع معکوس‌پذیری استفاده شده اما در مورد ساختار آن‌ها توضیحی داده نشد. در این بخش به توضیح تعدادی از توابع معکوس پذیر مورد استفاده پرداخته خواهد شد.
+\\
+\textbf{لایه 
+    \coupling{} \trans{\affine{}}{Affine}}:
 
-
-
+\textbf{لایه \coupling{}
+    غیر خطی درجه دو}:
+\textbf{لایه \coupling{}
+   \trans{تکه‌ای چند جمله‌ای}{Piece-wise polynomial}}:
 \section{\condtg}
 در ادامه ابتدا به دلیل مشابهت مدل‌های مولد شرطی و غیر شرطی، به معرفی تعدادی از معروف‌ترین مدل‌های مولد غیر شرطی پرداخته، سپس چند مورد مدل مولد شرطی ساده و در نهایت یکی از کامل‌ترین مدل‌های مولد شرطی موجود معرفی و در بخش آخر نیز پس از ارائه روش پیشنهادی، کارهای آتی بیان خواهد شد.
 از آنجا که تولید متن به صورت شرطی شباهت زیادی به عملیات تولید متن و دنباله‌های گسسته دارد، در این بخش به شرح این دسته از مدل‌ها پرداخته خواهد شد.
