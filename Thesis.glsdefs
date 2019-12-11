@@ -2998,3 +2998,63 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:مخلوط گاوسی{}}{}%
+{%
+\gls@defglossaryentry{en:مخلوط گاوسی{}}%
+{%
+name={Gaussian mixture},%
+sort={Gaussian mixture},%
+type={e2p-terms},%
+first={Gaussian mixture},%
+firstplural={Gaussian mixtures},%
+text={Gaussian mixture},%
+plural={Gaussian mixtures},%
+description={مخلوط گاوسی{}},%
+descriptionplural={مخلوط گاوسی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:مخلوط گاوسی{}}{}%
+{%
+\gls@defglossaryentry{fa:مخلوط گاوسی{}}%
+{%
+name={\gaussianmix {}},%
+sort={\gaussianmix {}},%
+type={p2e-terms},%
+first={مخلوط گاوسی{}},%
+firstplural={مخلوط گاوسی{}‌ها},%
+text={مخلوط گاوسی{}},%
+plural={مخلوط گاوسی{}‌ها},%
+description={Gaussian mixture},%
+descriptionplural={Gaussian mixture},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
