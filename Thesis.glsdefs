@@ -2998,6 +2998,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:سادک{}}{}%
+{%
+\gls@defglossaryentry{en:سادک{}}%
+{%
+name={Simplex},%
+sort={Simplex},%
+type={e2p-terms},%
+first={Simplex},%
+firstplural={Simplexs},%
+text={Simplex},%
+plural={Simplexs},%
+description={سادک{}},%
+descriptionplural={سادک{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:سادک{}}{}%
+{%
+\gls@defglossaryentry{fa:سادک{}}%
+{%
+name={\simplex {}},%
+sort={\simplex {}},%
+type={p2e-terms},%
+first={سادک{}},%
+firstplural={سادک{}‌ها},%
+text={سادک{}},%
+plural={سادک{}‌ها},%
+description={Simplex},%
+descriptionplural={Simplex},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:مخلوط گاوسی{}}{}%
 {%
 \gls@defglossaryentry{en:مخلوط گاوسی{}}%
