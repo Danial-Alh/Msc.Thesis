@@ -3298,3 +3298,123 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:کدگشایی حریصانه}{}%
+{%
+\gls@defglossaryentry{en:کدگشایی حریصانه}%
+{%
+name={Greedy decoding},%
+sort={Greedy decoding},%
+type={e2p-terms},%
+first={Greedy decoding},%
+firstplural={Greedy decodings},%
+text={Greedy decoding},%
+plural={Greedy decodings},%
+description={کدگشایی حریصانه},%
+descriptionplural={کدگشایی حریصانه},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:کدگشایی حریصانه}{}%
+{%
+\gls@defglossaryentry{fa:کدگشایی حریصانه}%
+{%
+name={\greedydecoding },%
+sort={\greedydecoding },%
+type={p2e-terms},%
+first={کدگشایی حریصانه},%
+firstplural={کدگشایی حریصانه‌ها},%
+text={کدگشایی حریصانه},%
+plural={کدگشایی حریصانه‌ها},%
+description={Greedy decoding},%
+descriptionplural={Greedy decoding},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:اعتبارسنجی{}}{}%
+{%
+\gls@defglossaryentry{en:اعتبارسنجی{}}%
+{%
+name={Validation},%
+sort={Validation},%
+type={e2p-terms},%
+first={Validation},%
+firstplural={Validations},%
+text={Validation},%
+plural={Validations},%
+description={اعتبارسنجی{}},%
+descriptionplural={اعتبارسنجی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:اعتبارسنجی{}}{}%
+{%
+\gls@defglossaryentry{fa:اعتبارسنجی{}}%
+{%
+name={\validation {}},%
+sort={\validation {}},%
+type={p2e-terms},%
+first={اعتبارسنجی{}},%
+firstplural={اعتبارسنجی{}‌ها},%
+text={اعتبارسنجی{}},%
+plural={اعتبارسنجی{}‌ها},%
+description={Validation},%
+descriptionplural={Validation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
