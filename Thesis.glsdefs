@@ -1858,9 +1858,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:خودرمزنگار واسرشتاین }{}%
+\ifglsentryexists{en:خودرمزنگار واسرشتاین}{}%
 {%
-\gls@defglossaryentry{en:خودرمزنگار واسرشتاین }%
+\gls@defglossaryentry{en:خودرمزنگار واسرشتاین}%
 {%
 name={Wasserstein autoencoder},%
 sort={Wasserstein autoencoder},%
@@ -1888,17 +1888,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:خودرمزنگار واسرشتاین }{}%
+\ifglsentryexists{fa:خودرمزنگار واسرشتاین}{}%
 {%
-\gls@defglossaryentry{fa:خودرمزنگار واسرشتاین }%
+\gls@defglossaryentry{fa:خودرمزنگار واسرشتاین}%
 {%
 name={\wae },%
 sort={\wae },%
 type={p2e-terms},%
 first={خودرمزنگار واسرشتاین},%
-firstplural={خودرمزنگار واسرشتاین ‌ها},%
+firstplural={خودرمزنگار واسرشتاین‌ها},%
 text={خودرمزنگار واسرشتاین},%
-plural={خودرمزنگار واسرشتاین ‌ها},%
+plural={خودرمزنگار واسرشتاین‌ها},%
 description={Wasserstein autoencoder},%
 descriptionplural={Wasserstein autoencoder},%
 symbol={\relax },%
@@ -2081,6 +2081,186 @@ text={سلسله مراتبی{}},%
 plural={سلسله مراتبی{}‌ها},%
 description={Ancestral},%
 descriptionplural={Ancestral},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تک یک{}}{}%
+{%
+\gls@defglossaryentry{en:تک یک{}}%
+{%
+name={One-hot},%
+sort={One-hot},%
+type={e2p-terms},%
+first={One-hot},%
+firstplural={One-hots},%
+text={One-hot},%
+plural={One-hots},%
+description={تک یک{}},%
+descriptionplural={تک یک{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تک یک{}}{}%
+{%
+\gls@defglossaryentry{fa:تک یک{}}%
+{%
+name={\onehot {}},%
+sort={\onehot {}},%
+type={p2e-terms},%
+first={تک یک{}},%
+firstplural={تک یک{}‌ها},%
+text={تک یک{}},%
+plural={تک یک{}‌ها},%
+description={One-hot},%
+descriptionplural={One-hot},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:سادک{}}{}%
+{%
+\gls@defglossaryentry{en:سادک{}}%
+{%
+name={Simplex},%
+sort={Simplex},%
+type={e2p-terms},%
+first={Simplex},%
+firstplural={Simplexs},%
+text={Simplex},%
+plural={Simplexs},%
+description={سادک{}},%
+descriptionplural={سادک{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:سادک{}}{}%
+{%
+\gls@defglossaryentry{fa:سادک{}}%
+{%
+name={\simplex {}},%
+sort={\simplex {}},%
+type={p2e-terms},%
+first={سادک{}},%
+firstplural={سادک{}‌ها},%
+text={سادک{}},%
+plural={سادک{}‌ها},%
+description={Simplex},%
+descriptionplural={Simplex},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:سنجه{}}{}%
+{%
+\gls@defglossaryentry{en:سنجه{}}%
+{%
+name={Critic},%
+sort={Critic},%
+type={e2p-terms},%
+first={Critic},%
+firstplural={Critics},%
+text={Critic},%
+plural={Critics},%
+description={سنجه{}},%
+descriptionplural={سنجه{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:سنجه{}}{}%
+{%
+\gls@defglossaryentry{fa:سنجه{}}%
+{%
+name={\critic {}},%
+sort={\critic {}},%
+type={p2e-terms},%
+first={سنجه{}},%
+firstplural={سنجه{}‌ها},%
+text={سنجه{}},%
+plural={سنجه{}‌ها},%
+description={Critic},%
+descriptionplural={Critic},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

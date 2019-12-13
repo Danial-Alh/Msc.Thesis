@@ -370,6 +370,57 @@ $p_G(x)$
 \trans{\ancestral{}}{Ancestral}
 ‎ ابتدا از توزیع $P_{data}‎$ نمونه‌برداری کرده و سپس از توزیع $Q(Z|X)$ نمونه‌برداری انجام می‌گیرد.
 نکته قابل ذکر این است که قضایا ارائه شده تنها در حالتی که ‎\decoder{}‎ تابعی قطعی باشد صادق هستند؛ البته قضیه مشابهی نیز تنها برای تابع هزینه مجذور فاصله ارائه شده است.
+\subsection{مدل 
+    \lr{Adversarially Regularized Autoencoder (ARAE)}}
+این مدل با اینکه قبل از \wae{} منتشر شده است، اما در واقع مربوط به استفاده از \wgan{} و \wae{} در حوزه متن است. در بخش قبل در حالت کلی توضیح داده شد که تابع هزینه \wae{} به صورت زیر است:
+\begin{align}
+    \mathcal{L}_{\text{WAE}}(Q, G) = \expected_{x \sim P_{\text{Data}}(X)}\expected_{z \sim Q(Z|x)} [c(x, G(z))] + \lambda . D_ Z(Q_Z, P_Z)
+\end{align}
+در این مقاله، دو موضوع بررسی شده است. موضوع اول استفاده از تابع هزینه \crossentropy{} به جای $c(.,.)$ بوده و دوم نیز استفاده از \wgan{} به عنوان $D_Z(.,.)$ به طوری که مناسب فضای تولید دنباله و متن باشد.
+\\
+فرض کنید $\mathcal{X} = \mathcal{V}^n$ فضای بردارهای
+\trans{\onehot{}}{One-hot}
+به طول $|\mathcal{V}|^n$ باشد که $\mathcal{V}$ مجموعه واژگان و $n$ نیز حداکثر طول جملات است (هر بردار متناظر با یک جمله است). همچنین تابع \encoder{} و \decoder{} به ترتیب به صورت
+$\text{enc}_\phi: \mathcal{X} \rightarrow \mathcal{Z}$ 
+که تابعی قطعی است و $f_\psi(\bff{Z}) : \mcal{Z} \rightarrow \Delta^{|\mcal{V}|^n - 1}$ تابعی از فضای نهان به 
+\trans{\simplex{}}{Simplex} $|\mcal{V}|^n - 1$
+بعدی (توزیع شرطی بر روی فضای $\mathcal{X}$) است، تعریف شده‌اند. همچنین 
+    $\hat{\bff{x}} = G_\psi(\bff{Z})  = \argmax_{
+        \bff{x}} f_\psi(\bff{x}|\bff{Z}) : \mcal{Z} \rightarrow \mcal{X}$
+    خروجی \decoder{} در حالت آزمون و توزیع $\bb{P}_\psi(\bff{x}|\bff{z})$ حاصل از آن توزیعی ضربه‌ای به صورت 
+    $p_\psi(\bff{x}|\bff{z}) = \bbm{1}\{\bff{x} = G_\psi(\bff{z})\}$
+    باشد، تابع هزینه زیر کران بالایی برای فاصله \wasser{} بین $\bb{P}_\text{Data}(\bff{x})$ و $\bb{P}_\psi(\bff{x})$ است که  
+    $p_\psi(\bff{x}) = \int_\bff{z} p_Z(\bff{z})p_\psi(\bff{x}|\bff{z})$
+    :
+    \begin{align}
+    \mathcal{L}_{\text{ARAE}}(Q, G) = \inf_{Q: Q_z = P_z} \expected_{x \sim P_{\text{Data}}(X)}\expected_{z \sim Q(Z|x)} [-\log \bff{x}^T f_\psi(\bff{z})]
+    \end{align}
+در اینجا نیز به مانند بخش آموزش  \wae{} برای رفع قید ذکر شده از نوعی فاصله به نام \wgan{} استفاده می‌شود. \wgan{} نیز عضوی از خانواده \gan{} است که رفتار مناسب‌تری هنگام فاصله زیاد مولد از داده اصلی از خود بروز می‌دهد. این روش به شرح زیر است:
+در اینجا نیز یک \generator{} و یک \discriminator{} داریم. البته در ادبیات \wgan{} به \discriminator{}، 
+\trans{\critic{}}{Critic}
+گفته می‌شود که وظیفه دارد به نمونه‌های واقعی اعداد بالاتر و به نمونه‌های مصنوعی اعداد پایین‌تری نسبت دهد.
+اگر $g_\theta(\epsilon)$ شبکه‌ای باشد که با گرفتن یک نوفه با توزیع گاوسی نرمال، آن را به نمونه‌ای در فضای نهان تبدیل کند و $f_w(\bff{X})$ یک \critic{} بین نمونه‌های تولید شده توسط مولد ($g$) و داده‌های واقعی باشد، تابع هزینه ذیل استفاده می‌گردد:
+\begin{gather}
+\mathcal{L}_\text{WGAN} (g, D)= 
+\expected_{\bff{x} \sim \prob_\text{Data}(\bff{X})} f(\bff{x})
+- \expected_{\bff{x} \sim \prob_g(\bff{X})} f(\bff{x})
+\\
+\text{\lr{s.t: f is 1-Lipschitz}} \nonumber
+\end{gather}
+که نسبت به $w$ بیشینه و نسبت به $\theta$ کمینه می‌گردد. در واقع تابع هزینه فوق فاصله \wasser{} بین دو توزیع $\prob_g(\bff{X})$ و $\prob_\text{Data}(\bff{X})$ است. برای برآوردن شرط \lr{1-Lipschitz} بودن $f$ نیز از روش ساده قطع کردن گرادیان‌های خارج از بازه $[-m, m]$ استفاده شده است.
+توضیح \lr{K-lipschitz} :)
+\\
+در این مقاله نیز برای نزدیک کردن فاصله توزیع حاشیه‌ای $Q_Z$ با $P_Z$ از \wgan{} استفاده شده است. در نهایت تابع هزینه‌های این مدل را می‌توان به شکل زیر جمع‌بندی کرد:
+    \begin{align}
+        \min_{\phi, \psi} \mcal{L}_\text{rec}(\phi, \psi) =& \expected_{\bff{x} \sim \prob_\text{Data}} [- \log f_\phi(\bff(x)|enc_\phi(\bff{x}))] \nonumber
+        \\
+        \max_{w} \mcal{L}_\text{critic}(w) =& 
+        \expected_{\bff{x} \sim \prob_\text{Data}} [f_w(\text{enc}_\phi(\bff{x}))]
+        -\expected_{\bff{z} \sim \prob_Z} [f_w(\bff{z})] \nonumber
+        \\
+        \min_{w} \mcal{L}_\text{enc}(w) =& 
+        \expected_{\bff{x} \sim \prob_\text{Data}} [f_w(\text{enc}_\phi(\bff{x}))]
+    \end{align}
 \subsection{دیگر روش‌های جلوگیری از صفر شدن فاصله \lr{KL}}
 آنچه که تا به حال توضیح داده شد، روش‌هایی بودند که به نظر موثرتر و پایه‌ای تر به موضوع پرداخته بودند؛ اما مقالات بسیاری در این حوزه ارائه شده است که در ادامه به توضیح خلاصه‌ای از آن‌ها خواهیم پرداخت.
 
