@@ -596,19 +596,21 @@ $\bff{f}$
 که $p_\theta(\bff{Z}|c)$  یک \priordist{} شرطی است.
 
 \subsection{\cgan{}}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.7\textwidth]{images/cgan.png}
-	\caption{نمایی از \cgan{}}
-\end{figure}
-در مورد\gan{} نیز شرایطی مشابه \cvae{} حاکم است و شرط به مولد و \discriminator{} ورودی داده می‌شود \cite{cgan} و رابطه آن به شرح زیر است:
+در مورد\gan{} نیز شرایطی مشابه \cvae{} حاکم است و شرط به مولد و \discriminator{}، ورودی داده می‌شود \cite{cgan} و رابطه آن به شرح زیر است:
 \begin{align}
 	\mcal{V}_\text{CGAN}(D, G) =
 	\expected_{(\bff{x}, c) \sim \prob_\text{Data}} [\log D(\bff{x}|c)] +
-	\expected_{c \sim p(C), \bff{z} \sim N(\bff{0}, \bff{I}),\bff{x} \sim p_G(\bff{X}|z,c)} [\log D(\bff{x}|c)]
+	\expected_{c \sim p(C), \bff{z} \sim N(\bff{0}, \bff{I}),\bff{x} \sim p_G(\bff{X}|z,c)} [\log 1 - D(\bff{x}|c)]
 \end{align}
+که نسبت به $D$ بیشینه و نسبت به $G$ کمینه می‌گردد. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.7\textwidth]{images/cgan.png}
+    \caption{نمایی از \cgan{}}
+\end{figure}
 لازم به ذکر است که مجددا در رابطه فوق مشکل گذر گرادیان وجود دارد و معمولا از روش‌هایی مانند آنچه در بخش ؟؟؟ (بر پایه یادگیری تقویتی) است، استفاده می‌شود. نمایی از \cgan{} در شکل ؟؟؟ آمده است.
 ؟؟؟ از آنجا که این مدل‌ها روش‌هایی ساده و در مورد شبکه‌های \vae{} و مقابله‌ای تقریبا آزمایش شده تنها در حوزه تصویر هستند، به تنهایی چندان کاربرد وسیعی در حوزه متن ندارند و به عنوان مدل پایه از آن‌ها بهره برده ‌می‌شود.
+
 \subsection{\lr{Generating Sentimental Texts via Mixture Adversarial Networks (SentiGAN) }}
 در این مدل به منظور تولید جمله با $C$ قطبیت معین، به ازای هر مقدار شرط یک مدل مولد مجزا و یک
 \trans{\classifier{}}{Classifier} $C+1$
@@ -640,6 +642,21 @@ $\{ \bff{x}^n \}_{n=1}^N$
 
 مشخص است که با افزایش تعداد شرط‌ها، این مدل مقیاس‌پذیر نخواهد بود. برای مثلا اگر بخواهیم دو شرط ۳ و ۴ مقداره را مدل کنیم به ۱۲ مدل مولد نیاز است.
 \subsection{\lr{A Generative Model for Category Text Generation (CSGAN)}}
+این مدل نیز شباهت زیادی به مدل \cgan{} دارد. نکته اصلی تفاوت آن با \cgan{} در داشتن سیگنال پاداشی متفاوت است. در \cgan{}،
+ \discriminator{} 
+ ضمن دریافت جفت جمله و شرط، احتمال نسبت به دسته واقعی یا مصنوعی بودن آن را تعیین می‌کرد؛ از این احتمال به عنوان پاداش در ساختار \reinforce{} برای حل گذر گرادیان استفاده شد. در این مقاله علاوه بر \discriminator{} ذکر شده، یک \classifier{} نیز به کار گرفته شده است و از ترکیب امتیاز واقعی بودن و تعلق جمله به دسته شرط مورد نظر، سیگنال پاداشی غنی‌تری ساخته شده است. ضمن حفظ ساختار کلی \cgan{}، دسته‌بند $D_C$ با تابع هزینه ذیل آموزش داده می‌شود:
+ \begin{align}
+     \mcal{L}_\text{CGAN} (D_C) = 
+     -\expected_{(\bff{x}, c) \sim \prob_\text{Data}} [\log D_C(c|\bff{x})]
+     -\expected_{c \sim \prob_C, \bff{x} \sim \prob_G(.|c)} [\log D_C(c|\bff{x})]     
+ \end{align}
+اگر \discriminator{} را با $D_R$ نشان دهیم، تابع پاداش نیز به شکل زیر تغییر می‌کند:
+ \begin{align}
+     \text{Reward} (\bff{x}, c) = 
+     \frac{2 D_R(\bff{x},c)D_C(c|\bff{x})}
+     {D_R(\bff{x},c)D_C(c|\bff{x})}
+ \end{align}
+ در واقع چه طبیعی نبودن جمله و چه عدم تعلق جمله مورد نظر به دسته شرط مورد نظر باعث جریمه مولد خواهد شد و بالعکس.
 \subsection{\lr{Toward Controlled Text Generation}}
 شاید این روش یکی از کامل‌ترین روش‌های ارائه شده برای تولید جملات شرطی باشد. بر خلاف مدل‌های ساده قبلی که رابطه بین شروط را در نظر نمی‌گرفتند، این روش علاوه بر تولید جملات صحیح و مرتبط با حالت شرط مورد نظر، سعی در حفظ ساختار و معنای کلی جمله با داشتن حالات مختلف شرط دارد \cite{toward}.
 \begin{figure}[h]
