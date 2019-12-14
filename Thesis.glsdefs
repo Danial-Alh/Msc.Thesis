@@ -2758,66 +2758,6 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:خودرمزنگار وردشی{}}{}%
-{%
-\gls@defglossaryentry{en:خودرمزنگار وردشی{}}%
-{%
-name={Variational autoencoder},%
-sort={Variational autoencoder},%
-type={e2p-terms},%
-first={Variational autoencoder},%
-firstplural={Variational autoencoders},%
-text={Variational autoencoder},%
-plural={Variational autoencoders},%
-description={خودرمزنگار وردشی{}},%
-descriptionplural={خودرمزنگار وردشی{}},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{fa:خودرمزنگار وردشی{}}{}%
-{%
-\gls@defglossaryentry{fa:خودرمزنگار وردشی{}}%
-{%
-name={\vae {}},%
-sort={\vae {}},%
-type={p2e-terms},%
-first={خودرمزنگار وردشی{}},%
-firstplural={خودرمزنگار وردشی{}‌ها},%
-text={خودرمزنگار وردشی{}},%
-plural={خودرمزنگار وردشی{}‌ها},%
-description={Variational autoencoder},%
-descriptionplural={Variational autoencoder},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
 \ifglsentryexists{en:تعبیه}{}%
 {%
 \gls@defglossaryentry{en:تعبیه}%
@@ -2878,9 +2818,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:دسته‌بند}{}%
+\ifglsentryexists{en:دسته‌بند{}}{}%
 {%
-\gls@defglossaryentry{en:دسته‌بند}%
+\gls@defglossaryentry{en:دسته‌بند{}}%
 {%
 name={Classifier},%
 sort={Classifier},%
@@ -2889,8 +2829,8 @@ first={Classifier},%
 firstplural={Classifiers},%
 text={Classifier},%
 plural={Classifiers},%
-description={دسته‌بند},%
-descriptionplural={دسته‌بند},%
+description={دسته‌بند{}},%
+descriptionplural={دسته‌بند{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2908,17 +2848,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:دسته‌بند}{}%
+\ifglsentryexists{fa:دسته‌بند{}}{}%
 {%
-\gls@defglossaryentry{fa:دسته‌بند}%
+\gls@defglossaryentry{fa:دسته‌بند{}}%
 {%
-name={دسته‌بند},%
-sort={دسته‌بند},%
+name={\classifier {}},%
+sort={\classifier {}},%
 type={p2e-terms},%
-first={دسته‌بند},%
-firstplural={دسته‌بند‌ها},%
-text={دسته‌بند},%
-plural={دسته‌بند‌ها},%
+first={دسته‌بند{}},%
+firstplural={دسته‌بند{}‌ها},%
+text={دسته‌بند{}},%
+plural={دسته‌بند{}‌ها},%
 description={Classifier},%
 descriptionplural={Classifier},%
 symbol={\relax },%

@@ -30,5 +30,9 @@
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خود برگشتی{}}{\reset@font\mtcSSSfont 22}{section*.29}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode لایه‌های اتصالی{}}{\reset@font\mtcSSSfont 23}{section*.31}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5-1}تولید متن به صورت شرطی}{\reset@font\mtcSfont 23}{section.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-5-1}مدل‌های شرطی ساده}{\reset@font\mtcSSfont 24}{subsection.1.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-5-1}شبکه‌ خودرمزنگار وردشی شرطی ۲}{\reset@font\mtcSSfont 24}{subsection.1.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-5-1}\lr {RNN} شرطی}{\reset@font\mtcSSfont 24}{subsection.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-5-1}خودرمزنگار وردشی شرطی {}}{\reset@font\mtcSSfont 24}{subsection.1.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-5-1}شبکه‌ تخاصمی مولد شرطی{}}{\reset@font\mtcSSfont 24}{subsection.1.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-5-1}\lr {Generating Sentimental Texts via Mixture Adversarial Networks (SentiGAN) }}{\reset@font\mtcSSfont 25}{subsection.1.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-5-1}\lr {A Generative Model for Category Text Generation (CSGAN)}}{\reset@font\mtcSSfont 26}{subsection.1.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6-5-1}\lr {Toward Controlled Text Generation}}{\reset@font\mtcSSfont 26}{subsection.1.5.6}}
