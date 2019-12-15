@@ -2758,6 +2758,606 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:دنباله به دنباله{}}{}%
+{%
+\gls@defglossaryentry{en:دنباله به دنباله{}}%
+{%
+name={Sequence to sequence},%
+sort={Sequence to sequence},%
+type={e2p-terms},%
+first={Sequence to sequence},%
+firstplural={Sequence to sequences},%
+text={Sequence to sequence},%
+plural={Sequence to sequences},%
+description={دنباله به دنباله{}},%
+descriptionplural={دنباله به دنباله{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:دنباله به دنباله{}}{}%
+{%
+\gls@defglossaryentry{fa:دنباله به دنباله{}}%
+{%
+name={\seqtoseq {}},%
+sort={\seqtoseq {}},%
+type={p2e-terms},%
+first={دنباله به دنباله{}},%
+firstplural={دنباله به دنباله{}‌ها},%
+text={دنباله به دنباله{}},%
+plural={دنباله به دنباله{}‌ها},%
+description={Sequence to sequence},%
+descriptionplural={Sequence to sequence},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:خودتوجه چند رأسه{}}{}%
+{%
+\gls@defglossaryentry{en:خودتوجه چند رأسه{}}%
+{%
+name={Multi-head Self-attention},%
+sort={Multi-head Self-attention},%
+type={e2p-terms},%
+first={Multi-head Self-attention},%
+firstplural={Multi-head Self-attentions},%
+text={Multi-head Self-attention},%
+plural={Multi-head Self-attentions},%
+description={خودتوجه چند رأسه{}},%
+descriptionplural={خودتوجه چند رأسه{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:خودتوجه چند رأسه{}}{}%
+{%
+\gls@defglossaryentry{fa:خودتوجه چند رأسه{}}%
+{%
+name={\multiheadselfattention {}},%
+sort={\multiheadselfattention {}},%
+type={p2e-terms},%
+first={خودتوجه چند رأسه{}},%
+firstplural={خودتوجه چند رأسه{}‌ها},%
+text={خودتوجه چند رأسه{}},%
+plural={خودتوجه چند رأسه{}‌ها},%
+description={Multi-head Self-attention},%
+descriptionplural={Multi-head Self-attention},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تمام متصل{}}{}%
+{%
+\gls@defglossaryentry{en:تمام متصل{}}%
+{%
+name={Fully connected},%
+sort={Fully connected},%
+type={e2p-terms},%
+first={Fully connected},%
+firstplural={Fully connecteds},%
+text={Fully connected},%
+plural={Fully connecteds},%
+description={تمام متصل{}},%
+descriptionplural={تمام متصل{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تمام متصل{}}{}%
+{%
+\gls@defglossaryentry{fa:تمام متصل{}}%
+{%
+name={\fullyconnected {}},%
+sort={\fullyconnected {}},%
+type={p2e-terms},%
+first={تمام متصل{}},%
+firstplural={تمام متصل{}‌ها},%
+text={تمام متصل{}},%
+plural={تمام متصل{}‌ها},%
+description={Fully connected},%
+descriptionplural={Fully connected},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:باقی‌مانده{}}{}%
+{%
+\gls@defglossaryentry{en:باقی‌مانده{}}%
+{%
+name={Residual},%
+sort={Residual},%
+type={e2p-terms},%
+first={Residual},%
+firstplural={Residuals},%
+text={Residual},%
+plural={Residuals},%
+description={باقی‌مانده{}},%
+descriptionplural={باقی‌مانده{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:باقی‌مانده{}}{}%
+{%
+\gls@defglossaryentry{fa:باقی‌مانده{}}%
+{%
+name={\residual {}},%
+sort={\residual {}},%
+type={p2e-terms},%
+first={باقی‌مانده{}},%
+firstplural={باقی‌مانده{}‌ها},%
+text={باقی‌مانده{}},%
+plural={باقی‌مانده{}‌ها},%
+description={Residual},%
+descriptionplural={Residual},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:نرمال‌کننده لایه}{}%
+{%
+\gls@defglossaryentry{en:نرمال‌کننده لایه}%
+{%
+name={Layer normalization},%
+sort={Layer normalization},%
+type={e2p-terms},%
+first={Layer normalization},%
+firstplural={Layer normalizations},%
+text={Layer normalization},%
+plural={Layer normalizations},%
+description={نرمال‌کننده لایه},%
+descriptionplural={نرمال‌کننده لایه},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:نرمال‌کننده لایه}{}%
+{%
+\gls@defglossaryentry{fa:نرمال‌کننده لایه}%
+{%
+name={\layernormalization },%
+sort={\layernormalization },%
+type={p2e-terms},%
+first={نرمال‌کننده لایه},%
+firstplural={نرمال‌کننده لایه‌ها},%
+text={نرمال‌کننده لایه},%
+plural={نرمال‌کننده لایه‌ها},%
+description={Layer normalization},%
+descriptionplural={Layer normalization},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:توجه چند رأسه{}}{}%
+{%
+\gls@defglossaryentry{en:توجه چند رأسه{}}%
+{%
+name={Multi-head Attention},%
+sort={Multi-head Attention},%
+type={e2p-terms},%
+first={Multi-head Attention},%
+firstplural={Multi-head Attentions},%
+text={Multi-head Attention},%
+plural={Multi-head Attentions},%
+description={توجه چند رأسه{}},%
+descriptionplural={توجه چند رأسه{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:توجه چند رأسه{}}{}%
+{%
+\gls@defglossaryentry{fa:توجه چند رأسه{}}%
+{%
+name={\multiheadattention {}},%
+sort={\multiheadattention {}},%
+type={p2e-terms},%
+first={توجه چند رأسه{}},%
+firstplural={توجه چند رأسه{}‌ها},%
+text={توجه چند رأسه{}},%
+plural={توجه چند رأسه{}‌ها},%
+description={Multi-head Attention},%
+descriptionplural={Multi-head Attention},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:پرسمان{}}{}%
+{%
+\gls@defglossaryentry{en:پرسمان{}}%
+{%
+name={Query},%
+sort={Query},%
+type={e2p-terms},%
+first={Query},%
+firstplural={Querys},%
+text={Query},%
+plural={Querys},%
+description={پرسمان{}},%
+descriptionplural={پرسمان{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:پرسمان{}}{}%
+{%
+\gls@defglossaryentry{fa:پرسمان{}}%
+{%
+name={\query {}},%
+sort={\query {}},%
+type={p2e-terms},%
+first={پرسمان{}},%
+firstplural={پرسمان{}‌ها},%
+text={پرسمان{}},%
+plural={پرسمان{}‌ها},%
+description={Query},%
+descriptionplural={Query},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:توجه با استفاده از ضرب داخلی مقیاس شده{}}{}%
+{%
+\gls@defglossaryentry{en:توجه با استفاده از ضرب داخلی مقیاس شده{}}%
+{%
+name={Scaled Dot-Product Attention},%
+sort={Scaled Dot-Product Attention},%
+type={e2p-terms},%
+first={Scaled Dot-Product Attention},%
+firstplural={Scaled Dot-Product Attentions},%
+text={Scaled Dot-Product Attention},%
+plural={Scaled Dot-Product Attentions},%
+description={توجه با استفاده از ضرب داخلی مقیاس شده{}},%
+descriptionplural={توجه با استفاده از ضرب داخلی مقیاس شده{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:توجه با استفاده از ضرب داخلی مقیاس شده{}}{}%
+{%
+\gls@defglossaryentry{fa:توجه با استفاده از ضرب داخلی مقیاس شده{}}%
+{%
+name={\dotattention {}},%
+sort={\dotattention {}},%
+type={p2e-terms},%
+first={توجه با استفاده از ضرب داخلی مقیاس شده{}},%
+firstplural={توجه با استفاده از ضرب داخلی مقیاس شده{}‌ها},%
+text={توجه با استفاده از ضرب داخلی مقیاس شده{}},%
+plural={توجه با استفاده از ضرب داخلی مقیاس شده{}‌ها},%
+description={Scaled Dot-Product Attention},%
+descriptionplural={Scaled Dot-Product Attention},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:پوشش{}}{}%
+{%
+\gls@defglossaryentry{en:پوشش{}}%
+{%
+name={Mask},%
+sort={Mask},%
+type={e2p-terms},%
+first={Mask},%
+firstplural={Masks},%
+text={Mask},%
+plural={Masks},%
+description={پوشش{}},%
+descriptionplural={پوشش{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:پوشش{}}{}%
+{%
+\gls@defglossaryentry{fa:پوشش{}}%
+{%
+name={\mask {}},%
+sort={\mask {}},%
+type={p2e-terms},%
+first={پوشش{}},%
+firstplural={پوشش{}‌ها},%
+text={پوشش{}},%
+plural={پوشش{}‌ها},%
+description={Mask},%
+descriptionplural={Mask},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تعبیه مکانی{}}{}%
+{%
+\gls@defglossaryentry{en:تعبیه مکانی{}}%
+{%
+name={Positional Embedding},%
+sort={Positional Embedding},%
+type={e2p-terms},%
+first={Positional Embedding},%
+firstplural={Positional Embeddings},%
+text={Positional Embedding},%
+plural={Positional Embeddings},%
+description={تعبیه مکانی{}},%
+descriptionplural={تعبیه مکانی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تعبیه مکانی{}}{}%
+{%
+\gls@defglossaryentry{fa:تعبیه مکانی{}}%
+{%
+name={\positionalembedding {}},%
+sort={\positionalembedding {}},%
+type={p2e-terms},%
+first={تعبیه مکانی{}},%
+firstplural={تعبیه مکانی{}‌ها},%
+text={تعبیه مکانی{}},%
+plural={تعبیه مکانی{}‌ها},%
+description={Positional Embedding},%
+descriptionplural={Positional Embedding},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:تعبیه}{}%
 {%
 \gls@defglossaryentry{en:تعبیه}%
@@ -2792,8 +3392,8 @@ parent={},%
 {%
 \gls@defglossaryentry{fa:تعبیه}%
 {%
-name={تعبیه},%
-sort={تعبیه},%
+name={\embedding },%
+sort={\embedding },%
 type={p2e-terms},%
 first={تعبیه},%
 firstplural={تعبیه‌ها},%

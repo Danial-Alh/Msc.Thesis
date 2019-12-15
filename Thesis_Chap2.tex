@@ -579,6 +579,108 @@ $\bff{f}$
 	غیر خطی درجه دو}:
 \textbf{لایه \coupling{}
 	\trans{تکه‌ای چند جمله‌ای}{Piece-wise polynomial}}:
+
+\subsection{معماری \transformer{}}
+معماری‌های معمول استفاده شده در حوزه پردازش متن بیشتر شامل \lr{LSTM} و \lr{CNN} هستند. اخیرا معماری دیگری به نام \transformer{} معرفی شد که مخصوص پردازش داده‌های به صورت دنباله بوده و پایه بسیاری از مدل‌های \stateoftheart{} است. در ادامه به معرفی این معماری و اجزای آن پرداخته خواهد شد.
+\\
+این مدل معماری نیز در گروه مدل‌های
+\trans{\seqtoseq{}}{Sequence to sequence}
+جای گرفته و از \encoder{} و \decoder{} تشکیل شده است. اگر یک جمله با طول $n$ را با $\bff{x} = (x_1, ..., x_n)$  نشان داده شود، \encoder{} با گرفتن دنباله کلمات $\bff{x}$ (یا هر واحد مورد استفاده دیگر)، این دنباله  را به دنباله بردار‌های پیوسته $\bff{z} = (z_1, ..., z_n)$ تبدیل می‌کند. \decoder{} نیز با گرفتن $\bff{z}$ دنباله کلمات مقصد $\bff{y} = (y_1, ..., y_m)$ خروجی می‌دهد. با اینکه معماری \encoder{} به صورت \autoregressive{} نیست اما \decoder{}، واحدی برای کنترل و ایجاد حالت \autoregressive{} را در خود جای داده است.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\textwidth, angle=-90]{images/attention3.png}
+	\caption{نمایی از معماری کلی \transformer{}}
+\end{figure}
+
+\textbf{\encoder{}}:
+\encoder{}
+از پشته‌ای $N$ لایه یکسان تشکیل شده است. هر لایه شامل دو زیر لایه است. اولین زیر لایه مربوط به نوعی مکانیزم توجه به نام
+\trans{\multiheadselfattention{}}{Multi-head Self-attention}
+و زیر لایه دوم یک لایه
+\trans{\fullyconnected{}}{Fully connected}
+است. لازم به ذکر است که در هر زیرلایه از اتصالات
+\trans{\residual{}}{Residual}
+و
+\trans{\layernormalization}{Layer normalization}
+استفاده شده است.
+\\
+\textbf{\decoder{}}:
+\decoder{}
+نیز از پشته کردن $N$ لایه تشکیل شده است. هر لایه علاوه بر واحد‌های ذکر شده برای \encoder{}، زیرلایه سومی نیز دارد که شامل
+\trans{\multiheadattention{}}{Multi-head Attention}
+به خروجی \encoder{} است. در \decoder{} نیز از اتصالات \residual{} و \layernormalization{} استفاده شده است. واحد \multiheadselfattention{} تفاوت کوچکی با واحد مشابه \encoder{} دارد تا در پیشبینی هر کلمه در خروجی، تنها تابعی از کلمات قبل از خود بوده و \autoregressive{} باشد.
+\\
+یک مکانیزم توجه را می‌توان نگاشتی از بردار
+\trans{\query{}}{Query}
+و یک مجموعه \keyvaluepair{} به یک بردار در نظر گرفت که \query{}، کلیدها و مقدارها همگی بردارند. بردار خروجی از جمع وزن‌دار بردارهای مقدار و هر وزن نسبت داده شده به بردار مقدار، با تابعی از بردار \query{} و کلید بدست می‌آید. در ادامه به شرح دقیق‌تر این مکانیزم پرداخته خواهد شد.
+\subsubsection{مکانیزم
+	\trans{\dotattention{}}{Scaled Dot-Product Attention}}
+این مکانیزم توجه که نام \dotattention{} بر آن نهاده شده است بر روی بردارهای \query{} و کلید $d_k$ بعدی و بردارهای مقدار $d_v$ بعدی اعمال می‌شود. امتیاز هر بردار مقدار با استفاده از ضرب داخلی بردار \query{} در بردار کلید متناظر آن بدست آمده و در نهایت با اعمال تابع \softmax{} بر روی آن وزن مربوطه محاسبه می‌گردد. لازم به ذکر است که برای کنترل واریانس امتیاز هر بردار مقدار، امتیازات قبل از اعمال تابع \softmax{} تقسیم بر $\sqrt{d_k}$ می‌شوند.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.25
+		\textwidth]{images/attention1.png}
+	\caption{نمایی از \dotattention{}}
+\end{figure}
+این مکانیزم به صورت زیر می‌توان تعریف کرد:
+\begin{align}
+	\text{Attention}(Q, K, V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V
+\end{align}
+که 
+$Q \in \bb{R}^{n \times d_k}$،
+$K \in \bb{R}^{n \times d_k}$ و
+$V \in \bb{R}^{n \times d_v}$ 
+به ترتیب بردارهای \query{}، کلید و مقدار هستند.
+ویژگی \autoregressive{} در همین نقطه به مدل تزریق می‌شود. اگر امتیاز یک بردار مقدار $-\infty$ شود، وزن نسبت داده شده به این بردار پس از اعمال \softmax{} برابر با صفر خواهد بود؛ بنابراین می‌توان بنا به دلخواه تاثیر هر بردار مقدار را با نسبت دادن  امتیاز $-\infty$ به آن، صفر کرد. به ماتریس $n \times n$ بُعدی که ردیف $i$ام آن بیان کننده مکان‌های قابل توجه برای کلمه $i$ام است، ماتریس 
+\trans{\mask{}}{Mask}
+گفته می‌شود (یک برای مکان‌های قابل توجه و $-\infty$ برای مکان‌های غیرقابل توجه).
+
+\subsubsection{مکانیزم \multiheadattention{}}
+این امکان وجود دارد که به جای یک بار اعمال تابع توجه بر بردارهای $d_\text{model}$ بُعدی ($d_\text{model}$ اندازه بردار ورودی است)، بردارهای \query{}، کلید و مقدار را با $h$ تبدیل خطی به ترتیب به $h$ فضای مختلف با ابعاد $d_k$، $d_k$ و $d_v$ بُعدی برده و پس از اعمال تابع توجه، نتایجشان را به یکدیگر متصل کرد. لازم به ذکر است که این عملیات‌ها همگی به موازات یکدیگر  قابل انجامند و می‌توان از پتانسیل موازی‌سازی \gpu{} بهره گرفت. در واقع \multiheadattention{} این امکان را به مدل می‌دهد تا با بردن بردارها به فضاهای متفاوت، از چندین فضای مختلف به مکان‌ها و ویژگی‌های مختلف نگاه کرده و در نتیجه به مکان‌های متفاوتی به صورت همزمان توجه کند.
+\begin{gather}
+	\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, ..., \text{head}_h)W^O \nonumber
+	\\
+	: \text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V)
+\end{gather}
+که
+$\Big(
+	W_i^Q \in \bb{R}^{d_\text{model} \times d_k},
+	W_i^K \in \bb{R}^{d_\text{model} \times d_k},
+	W_i^V \in \bb{R}^{d_\text{model} \times d_v},
+	W^O \in \bb{R}^{hd_v \times d_\text{model}}\Big)$
+ماتریس‌های تبدیل خطی هستند. لازم به ذکر است که $h * d_v = d_\text{model}$ است.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.4
+    \textwidth]{images/attention2.png}
+    \caption{نمایی از \multiheadattention{}}
+\end{figure}
+تا به اینجا مکانیزم توجه در \transformer{} توضیح داده شد اما این مکانیزم به چه صورتی و در کجا استفاده شده است؟
+\begin{itemize}
+    \item 
+    در \decoder{} واحد \multiheadattention{} وجود دارد. در اینجا \query{} ها، خروجی لایه قبل \decoder{} و بردارهای مقدار و کلید خروجی‌های \encoder{} هستند. در واقع می‌توان از این مکانیزم تعبیر حافظه نیز داشت.
+    \item
+    در \encoder{} نیز از \multiheadselfattention{} نام برده شد. \multiheadselfattention{} همان \multiheadattention{} است اگر که بردار \query{}، کلید و مقدار آن یک چیز باشند. بنابراین به ازای هر کلمه، در هر لایه \encoder{}، به تمام خروجی‌های لایه قبل \multiheadselfattention{} زده می‌شود.
+    \item 
+    مجددا در \decoder{} نیز از \multiheadselfattention{} استفاده شده است؛ با این تفاوت که در هر لایه، بردار متناظر با کلمه $i$ با استفاده از \mask{}‌های $-\infty$، تنها تابعی از بردار کلمات قبل‌تر از $i$ خواهد بود.
+\end{itemize}
+
+\subsubsection{بردار
+    \trans{\positionalembedding{}}{Positional Embedding}}
+از آنجا که ساختار معرفی شده، خاصیت \recurrence{} ندارد، در هیچ جایی اطلاعاتی راجع به فاصله کلمات نسبت به هم و موقعیتشان در جمله وارد مدل نمی‌شود؛ بنابراین نیاز است تا به نحوی موقعیت کلمات در بردار \embedding{} هر کلمه گنجانده شود که به آن \positionalembedding{} گفته می‌شود. بردار \positionalembedding{} 
+$PE$
+که $d_model$ بُعدی است، به صورت زیر تعریف شده است:
+\begin{align}
+PE_{(pos, 2i)} = \sin ( pos / 10000^{2i/d_\text{model}}) \nonumber
+\\
+PE_{(pos, 2i+1)} = \cos ( pos / 10000^{2i/d_\text{model}})
+\end{align}
+که $pos$ شناسه مکانی مورد نظر است. در مورد نحوه انتخاب روش \encoding{} نیز این طور بیان شده است که 
+\positionalembedding{}  $i+k$
+تابعی خطی از
+\positionalembedding{} $i$
+است بوده و قابلیت توسعه‌پذیری به جملات با طول‌های بیشتر که در حین آموزش دیده نشده است را ایجاد می‌کند. لازم به ذکر است که بردار \positionalembedding{} با بردار \embedding{} کلمه متناظرش جمع خواهد شد.
+
 \section{\condtg}
 تا به اینجا به دلیل مشابهت مدل‌های مولد شرطی و غیر شرطی، به معرفی تعدادی از معروف‌ترین مدل‌های مولد غیر شرطی، مشکلات آموزش و راه‌حل‌های رفع آن‌ها پرداخته شد. در این بخش چند مورد مدل مولد شرطی ساده و در ادامه چند مدل شرطی پیچیده‌تر معرفی خواهند شد. در بخش داده را با $\mcal{X} = \{(\bff{x}_n, \bff{c}_i)\}_{n=1}^N$ نشان می‌دهیم.
 \subsection{\lr{RNN} شرطی}
@@ -602,11 +704,11 @@ $\bff{f}$
 	\expected_{(\bff{x}, c) \sim \prob_\text{Data}} [\log D(\bff{x}|c)] +
 	\expected_{c \sim p(C), \bff{z} \sim N(\bff{0}, \bff{I}),\bff{x} \sim p_G(\bff{X}|z,c)} [\log 1 - D(\bff{x}|c)]
 \end{align}
-که نسبت به $D$ بیشینه و نسبت به $G$ کمینه می‌گردد. 
+که نسبت به $D$ بیشینه و نسبت به $G$ کمینه می‌گردد.
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=.7\textwidth]{images/cgan.png}
-    \caption{نمایی از \cgan{}}
+	\centering
+	\includegraphics[width=.7\textwidth]{images/cgan.png}
+	\caption{نمایی از \cgan{}}
 \end{figure}
 لازم به ذکر است که مجددا در رابطه فوق مشکل گذر گرادیان وجود دارد و معمولا از روش‌هایی مانند آنچه در بخش ؟؟؟ (بر پایه یادگیری تقویتی) است، استفاده می‌شود. نمایی از \cgan{} در شکل ؟؟؟ آمده است.
 ؟؟؟ از آنجا که این مدل‌ها روش‌هایی ساده و در مورد شبکه‌های \vae{} و مقابله‌ای تقریبا آزمایش شده تنها در حوزه تصویر هستند، به تنهایی چندان کاربرد وسیعی در حوزه متن ندارند و به عنوان مدل پایه از آن‌ها بهره برده ‌می‌شود.
@@ -628,35 +730,35 @@ $\{ \bff{x}^n \}_{n=1}^N$
 	V_{D_c}(\bff{x}_{1:t}, G_c) = \frac{1}{N'} \sum_{n'=1}^{N'} (1 - D_c(\bff{x}_{1:t}, \bff{x}^{n'}_{t+1:T}))
 \end{align}
 در واقع با ثابت نگه‌داشتن $\bff{x}_{1:t}$،
- $N'$
- بار جمله را با $G_c$ تکمیل کرده و در نهایت امتیاز \discriminator{} به  $N'$ جمله میانگین گرفته می‌شود. واضح است که برای حرکت آخر (زمانی که $t=T$ است) چنین فرآیندی انجام نمی‌گیرد و از امتیاز \discriminator{} به کل جمله استفاده می‌شود. قابل توجه است که $\mcal{L}_\text{SentiGAN}(G_c)$ با تابع هزینه \wgan{} نیز شبیه بوده، گرچه شرط \lr{K-Lipschitz} بودن برای آن رعایت نشده است 
- ( $G_c(.)V_{D_c}(.)$
-  به عنوان تابع \critic{} در نظر گرفته شده است).
-  \\
+$N'$
+بار جمله را با $G_c$ تکمیل کرده و در نهایت امتیاز \discriminator{} به  $N'$ جمله میانگین گرفته می‌شود. واضح است که برای حرکت آخر (زمانی که $t=T$ است) چنین فرآیندی انجام نمی‌گیرد و از امتیاز \discriminator{} به کل جمله استفاده می‌شود. قابل توجه است که $\mcal{L}_\text{SentiGAN}(G_c)$ با تابع هزینه \wgan{} نیز شبیه بوده، گرچه شرط \lr{K-Lipschitz} بودن برای آن رعایت نشده است
+( $G_c(.)V_{D_c}(.)$
+به عنوان تابع \critic{} در نظر گرفته شده است).
+\\
 تابع هزینه دسته‌بند نیز به صورت زیر تعریف می‌شود:
 \begin{align}
-\mcal{L}_\text{SentiGAN} (D) = 
-- \sum_c \expected_{\bff{x} \sim \prob_{G_c}} \log D_{C+1} (\bff{x})
-- \expected_{\bff{x} \sim \prob_\text{Data}(.|c)} \log D_c(\bff{x})
+	\mcal{L}_\text{SentiGAN} (D) =
+	- \sum_c \expected_{\bff{x} \sim \prob_{G_c}} \log D_{C+1} (\bff{x})
+	- \expected_{\bff{x} \sim \prob_\text{Data}(.|c)} \log D_c(\bff{x})
 \end{align}
 
 مشخص است که با افزایش تعداد شرط‌ها، این مدل مقیاس‌پذیر نخواهد بود. برای مثلا اگر بخواهیم دو شرط ۳ و ۴ مقداره را مدل کنیم به ۱۲ مدل مولد نیاز است.
 \subsection{\lr{A Generative Model for Category Text Generation (CSGAN)}}
 این مدل نیز شباهت زیادی به مدل \cgan{} دارد. نکته اصلی تفاوت آن با \cgan{} در داشتن سیگنال پاداشی متفاوت است. در \cgan{}،
- \discriminator{} 
- ضمن دریافت جفت جمله و شرط، احتمال نسبت به دسته واقعی یا مصنوعی بودن آن را تعیین می‌کرد؛ از این احتمال به عنوان پاداش در ساختار \reinforce{} برای حل گذر گرادیان استفاده شد. در این مقاله علاوه بر \discriminator{} ذکر شده، یک \classifier{} نیز به کار گرفته شده است و از ترکیب امتیاز واقعی بودن و تعلق جمله به دسته شرط مورد نظر، سیگنال پاداشی غنی‌تری ساخته شده است. ضمن حفظ ساختار کلی \cgan{}، دسته‌بند $D_C$ با تابع هزینه ذیل آموزش داده می‌شود:
- \begin{align}
-     \mcal{L}_\text{CGAN} (D_C) = 
-     -\expected_{(\bff{x}, c) \sim \prob_\text{Data}} [\log D_C(c|\bff{x})]
-     -\expected_{c \sim \prob_C, \bff{x} \sim \prob_G(.|c)} [\log D_C(c|\bff{x})]     
- \end{align}
+\discriminator{}
+ضمن دریافت جفت جمله و شرط، احتمال نسبت به دسته واقعی یا مصنوعی بودن آن را تعیین می‌کرد؛ از این احتمال به عنوان پاداش در ساختار \reinforce{} برای حل گذر گرادیان استفاده شد. در این مقاله علاوه بر \discriminator{} ذکر شده، یک \classifier{} نیز به کار گرفته شده است و از ترکیب امتیاز واقعی بودن و تعلق جمله به دسته شرط مورد نظر، سیگنال پاداشی غنی‌تری ساخته شده است. ضمن حفظ ساختار کلی \cgan{}، دسته‌بند $D_C$ با تابع هزینه ذیل آموزش داده می‌شود:
+\begin{align}
+	\mcal{L}_\text{CGAN} (D_C) =
+	-\expected_{(\bff{x}, c) \sim \prob_\text{Data}} [\log D_C(c|\bff{x})]
+	-\expected_{c \sim \prob_C, \bff{x} \sim \prob_G(.|c)} [\log D_C(c|\bff{x})]
+\end{align}
 اگر \discriminator{} را با $D_R$ نشان دهیم، تابع پاداش نیز به شکل زیر تغییر می‌کند:
- \begin{align}
-     \text{Reward} (\bff{x}, c) = 
-     \frac{2 D_R(\bff{x},c)D_C(c|\bff{x})}
-     {D_R(\bff{x},c)D_C(c|\bff{x})}
- \end{align}
- در واقع چه طبیعی نبودن جمله و چه عدم تعلق جمله مورد نظر به دسته شرط مورد نظر باعث جریمه مولد خواهد شد و بالعکس.
+\begin{align}
+	\text{Reward} (\bff{x}, c) =
+	\frac{2 D_R(\bff{x},c)D_C(c|\bff{x})}
+	{D_R(\bff{x},c)D_C(c|\bff{x})}
+\end{align}
+در واقع چه طبیعی نبودن جمله و چه عدم تعلق جمله مورد نظر به دسته شرط مورد نظر باعث جریمه مولد خواهد شد و بالعکس.
 \subsection{\lr{Toward Controlled Text Generation}}
 شاید این روش یکی از کامل‌ترین روش‌های ارائه شده برای تولید جملات شرطی باشد. بر خلاف مدل‌های ساده قبلی که رابطه بین شروط را در نظر نمی‌گرفتند، این روش علاوه بر تولید جملات صحیح و مرتبط با حالت شرط مورد نظر، سعی در حفظ ساختار و معنای کلی جمله با داشتن حالات مختلف شرط دارد \cite{toward}.
 \begin{figure}[h]
