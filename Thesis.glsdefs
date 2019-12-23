@@ -3718,6 +3718,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:پیش‌آموزش{}}{}%
+{%
+\gls@defglossaryentry{en:پیش‌آموزش{}}%
+{%
+name={Pretrain},%
+sort={Pretrain},%
+type={e2p-terms},%
+first={Pretrain},%
+firstplural={Pretrains},%
+text={Pretrain},%
+plural={Pretrains},%
+description={پیش‌آموزش{}},%
+descriptionplural={پیش‌آموزش{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:پیش‌آموزش{}}{}%
+{%
+\gls@defglossaryentry{fa:پیش‌آموزش{}}%
+{%
+name={\pretrain {}},%
+sort={\pretrain {}},%
+type={p2e-terms},%
+first={پیش‌آموزش{}},%
+firstplural={پیش‌آموزش{}‌ها},%
+text={پیش‌آموزش{}},%
+plural={پیش‌آموزش{}‌ها},%
+description={Pretrain},%
+descriptionplural={Pretrain},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:سادک{}}{}%
 {%
 \gls@defglossaryentry{en:سادک{}}%
@@ -4061,66 +4121,6 @@ text={کدگشایی حریصانه},%
 plural={کدگشایی حریصانه‌ها},%
 description={Greedy decoding},%
 descriptionplural={Greedy decoding},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{en:اعتبارسنجی{}}{}%
-{%
-\gls@defglossaryentry{en:اعتبارسنجی{}}%
-{%
-name={Validation},%
-sort={Validation},%
-type={e2p-terms},%
-first={Validation},%
-firstplural={Validations},%
-text={Validation},%
-plural={Validations},%
-description={اعتبارسنجی{}},%
-descriptionplural={اعتبارسنجی{}},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{fa:اعتبارسنجی{}}{}%
-{%
-\gls@defglossaryentry{fa:اعتبارسنجی{}}%
-{%
-name={\validation {}},%
-sort={\validation {}},%
-type={p2e-terms},%
-first={اعتبارسنجی{}},%
-firstplural={اعتبارسنجی{}‌ها},%
-text={اعتبارسنجی{}},%
-plural={اعتبارسنجی{}‌ها},%
-description={Validation},%
-descriptionplural={Validation},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

@@ -10,7 +10,90 @@
 \\
 دسته آخر نیز مربوط به مدل‌های \vae{} است. این مدل‌ها از این جهت که هم دارای فضای نهان با توزیع مشخص هستند و با معیار \likelihood{} آموزش داده می‌شوند، بنابراین برخلاف \gan{} دچار مشکل \modecollapse{} نبوده و می‌توان با نمونه‌برداری از فضای نهان (مانند \gan{}) به جملات تبدیل کرد. این مدل‌ها نیز بدون ضعف نیستند. همان طور که در بخش ؟؟؟ توضیح داده شد، مشکل اساسی \vae{} در تولید متن، عدم توجه به فضای نهان است. راه حل‌های متعددی برای این مشکل ارائه شده است که بعضی آن را ناشی از مشکلات تابع هزینه می‌دانند. علاوه بر این، به دلیل استفاده از روش ‌\teacherforcing{}، این مدل نیز دچار \expbias{} است. گذشته از این ضعف‌ها مشکلات دیگری نیز برای آموزش دادن شرطی این مدل‌ها گزارش شده است؛ مانند این موضوع که مدل به طور همزمان توانایی داشتن خطای بازسازی کم و هم رعایت شرط ورودی را چندان خوب ندارد. احتمالا به همین دلیل است که در ؟؟؟ از یک دسته‌بند شرط برای اجبار \decoder{} به رعایت شرط استفاده شده است.
 
-در مجموع هیچ کدام از روش‌های فوق خالی از ضعف نیستند اما از آنجا که هدف در این پروژه تولید جملات به صورت شرطی است، اگر بتوان فضای نهانی با قابلیت تفسیرپذیری بالا به وجود آورد، این امکان وجود دارد تا در صورت لزوم با یادگیری هر بخش از فضای نهان به یک شرط خاص دست یافت. به عبارت دیگر با یک بار یادگیری فضای نهان، می‌توان از آن برای یادگیری شروط مختلف بهره برد و از آنجا که معمولا داده برچسب خورده برای هر وظیفه‌ای به تعداد زیاد موجود نیست، بنابراین می‌توان انتظار داشت با توجه به کوچکتر بودن فضای نهان نسبت به فضای ورودی، با داشتن فضای نهان تفسیرپذیر، وظایف مربوط به شروط مختلف را حتی با داده کمتری فرا گرفت.
+\subsection{مشاهدات رفتار مدل‌های پیشین}
+آنچه توضیح داده شد شرح توضیحی رفتار مدل‌های مختلف بود. در این بخش دو نمونه از رفتارهای نامطلوب دو دسته \gan{} و \vae{} توضیح داده خواهند شد.
+\\
+مدل اول مدل \towardctg{} است که پایه اصلی آن یک مدل \vae{} می‌باشد. نکته حائز اهمیت این دسته از مدل‌ها میزان تاثیر فضای نهان بر خروجی \decoder{} است. در این مدل، از پارامتر $\tau$ (دما) به منظور کنترل میزان اتکای \decoder{} بر فضای نهان استفاده می‌شود. به طور کلی از این پارامتر در تغییر دادن یک توزیع گسسته از حالت یکنواخت به ضربه بسیار کاربردی است. اگر $\bff{o}$ بردار ورودی تابع \softmax{} باشد، پارامتر $\tau{}$ که مقداری بین صفر و یک دارد، به صورت زیر تزریق می‌شود:
+\begin{gather}
+	\bff{y} = \text{softmax}(\bff{o}/\tau) \\
+	\bff{x} \sim \prob_\bff{y} \nonumber
+\end{gather}
+منظور از $\prob_\bff{y}$ توزیع گسسته ایست که احتمالات هر مقدار آن مطابق با $\bff{y}$ است. در رابطه فوق اگر پارامتر $\tau$ دارای مقدار یک باشد، تاثیری بر توزیع $\bff{y}$ نداشته و توزیع به حالت قبلی خود باقی می‌ماند؛ اما هر قدر این پارامتر به سمت صفر پیش رود، توزیع خروجی \softmax{} به سمت توزیع ضربه بر روی بیشینه مقدار بردار $\bff{o}$ پیش خواهد رفت و به عبارت دیگر، \greedydecoding{} خواهد بود. \\
+در اینجا نیز می‌توان با تغییر این پارامتر میزان تاثیر فضای نهان بر خروجی \decoder{} را اندازه‌گیری نمود. به طور پیش‌فرض مقدار این پارامتر عددی در حدود ۸.۰ قرار داده شده است. با نمونه‌گیری از فضای نهان و \decode{} کردن آن توسط \decoder{} با پارامتر ذکر شده در دو حالت ۸.۰ و نزدیک به صفر، جملات در جدول 
+\ref{table:vae_temp_samples}
+بدست آمده‌اند.
+	\begin{table}[h!]
+        \centering
+		\begin{tabular}{|c|c|}
+            \hline
+			\multirow{9}{5em}{\centering \bf{نمونه‌های با پارامتر دمای 8.0}}
+           &\lr{a dream cast of solid female talent who build a seamless ensemble .}\\
+           &\lr{ what it lacks in originality it makes up for in intelligence and b - grade}\\
+            &\lr{a vivid cinematic portrait .}\\
+            &\lr{an impeccable study in perversity .}\\
+            &\lr{a gift to anyone who loves both dance and cinema}\\
+            &\lr{my advice is to skip the film and pick up the soundtrack .}\\
+            &\lr{"a twisty , moody slice of southern gothic ..."}\\
+            &\lr{and neither nor suspenseful nor particularly well - drawn in by the center .}\\
+            &\lr{it 's basically an overlong episode of tales from the crypt .}\\
+            \hline
+            \multirow{9}{5em}{\centering \bf{نمونه‌های با پارامتر دمای نزدیک به صفر}}
+            &\lr{a film that clearly means to preach exclusively to the converted .}\\
+            &\lr{a very average science fiction .}\\
+            &\lr{the film 's center will not hold .}\\
+            &\lr{ very good film sits the place where a masterpiece of the place .}\\
+            &\lr{the movie quickly drags on becoming boring and predictable .}\\
+            &\lr{a film that clearly means to preach exclusively to the converted .}\\
+            &\lr{a film that clearly means to preach exclusively to the converted .}\\
+            &\lr{a film that clearly means to preach exclusively to the converted .}\\
+            &\lr{a very average science fiction film .}\\
+            \hline
+		\end{tabular}
+		\caption{خروجی مدل  \towardctg 
+            در دو حالت با پارامتر دمای 8.0 و نزدیک به صفر.}
+        \label{table:vae_temp_samples}
+	\end{table}
+واضح است در حالتی که منبع عامل تصادفی تنها از فضای نهان باشد، خروجی مدل یک جمله ثابت خواهد بود. بنابراین این طور می‌توان نتیجه‌گیری نمود که خروجی \decoder{} چندان توسط فضای نهان قابل کنترل نیست و تا حدی مستقلا کار می‌کند.
+\\
+مشابه چنین اتفاقی نیز به لحاظ خروجی مدل در مورد \sentigan{} نیز می‌افتد. در اینجا، به دلیل اینکه فضای نهانی وجود ندارد، بنابراین آزمایش پیش‌تر ذکر شده را نمی‌توان انجام داد. اما مشکل اصلی آموزش \gan{} در کنترل میزان آموزش \generator{} و \discriminator{} و رخداد پدیده \modecollapse{} است. روش معمول این دسته از مدل‌ها به این صورت است که ابتدا یک مرحله، \generator{} با معیار بیشینه \likelihood{} 
+\trans{\pretrain{}}{Pretrain}
+داده شده و پس از آن با تابع هزینه تخاصمی آموزش داده می‌شود.
+ 	\begin{table}[h!]
+     \centering
+     \begin{tabular}{|c|c|}
+         \hline
+         \multirow{9}{5em}{\centering \bf{ابتدای آموزش تخاصمی}}
+         &\lr{a bravura exercise in emptiness .}\\
+         &\lr{a movie that is without intent .}\\
+         &\lr{a sometimes tedious film .}\\
+         &\lr{there 's a reason the studio did n't offer an advance screening .}\\
+         &\lr{the movie is a desperate miscalculation .}\\
+         &\lr{i liked a lot of the smaller scenes .}\\
+         &\lr{a film that is a documentary !}\\
+         &\lr{it 's a spectacular performance - ahem , we hope it 's a good bark}\\
+         &\lr{visually striking and viscerally repellent .}\\
+         \hline
+         \multirow{9}{5em}{\centering \bf{پس از رخداد \modecollapse{}}}
+         &\lr{a movie that 's about as overbearing and over-the-top as the family it depicts .}\\
+         &\lr{a movie that 's about as overbearing and over-the-top as the family it depicts .}\\
+         &\lr{a movie that 's about as overbearing and over-the-top as the family it depicts .}\\
+         &\lr{a movie that 's about as overbearing and over-the-top as the family it depicts .}\\
+         &\lr{a warm , and funny , good-natured treat , slight and and funny , good-natured}\\
+         &\lr{a film 's a warm and incendiary movie and good-natured treat of the year 's}\\
+         &\lr{a film that clearly means to preach exclusively to the converted .}\\
+         &\lr{a film that clearly means to preach exclusively to the converted .}\\
+         &\lr{a warm , and funny , good-natured treat , slight and and funny and good-natured}\\
+         \hline
+     \end{tabular}
+     \caption{خروجی مدل \sentigan{}
+     در ابتدای آموزش تخاصمی و پس از رخداد \modecollapse{}}
+     \label{table:gan_modecollapse_samples}
+ \end{table}
+ به منظور بررسی موضوع ذکر شده، در حین آموزش دو گام، یکی در ابتدای آموزش تخاصمی و دیگری پس از رخداد \modecollapse{} را انتخاب و از مدل نمونه‌برداری و در جدول 
+\ref{table:gan_modecollapse_samples}
+گزارش شده است. مجددا شاهد وضعیتی هستیم که تنوع جملات تولیدی توسط مدل بسیار کم شده است. لازم به ذکر است که این موضوع با تغییر میزان آموزش \generator{} و \discriminator{} نیز تغییری نکرد.  از آنجا که به ازای هر شرط یک \generator{} جدا در نظر گرفته است، جملات تولیدی هر \generator{} به تعداد جمله محدود شده و دو دستگی جملات ذکر شده در حالت \modecollapse{} به این علت است (دادگان آموزشی دارای دو مقدار شرط است).
+\\
+بنابراین در مجموع هیچ کدام از روش‌های فوق خالی از ضعف نیستند اما از آنجا که هدف در این پروژه تولید جملات به صورت شرطی است، اگر بتوان فضای نهانی با قابلیت تفسیرپذیری بالا به وجود آورد، این امکان وجود دارد تا در صورت لزوم با یادگیری هر بخش از فضای نهان به یک شرط خاص دست یافت. به عبارت دیگر با یک بار یادگیری فضای نهان، می‌توان از آن برای یادگیری شروط مختلف بهره برد و از آنجا که معمولا داده برچسب خورده برای هر وظیفه‌ای به تعداد زیاد موجود نیست، بنابراین می‌توان انتظار داشت با توجه به کوچکتر بودن فضای نهان نسبت به فضای ورودی، با داشتن فضای نهان تفسیرپذیر، وظایف مربوط به شروط مختلف را حتی با داده کمتری فرا گرفت.
 \\
 بنابراین مدل نهایی از دو بخش کلی تشکیل شده است:
 \begin{itemize}
@@ -73,7 +156,7 @@ $\mathcal{L}_{\text{WAE}}(Q, G)$
 که $\bff{o}$ بردار قبل از اعمال \lr{softmax}
 ،
 $\bff{u}$
-بردار خروجی و توابع \lr{onehot} و \lr{stop-gradient} به ترتیب تبدیل‌کننده شاخص به بردار 
+بردار خروجی و توابع \lr{onehot} و \lr{stop-gradient} به ترتیب تبدیل‌کننده شاخص به بردار
 \trans{\onehot{}}{Onehot}
 و قطع‌کننده عبور گرادیان هستند. بنابراین همان طور که از تعریف برداشت می‌شود، در فاز
 \trans{\forward{}}{Forward}
@@ -104,10 +187,10 @@ $\mathcal{X}_C = \{(\bff{x}_i, \bff{c}_i)\}_{i=1}^{N}$
 \end{gather}
 خواهیم داشت:
 \begin{align}
-	\mathcal{L}_c (F) = & KL\big(Q(Z|c) ~ || ~ F(Z|c)\big) \nonumber                                                    \\
-	=                   & \int_z Q(z|c) \log \frac{Q(z|c)}{F(z|c) \nonumber}                                            \\
-	=                   & -\int_z Q(z|c) \log F(z|c) + \text{const} \nonumber                                           \\
-	=                   & -\int_z \sum_x P_\text{Data}(x|c) Q(z|x) \log F(z|c) + \text{const} \nonumber                 \\
+	\mathcal{L}_c (F) = & KL\big(Q(Z|c) ~ || ~ F(Z|c)\big) \nonumber                                          \\
+	=                   & \int_z Q(z|c) \log \frac{Q(z|c)}{F(z|c) \nonumber}                                  \\
+	=                   & -\int_z Q(z|c) \log F(z|c) + \text{const} \nonumber                                 \\
+	=                   & -\int_z \sum_x P_\text{Data}(x|c) Q(z|x) \log F(z|c) + \text{const} \nonumber       \\
 	\Rightarrow
 	\mathcal{L}_c (F) = & - \expected_{x \sim P_\text{Data}(X|c), z \sim Q(Z|x)} [\log F(z|c)] + \text{const}
 \end{align}
@@ -115,33 +198,33 @@ $\mathcal{X}_C = \{(\bff{x}_i, \bff{c}_i)\}_{i=1}^{N}$
 \\
 اگر تابع $F$ را به صورت $F = F_1 \circ F_2 \circ ... \circ F_L$ باشد که $F_l$ یک لایه از نوع \lr{MAF} است. اگر خروجی لایه $l$ ام را با $Z_l \in \bb{R}^D$ نشان دهیم و $Z_0$ نمونه‌ای از توزیع پایه  $P_{Z_0}$ با قابلیت محاسبه کارای احتمال یک نمونه و همچنین نمونه‌برداری باشد (در اینجا توزیع گاوسی نرمال)، خواهیم داشت:
 \begin{align}
-    Z^i_{l+1} =& Z^i_{l} * \Theta^{i}_{l,1}(Z^{1:i-1}_{l+1}) + \Theta^{i}_{l,2}(Z^{1:i-1}_{l+1})
+	Z^i_{l+1} = & Z^i_{l} * \Theta^{i}_{l,1}(Z^{1:i-1}_{l+1}) + \Theta^{i}_{l,2}(Z^{1:i-1}_{l+1})
 \end{align}
 و تابع معکوس نیز می‌تواند به صورت برداری به شرح زیر نوشته شود:
 \begin{align}
-    \bff{Z_{l-1}} =& F_{l}^{-1}(\bff{Z_{l}}) \nonumber
-    \\
-   \bff{ Z_{l-1}} =& 
-   \frac{\bff{ Z_{l}} - \Theta_{l,2}(\bff{Z_{l}})}
-               {\Theta_{l,1}(\bff{Z_{l}})}
+	\bff{Z}_{l-1} =  & F_{l}^{-1}(\bff{Z}_{l}) \nonumber
+	\\
+	\bff{ Z}_{l-1} = &
+	\frac{\bff{ Z}_{l} - \Theta_{l,2}(\bff{Z}_{l})}
+	{\Theta_{l,1}(\bff{Z}_{l})}
 \end{align}
 که $\Theta_{l,1}$ و $\Theta_{l,2}$ نیز توابعی هستند که با شبکه عصبی مدل می‌شوند؛ تنها محدودیت این شبکه‌ها در این است که بُعد $i$ام آن تنها باید تابعی از ابعاد $1$ تا $i-1$ باشد. به این هدف، از معماری \lr{MADE} در $\Theta_{l,1}$ و $\Theta_{l,2}$ استفاده می‌شود.
 \\
 از آنجا که هر بُعد بر حسب بعدهای قبل از خود است، بنابراین ماتریس ژاکوبین نیز مثلثی بوده و دترمینان آن برابر با حاصل‌ضرب اعضای قطر آن است.
 \begin{align}
-\Big[ \frac{\partial F_{l+1}}{\partial \bff{Z_l}} \Big]_{i,i} = \Theta^{i}_{l,1}(Z^{1:i-1}_{l+1}) \nonumber
-\\
-\text{det}\Big[ \frac{\partial F_{l+1}}{\partial\bff{Z_l}} \Big] = \prod_{i=1}^D \Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})
+	\Big[ \frac{\partial F_{l+1}}{\partial \bff{Z_l}} \Big]_{i,i} = \Theta^{i}_{l,1}(Z^{1:i-1}_{l+1}) \nonumber
+	\\
+	\text{det}\Big[ \frac{\partial F_{l+1}}{\partial\bff{Z_l}} \Big] = \prod_{i=1}^D \Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})
 \end{align}
 بنابراین \likelihood{} نیز طبق رابطه ؟؟؟ به صورت زیر محاسبه می‌شود:
 \begin{align}
-\log P_F(Z_L) =& \log P_{Z_0} - \sum_{l=1}^L \log (\text{det}[    \frac{\partial F_{l+1}}{\partial \bff{Z_l}}     ]) \nonumber
-\\
-=& \log P_{Z_0} - \sum_{l=1}^L \sum_{i=1}^D \log (\Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})) \nonumber
-\\
-=& \sum_{i=1}^D -\frac{1}{2} \{Z^i_0\}^2 - \sum_{l=1}^L \sum_{i=1}^D \log (\Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})) + \text{const} \nonumber
-\\
-=& -\sum_{i=1}^D \frac{1}{2} \{Z^i_0\}^2 + \sum_{l=1}^L \log (\Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})) + \text{const}
+	\log P_F(Z_L) = & \log P_{Z_0} - \sum_{l=1}^L \log (\text{det}[    \frac{\partial F_{l+1}}{\partial \bff{Z_l}}     ]) \nonumber
+	\\
+	=               & \log P_{Z_0} - \sum_{l=1}^L \sum_{i=1}^D \log (\Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})) \nonumber
+	\\
+	=               & \sum_{i=1}^D -\frac{1}{2} \{Z^i_0\}^2 - \sum_{l=1}^L \sum_{i=1}^D \log (\Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})) + \text{const} \nonumber
+	\\
+	=               & -\sum_{i=1}^D \frac{1}{2} \{Z^i_0\}^2 + \sum_{l=1}^L \log (\Theta^{i}_{l,1}(Z^{1:i-1}_{l+1})) + \text{const}
 \end{align}
 در نهایت رابطه هزینه $\mathcal{L}_c (F)$ به صورت زیر خواهد بود:
 
