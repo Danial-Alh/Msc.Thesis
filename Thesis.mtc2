@@ -1,4 +1,41 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1-2}مقدمه}{\reset@font\mtcSfont 33}{section.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-1-2}مشاهدات رفتار مدل‌های پیشین}{\reset@font\mtcSSfont 34}{subsection.2.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2-2}آموزش خودرمزنگار{}}{\reset@font\mtcSfont 37}{section.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3-2}آموزش مولد شرطی}{\reset@font\mtcSfont 39}{section.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1-2}مقدمه}{\reset@font\mtcSfont 6}{section.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-1-2}پیش‌نیازها}{\reset@font\mtcSSfont 6}{subsection.2.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {KL}}{\reset@font\mtcSSSfont 6}{section*.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {KL} معکوس}{\reset@font\mtcSSSfont 6}{section*.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {Jensen Shannon}}{\reset@font\mtcSSSfont 6}{section*.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {Total Variation}}{\reset@font\mtcSSSfont 7}{section*.7}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode فاصله \lr {Wasserstein}}{\reset@font\mtcSSSfont 7}{section*.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2-2}مدل‌های زبانی بدون فضای نهان}{\reset@font\mtcSfont 7}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-2-2}مدل زبانی پایه (جبر معلم{})}{\reset@font\mtcSSfont 7}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-2-2}مدل زبانی با استفاده از شبکه‌های تخاصمی مولد{}}{\reset@font\mtcSSfont 8}{subsection.2.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3-2}مدل‌های زبانی با فضای نهان}{\reset@font\mtcSfont 10}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-3-2}خودرمزنگار وردشی{}}{\reset@font\mtcSSfont 10}{subsection.2.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تکنیک پارامتریزه‌سازی مجدد{}}{\reset@font\mtcSSSfont 11}{section*.13}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تکنیک پارامتریزه‌سازی مجدد{}}{\reset@font\mtcSSSfont 11}{section*.14}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-3-2}عوامل صفر شدن \lr {KL}}{\reset@font\mtcSSfont 12}{subsection.2.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode تمایل شبکه کدگشا{} به استقلال داشتن از فضای نهان}{\reset@font\mtcSSSfont 12}{section*.16}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode بهینه‌های سراسری نامطلوب}{\reset@font\mtcSSSfont 14}{section*.17}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode عقب ماندن شبکه کدگذار{} در تخمین توزیع پسین واقعی}{\reset@font\mtcSSSfont 14}{section*.18}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-3-2}راه حل‌های حاشیه‌ای برای رفع مشکل صفر شدن \lr {KL}}{\reset@font\mtcSSfont 16}{subsection.2.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-2}خودرمزنگار تخاصمی}{\reset@font\mtcSSfont 17}{subsection.2.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-3-2}خودرمزنگار واسرشتاین}{\reset@font\mtcSSfont 19}{subsection.2.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6-3-2}مدل \lr {Adversarially Regularized Autoencoder (ARAE)}}{\reset@font\mtcSSfont 22}{subsection.2.3.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7-3-2}دیگر روش‌های جلوگیری از صفر شدن فاصله \lr {KL}}{\reset@font\mtcSSfont 23}{subsection.2.3.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8-3-2}شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{\reset@font\mtcSSfont 23}{subsection.2.3.8}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مفاهیم پایه}{\reset@font\mtcSSSfont 24}{section*.24}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {درایه‌گرا{}}{Elementwise}}{\reset@font\mtcSSSfont 24}{section*.25}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خطی}{\reset@font\mtcSSSfont 25}{section*.26}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {اتصالی{}}{Coupling} }{\reset@font\mtcSSSfont 25}{section*.27}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خود برگشتی{}}{\reset@font\mtcSSSfont 26}{section*.29}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode لایه‌های اتصالی{}}{\reset@font\mtcSSSfont 27}{section*.31}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {9-3-2}معماری \lr {Transformer}{}}{\reset@font\mtcSSfont 28}{subsection.2.3.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مکانیزم \trans {توجه با استفاده از ضرب داخلی مقیاس شده{}}{Scaled Dot-Product Attention}}{\reset@font\mtcSSSfont 30}{section*.33}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مکانیزم توجه چند رأسه{}}{\reset@font\mtcSSSfont 30}{section*.35}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode بردار \trans {تعبیه مکانی{}}{Positional Embedding}}{\reset@font\mtcSSSfont 32}{section*.37}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-2}تولید متن به صورت شرطی}{\reset@font\mtcSfont 32}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-4-2}\lr {RNN} شرطی}{\reset@font\mtcSSfont 32}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-4-2}خودرمزنگار وردشی شرطی{}}{\reset@font\mtcSSfont 32}{subsection.2.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-4-2}شبکه‌ تخاصمی مولد شرطی{}}{\reset@font\mtcSSfont 33}{subsection.2.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-4-2}\lr {Generating Sentimental Texts via Mixture Adversarial Networks (SentiGAN) }}{\reset@font\mtcSSfont 34}{subsection.2.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-4-2}\lr {A Generative Model for Category Text Generation (CSGAN)}}{\reset@font\mtcSSfont 34}{subsection.2.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6-4-2}\lr {Toward Controlled Text Generation}}{\reset@font\mtcSSfont 35}{subsection.2.4.6}}
