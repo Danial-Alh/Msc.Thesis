@@ -1,3 +1,123 @@
+\ifglsentryexists{en:میانگین جویانه{}}{}%
+{%
+\gls@defglossaryentry{en:میانگین جویانه{}}%
+{%
+name={Mean-seeking},%
+sort={Mean-seeking},%
+type={e2p-terms},%
+first={Mean-seeking},%
+firstplural={Mean-seekings},%
+text={Mean-seeking},%
+plural={Mean-seekings},%
+description={میانگین جویانه{}},%
+descriptionplural={میانگین جویانه{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:میانگین جویانه{}}{}%
+{%
+\gls@defglossaryentry{fa:میانگین جویانه{}}%
+{%
+name={\meanseeking {}},%
+sort={\meanseeking {}},%
+type={p2e-terms},%
+first={میانگین جویانه{}},%
+firstplural={میانگین جویانه{}‌ها},%
+text={میانگین جویانه{}},%
+plural={میانگین جویانه{}‌ها},%
+description={Mean-seeking},%
+descriptionplural={Mean-seeking},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:آرگومان بیشینه یابی{}}{}%
+{%
+\gls@defglossaryentry{en:آرگومان بیشینه یابی{}}%
+{%
+name={Argmax},%
+sort={Argmax},%
+type={e2p-terms},%
+first={Argmax},%
+firstplural={Argmaxs},%
+text={Argmax},%
+plural={Argmaxs},%
+description={آرگومان بیشینه یابی{}},%
+descriptionplural={آرگومان بیشینه یابی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:آرگومان بیشینه یابی{}}{}%
+{%
+\gls@defglossaryentry{fa:آرگومان بیشینه یابی{}}%
+{%
+name={\argmaxphrase {}},%
+sort={\argmaxphrase {}},%
+type={p2e-terms},%
+first={آرگومان بیشینه یابی{}},%
+firstplural={آرگومان بیشینه یابی{}‌ها},%
+text={آرگومان بیشینه یابی{}},%
+plural={آرگومان بیشینه یابی{}‌ها},%
+description={Argmax},%
+descriptionplural={Argmax},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:وظیفه{}}{}%
 {%
 \gls@defglossaryentry{en:وظیفه{}}%
@@ -598,6 +718,126 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:افزودن داده}{}%
+{%
+\gls@defglossaryentry{en:افزودن داده}%
+{%
+name={Augmentation},%
+sort={Augmentation},%
+type={e2p-terms},%
+first={Augmentation},%
+firstplural={Augmentations},%
+text={Augmentation},%
+plural={Augmentations},%
+description={افزودن داده},%
+descriptionplural={افزودن داده},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:افزودن داده}{}%
+{%
+\gls@defglossaryentry{fa:افزودن داده}%
+{%
+name={\augmentation },%
+sort={\augmentation },%
+type={p2e-terms},%
+first={افزودن داده},%
+firstplural={افزودن داده‌ها},%
+text={افزودن داده},%
+plural={افزودن داده‌ها},%
+description={Augmentation},%
+descriptionplural={Augmentation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:نیمه‌نظارتی{}}{}%
+{%
+\gls@defglossaryentry{en:نیمه‌نظارتی{}}%
+{%
+name={Semi-supervised},%
+sort={Semi-supervised},%
+type={e2p-terms},%
+first={Semi-supervised},%
+firstplural={Semi-superviseds},%
+text={Semi-supervised},%
+plural={Semi-superviseds},%
+description={نیمه‌نظارتی{}},%
+descriptionplural={نیمه‌نظارتی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:نیمه‌نظارتی{}}{}%
+{%
+\gls@defglossaryentry{fa:نیمه‌نظارتی{}}%
+{%
+name={\semisupervised {}},%
+sort={\semisupervised {}},%
+type={p2e-terms},%
+first={نیمه‌نظارتی{}},%
+firstplural={نیمه‌نظارتی{}‌ها},%
+text={نیمه‌نظارتی{}},%
+plural={نیمه‌نظارتی{}‌ها},%
+description={Semi-supervised},%
+descriptionplural={Semi-supervised},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:پیشین}{}%
 {%
 \gls@defglossaryentry{en:پیشین}%
@@ -898,6 +1138,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:پسین{}}{}%
+{%
+\gls@defglossaryentry{en:پسین{}}%
+{%
+name={Posterior},%
+sort={Posterior},%
+type={e2p-terms},%
+first={Posterior},%
+firstplural={Posteriors},%
+text={Posterior},%
+plural={Posteriors},%
+description={پسین{}},%
+descriptionplural={پسین{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:پسین{}}{}%
+{%
+\gls@defglossaryentry{fa:پسین{}}%
+{%
+name={\posterior {}},%
+sort={\posterior {}},%
+type={p2e-terms},%
+first={پسین{}},%
+firstplural={پسین{}‌ها},%
+text={پسین{}},%
+plural={پسین{}‌ها},%
+description={Posterior},%
+descriptionplural={Posterior},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:خودرمزنگار وردشی{}}{}%
 {%
 \gls@defglossaryentry{en:خودرمزنگار وردشی{}}%
@@ -941,6 +1241,366 @@ text={خودرمزنگار وردشی{}},%
 plural={خودرمزنگار وردشی{}‌ها},%
 description={Variational Autoencoder},%
 descriptionplural={Variational Autoencoder},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:خودرمزنگار{}}{}%
+{%
+\gls@defglossaryentry{en:خودرمزنگار{}}%
+{%
+name={Autoencoder},%
+sort={Autoencoder},%
+type={e2p-terms},%
+first={Autoencoder},%
+firstplural={Autoencoders},%
+text={Autoencoder},%
+plural={Autoencoders},%
+description={خودرمزنگار{}},%
+descriptionplural={خودرمزنگار{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:خودرمزنگار{}}{}%
+{%
+\gls@defglossaryentry{fa:خودرمزنگار{}}%
+{%
+name={\autoencoder {}},%
+sort={\autoencoder {}},%
+type={p2e-terms},%
+first={خودرمزنگار{}},%
+firstplural={خودرمزنگار{}‌ها},%
+text={خودرمزنگار{}},%
+plural={خودرمزنگار{}‌ها},%
+description={Autoencoder},%
+descriptionplural={Autoencoder},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تمیزدهنده{}}{}%
+{%
+\gls@defglossaryentry{en:تمیزدهنده{}}%
+{%
+name={Discriminator},%
+sort={Discriminator},%
+type={e2p-terms},%
+first={Discriminator},%
+firstplural={Discriminators},%
+text={Discriminator},%
+plural={Discriminators},%
+description={تمیزدهنده{}},%
+descriptionplural={تمیزدهنده{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تمیزدهنده{}}{}%
+{%
+\gls@defglossaryentry{fa:تمیزدهنده{}}%
+{%
+name={\discriminator {}},%
+sort={\discriminator {}},%
+type={p2e-terms},%
+first={تمیزدهنده{}},%
+firstplural={تمیزدهنده{}‌ها},%
+text={تمیزدهنده{}},%
+plural={تمیزدهنده{}‌ها},%
+description={Discriminator},%
+descriptionplural={Discriminator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:نوفه{}}{}%
+{%
+\gls@defglossaryentry{en:نوفه{}}%
+{%
+name={Noise},%
+sort={Noise},%
+type={e2p-terms},%
+first={Noise},%
+firstplural={Noises},%
+text={Noise},%
+plural={Noises},%
+description={نوفه{}},%
+descriptionplural={نوفه{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:نوفه{}}{}%
+{%
+\gls@defglossaryentry{fa:نوفه{}}%
+{%
+name={\noise {}},%
+sort={\noise {}},%
+type={p2e-terms},%
+first={نوفه{}},%
+firstplural={نوفه{}‌ها},%
+text={نوفه{}},%
+plural={نوفه{}‌ها},%
+description={Noise},%
+descriptionplural={Noise},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:میانگین جویانه{}}{}%
+{%
+\gls@defglossaryentry{en:میانگین جویانه{}}%
+{%
+name={Mean-seeking},%
+sort={Mean-seeking},%
+type={e2p-terms},%
+first={Mean-seeking},%
+firstplural={Mean-seekings},%
+text={Mean-seeking},%
+plural={Mean-seekings},%
+description={میانگین جویانه{}},%
+descriptionplural={میانگین جویانه{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:میانگین جویانه{}}{}%
+{%
+\gls@defglossaryentry{fa:میانگین جویانه{}}%
+{%
+name={\meanseeking {}},%
+sort={\meanseeking {}},%
+type={p2e-terms},%
+first={میانگین جویانه{}},%
+firstplural={میانگین جویانه{}‌ها},%
+text={میانگین جویانه{}},%
+plural={میانگین جویانه{}‌ها},%
+description={Mean-seeking},%
+descriptionplural={Mean-seeking},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:چسبیدگی به قله{}}{}%
+{%
+\gls@defglossaryentry{en:چسبیدگی به قله{}}%
+{%
+name={Mode Collapse},%
+sort={Mode Collapse},%
+type={e2p-terms},%
+first={Mode Collapse},%
+firstplural={Mode Collapses},%
+text={Mode Collapse},%
+plural={Mode Collapses},%
+description={چسبیدگی به قله{}},%
+descriptionplural={چسبیدگی به قله{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:چسبیدگی به قله{}}{}%
+{%
+\gls@defglossaryentry{fa:چسبیدگی به قله{}}%
+{%
+name={\modecollapse {}},%
+sort={\modecollapse {}},%
+type={p2e-terms},%
+first={چسبیدگی به قله{}},%
+firstplural={چسبیدگی به قله{}‌ها},%
+text={چسبیدگی به قله{}},%
+plural={چسبیدگی به قله{}‌ها},%
+description={Mode Collapse},%
+descriptionplural={Mode Collapse},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:آرگومان بیشینه یابی{}}{}%
+{%
+\gls@defglossaryentry{en:آرگومان بیشینه یابی{}}%
+{%
+name={Argmax},%
+sort={Argmax},%
+type={e2p-terms},%
+first={Argmax},%
+firstplural={Argmaxs},%
+text={Argmax},%
+plural={Argmaxs},%
+description={آرگومان بیشینه یابی{}},%
+descriptionplural={آرگومان بیشینه یابی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:آرگومان بیشینه یابی{}}{}%
+{%
+\gls@defglossaryentry{fa:آرگومان بیشینه یابی{}}%
+{%
+name={\argmaxphrase {}},%
+sort={\argmaxphrase {}},%
+type={p2e-terms},%
+first={آرگومان بیشینه یابی{}},%
+firstplural={آرگومان بیشینه یابی{}‌ها},%
+text={آرگومان بیشینه یابی{}},%
+plural={آرگومان بیشینه یابی{}‌ها},%
+description={Argmax},%
+descriptionplural={Argmax},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
