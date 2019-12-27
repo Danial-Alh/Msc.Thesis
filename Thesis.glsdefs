@@ -1618,6 +1618,186 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:واسرشتاین{}}{}%
+{%
+\gls@defglossaryentry{en:واسرشتاین{}}%
+{%
+name={Wasserstein},%
+sort={Wasserstein},%
+type={e2p-terms},%
+first={Wasserstein},%
+firstplural={Wassersteins},%
+text={Wasserstein},%
+plural={Wassersteins},%
+description={واسرشتاین{}},%
+descriptionplural={واسرشتاین{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:واسرشتاین{}}{}%
+{%
+\gls@defglossaryentry{fa:واسرشتاین{}}%
+{%
+name={\wasser {}},%
+sort={\wasser {}},%
+type={p2e-terms},%
+first={واسرشتاین{}},%
+firstplural={واسرشتاین{}‌ها},%
+text={واسرشتاین{}},%
+plural={واسرشتاین{}‌ها},%
+description={Wasserstein},%
+descriptionplural={Wasserstein},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:طرح جابه‌جایی{}}{}%
+{%
+\gls@defglossaryentry{en:طرح جابه‌جایی{}}%
+{%
+name={Transport Plan},%
+sort={Transport Plan},%
+type={e2p-terms},%
+first={Transport Plan},%
+firstplural={Transport Plans},%
+text={Transport Plan},%
+plural={Transport Plans},%
+description={طرح جابه‌جایی{}},%
+descriptionplural={طرح جابه‌جایی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:طرح جابه‌جایی{}}{}%
+{%
+\gls@defglossaryentry{fa:طرح جابه‌جایی{}}%
+{%
+name={\transportplan {}},%
+sort={\transportplan {}},%
+type={p2e-terms},%
+first={طرح جابه‌جایی{}},%
+firstplural={طرح جابه‌جایی{}‌ها},%
+text={طرح جابه‌جایی{}},%
+plural={طرح جابه‌جایی{}‌ها},%
+description={Transport Plan},%
+descriptionplural={Transport Plan},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:‎با قابلیت بازتولید}{}%
+{%
+\gls@defglossaryentry{en:‎با قابلیت بازتولید}%
+{%
+name={Reproducing},%
+sort={Reproducing},%
+type={e2p-terms},%
+first={Reproducing},%
+firstplural={Reproducings},%
+text={Reproducing},%
+plural={Reproducings},%
+description={‎با قابلیت بازتولید},%
+descriptionplural={‎با قابلیت بازتولید},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:‎با قابلیت بازتولید}{}%
+{%
+\gls@defglossaryentry{fa:‎با قابلیت بازتولید}%
+{%
+name={‎\reproducing },%
+sort={‎\reproducing },%
+type={p2e-terms},%
+first={‎با قابلیت بازتولید},%
+firstplural={‎با قابلیت بازتولید‌ها},%
+text={‎با قابلیت بازتولید},%
+plural={‎با قابلیت بازتولید‌ها},%
+description={Reproducing},%
+descriptionplural={Reproducing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:جبر معلم}{}%
 {%
 \gls@defglossaryentry{en:جبر معلم}%
@@ -3962,13 +4142,13 @@ parent={},%
 {%
 \gls@defglossaryentry{en:واحد پردازش‌گر گرافیک{}}%
 {%
-name={Graphics Processsing Unit},%
-sort={Graphics Processsing Unit},%
+name={Graphics Processing Unit},%
+sort={Graphics Processing Unit},%
 type={e2p-terms},%
-first={Graphics Processsing Unit},%
-firstplural={Graphics Processsing Units},%
-text={Graphics Processsing Unit},%
-plural={Graphics Processsing Units},%
+first={Graphics Processing Unit},%
+firstplural={Graphics Processing Units},%
+text={Graphics Processing Unit},%
+plural={Graphics Processing Units},%
 description={واحد پردازش‌گر گرافیک{}},%
 descriptionplural={واحد پردازش‌گر گرافیک{}},%
 symbol={\relax },%
@@ -3999,8 +4179,8 @@ first={واحد پردازش‌گر گرافیک{}},%
 firstplural={واحد پردازش‌گر گرافیک{}‌ها},%
 text={واحد پردازش‌گر گرافیک{}},%
 plural={واحد پردازش‌گر گرافیک{}‌ها},%
-description={Graphics Processsing Unit},%
-descriptionplural={Graphics Processsing Unit},%
+description={Graphics Processing Unit},%
+descriptionplural={Graphics Processing Unit},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
