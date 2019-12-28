@@ -118,19 +118,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:وظیفه{}}{}%
+\ifglsentryexists{en:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{}%
 {%
-\gls@defglossaryentry{en:وظیفه{}}%
+\gls@defglossaryentry{en:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}%
 {%
-name={Task},%
-sort={Task},%
+name={Normalizing Flow Networks},%
+sort={Normalizing Flow Networks},%
 type={e2p-terms},%
-first={Task},%
-firstplural={Tasks},%
-text={Task},%
-plural={Tasks},%
-description={وظیفه{}},%
-descriptionplural={وظیفه{}},%
+first={Normalizing Flow Networks},%
+firstplural={Normalizing Flow Networkss},%
+text={Normalizing Flow Networks},%
+plural={Normalizing Flow Networkss},%
+description={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+descriptionplural={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -148,17 +148,77 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:وظیفه{}}{}%
+\ifglsentryexists{fa:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{}%
 {%
-\gls@defglossaryentry{fa:وظیفه{}}%
+\gls@defglossaryentry{fa:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}%
+{%
+name={\normalizingflownets {}},%
+sort={\normalizingflownets {}},%
+type={p2e-terms},%
+first={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+firstplural={شبکه‌های مبتنی بر جریان نرمال‌کننده{}‌ها},%
+text={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+plural={شبکه‌های مبتنی بر جریان نرمال‌کننده{}‌ها},%
+description={Normalizing Flow Networks},%
+descriptionplural={Normalizing Flow Networks},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:وظیفه‌{}}{}%
+{%
+\gls@defglossaryentry{en:وظیفه‌{}}%
+{%
+name={Task},%
+sort={Task},%
+type={e2p-terms},%
+first={Task},%
+firstplural={Tasks},%
+text={Task},%
+plural={Tasks},%
+description={وظیفه‌{}},%
+descriptionplural={وظیفه‌{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:وظیفه‌{}}{}%
+{%
+\gls@defglossaryentry{fa:وظیفه‌{}}%
 {%
 name={\task {}},%
 sort={\task {}},%
 type={p2e-terms},%
-first={وظیفه{}},%
-firstplural={وظیفه{}‌ها},%
-text={وظیفه{}},%
-plural={وظیفه{}‌ها},%
+first={وظیفه‌{}},%
+firstplural={وظیفه‌{}‌ها},%
+text={وظیفه‌{}},%
+plural={وظیفه‌{}‌ها},%
 description={Task},%
 descriptionplural={Task},%
 symbol={\relax },%
@@ -3838,6 +3898,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{}%
+{%
+\gls@defglossaryentry{en:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}%
+{%
+name={Normalizing Flow Networks},%
+sort={Normalizing Flow Networks},%
+type={e2p-terms},%
+first={Normalizing Flow Networks},%
+firstplural={Normalizing Flow Networkss},%
+text={Normalizing Flow Networks},%
+plural={Normalizing Flow Networkss},%
+description={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+descriptionplural={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{}%
+{%
+\gls@defglossaryentry{fa:شبکه‌های مبتنی بر جریان نرمال‌کننده{}}%
+{%
+name={\normalizingflownets {}},%
+sort={\normalizingflownets {}},%
+type={p2e-terms},%
+first={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+firstplural={شبکه‌های مبتنی بر جریان نرمال‌کننده{}‌ها},%
+text={شبکه‌های مبتنی بر جریان نرمال‌کننده{}},%
+plural={شبکه‌های مبتنی بر جریان نرمال‌کننده{}‌ها},%
+description={Normalizing Flow Networks},%
+descriptionplural={Normalizing Flow Networks},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:درایه‌گرا{}}{}%
 {%
 \gls@defglossaryentry{en:درایه‌گرا{}}%
@@ -5561,6 +5681,126 @@ text={مخلوط گاوسی{}},%
 plural={مخلوط گاوسی{}‌ها},%
 description={Gaussian mixture},%
 descriptionplural={Gaussian mixture},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:همسبتگی{}}{}%
+{%
+\gls@defglossaryentry{en:همسبتگی{}}%
+{%
+name={Correlation},%
+sort={Correlation},%
+type={e2p-terms},%
+first={Correlation},%
+firstplural={Correlations},%
+text={Correlation},%
+plural={Correlations},%
+description={همسبتگی{}},%
+descriptionplural={همسبتگی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:همسبتگی{}}{}%
+{%
+\gls@defglossaryentry{fa:همسبتگی{}}%
+{%
+name={\correlation {}},%
+sort={\correlation {}},%
+type={p2e-terms},%
+first={همسبتگی{}},%
+firstplural={همسبتگی{}‌ها},%
+text={همسبتگی{}},%
+plural={همسبتگی{}‌ها},%
+description={Correlation},%
+descriptionplural={Correlation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:به‌آموزی{}}{}%
+{%
+\gls@defglossaryentry{en:به‌آموزی{}}%
+{%
+name={Fine-tuning},%
+sort={Fine-tuning},%
+type={e2p-terms},%
+first={Fine-tuning},%
+firstplural={Fine-tunings},%
+text={Fine-tuning},%
+plural={Fine-tunings},%
+description={به‌آموزی{}},%
+descriptionplural={به‌آموزی{}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:به‌آموزی{}}{}%
+{%
+\gls@defglossaryentry{fa:به‌آموزی{}}%
+{%
+name={\finetuning {}},%
+sort={\finetuning {}},%
+type={p2e-terms},%
+first={به‌آموزی{}},%
+firstplural={به‌آموزی{}‌ها},%
+text={به‌آموزی{}},%
+plural={به‌آموزی{}‌ها},%
+description={Fine-tuning},%
+descriptionplural={Fine-tuning},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
