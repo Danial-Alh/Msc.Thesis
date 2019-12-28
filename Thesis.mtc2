@@ -14,21 +14,20 @@
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode عقب ماندن شبکه کدگذار{} در تخمین توزیع پسین واقعی}{\reset@font\mtcSSSfont 20}{section*.19}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3-3-2}بعضی راه حل‌های ارائه شده برای رفع مشکل صفر شدن \lr {KL}}{\reset@font\mtcSSfont 22}{subsection.2.3.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode استفاده از \lr {CNN}{} به جای \lr {LSTM}{} در کدگشا{}}{\reset@font\mtcSSSfont 22}{section*.22}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-2}خودرمزنگار تخاصمی}{\reset@font\mtcSSfont 23}{subsection.2.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-3-2}خودرمزنگار واسرشتاین}{\reset@font\mtcSSfont 25}{subsection.2.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6-3-2}مدل \lr {Adversarially Regularized Autoencoder (ARAE)}}{\reset@font\mtcSSfont 28}{subsection.2.3.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7-3-2}دیگر روش‌های جلوگیری از صفر شدن فاصله \lr {KL}}{\reset@font\mtcSSfont 29}{subsection.2.3.7}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {8-3-2}شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{\reset@font\mtcSSfont 29}{subsection.2.3.8}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مفاهیم پایه}{\reset@font\mtcSSSfont 30}{section*.26}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {درایه‌گرا{}}{Elementwise}}{\reset@font\mtcSSSfont 30}{section*.27}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خطی}{\reset@font\mtcSSSfont 31}{section*.28}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {اتصالی{}}{Coupling} }{\reset@font\mtcSSSfont 31}{section*.29}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خود برگشتی{}}{\reset@font\mtcSSSfont 32}{section*.31}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode لایه‌های اتصالی{}}{\reset@font\mtcSSSfont 33}{section*.33}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {9-3-2}معماری \lr {Transformer}{}}{\reset@font\mtcSSfont 34}{subsection.2.3.9}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مکانیزم \trans {توجه با استفاده از ضرب داخلی مقیاس شده{}}{Scaled Dot-Product Attention}}{\reset@font\mtcSSSfont 36}{section*.35}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مکانیزم توجه چند رأسه{}}{\reset@font\mtcSSSfont 36}{section*.37}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode بردار \trans {تعبیه مکانی{}}{Positional Embedding}}{\reset@font\mtcSSSfont 38}{section*.39}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode خودرمزنگار تخاصمی}{\reset@font\mtcSSSfont 23}{section*.24}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode خودرمزنگار واسرشتاین}{\reset@font\mtcSSSfont 25}{section*.26}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مدل \lr {Adversarially Regularized Autoencoder (ARAE)}}{\reset@font\mtcSSSfont 27}{section*.28}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-2}شبکه‌های مبتنی بر جریان نرمال‌کننده{}}{\reset@font\mtcSSfont 29}{subsection.2.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مفاهیم پایه}{\reset@font\mtcSSSfont 30}{section*.29}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {درایه‌گرا{}}{Elementwise}}{\reset@font\mtcSSSfont 30}{section*.30}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خطی}{\reset@font\mtcSSSfont 31}{section*.31}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های \trans {اتصالی{}}{Coupling} }{\reset@font\mtcSSSfont 31}{section*.32}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode جریان‌های خود برگشتی{}}{\reset@font\mtcSSSfont 32}{section*.34}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode لایه‌های اتصالی{}}{\reset@font\mtcSSSfont 33}{section*.36}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5-3-2}معماری \lr {Transformer}{}}{\reset@font\mtcSSfont 34}{subsection.2.3.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مکانیزم \trans {توجه با استفاده از ضرب داخلی مقیاس شده{}}{Scaled Dot-Product Attention}}{\reset@font\mtcSSSfont 36}{section*.38}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode مکانیزم توجه چند رأسه{}}{\reset@font\mtcSSSfont 36}{section*.40}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode بردار \trans {تعبیه مکانی{}}{Positional Embedding}}{\reset@font\mtcSSSfont 38}{section*.42}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-2}تولید متن به صورت شرطی}{\reset@font\mtcSfont 38}{section.2.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1-4-2}\lr {RNN} شرطی}{\reset@font\mtcSSfont 38}{subsection.2.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2-4-2}خودرمزنگار وردشی شرطی{}}{\reset@font\mtcSSfont 38}{subsection.2.4.2}}

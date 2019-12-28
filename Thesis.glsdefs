@@ -3598,66 +3598,6 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:‎با قابلیت بازتولید}{}%
-{%
-\gls@defglossaryentry{en:‎با قابلیت بازتولید}%
-{%
-name={Reproducing},%
-sort={Reproducing},%
-type={e2p-terms},%
-first={Reproducing},%
-firstplural={Reproducings},%
-text={Reproducing},%
-plural={Reproducings},%
-description={‎با قابلیت بازتولید},%
-descriptionplural={‎با قابلیت بازتولید},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{fa:‎با قابلیت بازتولید}{}%
-{%
-\gls@defglossaryentry{fa:‎با قابلیت بازتولید}%
-{%
-name={‎\reproducing },%
-sort={‎\reproducing },%
-type={p2e-terms},%
-first={‎با قابلیت بازتولید},%
-firstplural={‎با قابلیت بازتولید‌ها},%
-text={‎با قابلیت بازتولید},%
-plural={‎با قابلیت بازتولید‌ها},%
-description={Reproducing},%
-descriptionplural={Reproducing},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
 \ifglsentryexists{en:سلسله مراتبی{}}{}%
 {%
 \gls@defglossaryentry{en:سلسله مراتبی{}}%
@@ -5201,66 +5141,6 @@ text={نیمه‌نظارتی},%
 plural={نیمه‌نظارتی‌ها},%
 description={Semi-supervised},%
 descriptionplural={Semi-supervised},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{en:بدون نظارت}{}%
-{%
-\gls@defglossaryentry{en:بدون نظارت}%
-{%
-name={Unsupervised},%
-sort={Unsupervised},%
-type={e2p-terms},%
-first={Unsupervised},%
-firstplural={Unsuperviseds},%
-text={Unsupervised},%
-plural={Unsuperviseds},%
-description={بدون نظارت},%
-descriptionplural={بدون نظارت},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{fa:بدون نظارت}{}%
-{%
-\gls@defglossaryentry{fa:بدون نظارت}%
-{%
-name={\unsupervised },%
-sort={\unsupervised },%
-type={p2e-terms},%
-first={بدون نظارت},%
-firstplural={بدون نظارت‌ها},%
-text={بدون نظارت},%
-plural={بدون نظارت‌ها},%
-description={Unsupervised},%
-descriptionplural={Unsupervised},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
