@@ -4,9 +4,16 @@
 \begin{latin}
 \centerline{\textbf{\large{Abstract}}}
 \begin{quote}
-	
+    By the improvement of machine learning methods specially the Deep Learning in the last decade, there were expanding usage of these methods in Language Modeling task. As the essence of a language model is more basic, recently huge networks are trained with language model objective but fine-tuned on target tasks such as Question Answering, Sentiment Analysis and etc.
+    which is a promising sign of its importance and usage in even other NLP tasks. However, this task still has severe problems. The Teacher Forcing based methods, suffer from the so-called exposure bias problem which is due to the train/test procedure discrepancy. Some solutions such as using Reinforcement Learning which has high variance or other approximate ones have been introduced. On the side of models with latent space, the ignorance of the latent space by the decoder is reported.
+    \\
+    The more practical task, Conditional Text Generation including determination of the tense of the output sentence or more complex conditions such as context or topic, has great importance. The usage of these models is not restricted to the text generation and they can be taken in account in creating drug molecules with specific characteristics, musics with specific genres or generating graphs with specific features. In conditional text generation, there will be additional problem which is the mismatch of generated sentence with the desired condition.
+    \\
+    In this project, a new approach in training conditional text generation with discrete conditions is proposed. The proposed method is a model with latent space while controlled the latent space ignorance problem and also partitioned the prior distribution on latent space with respect to the condition values. By incorporating the Normalizing Flow Networks, which have been recently in attention, the distribution of latent space of each condition is learnt.
+    \\
+    At the end, the baseline methods and the proposed method are evaluated against various metrics including quality, diversity and the match percentage of generated text with the desired condition. The proposed method outperforms the similar latent based method in some aspects.
 \vskip 1cm
-\textbf{Keywords:} \textit{a}
+\textbf{Keywords: Conditional Text Generation, Generative Models with Latent Space, Neural Networks, Deep Learning} \textit{a}
 \end{quote}
 \end{latin}
 
