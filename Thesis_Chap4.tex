@@ -5,7 +5,16 @@
 \section{دادگان آموزشی} \label{chap4:dataset}
 \bff{\lr{Stanford Sentiment Treebank (SST)}}:
 این دادگان حاوی حدود ۱۱ هزار نظر مثبت و منفی راجع به فیلم‌ها است \cite{sst}. به مانند سایر مدل‌ها جملات با طول کمتر از ۲۵ کلمه انتخاب شد که باقی مانده، ۲۲۰۷ جمله مثبت و منفی دادگان آموزشی، ۹۴۶ جمله دادگان \validation{} و ۱۳۵۰ جمله دادگان آزمون با اندازه واژگان ۷۴۷۹ خواهد بود.
-
+\\
+\bff{\lr{Yelp Restaurant (Yelp)}}:
+این دادگان حاوی حدود ۶۰ هزار نظر مثبت و منفی کاربران راجع به رستوران‌ها است که زیرمجموعه‌ای از دادگان اصلی است
+\LTRfootnote{\url{https://www.yelp.com}}.
+حداکثر طول این جملات ۳۰ و با اندازه واژگان ۷۸۰۲، ۴۵ هزار داده آموزشی، ۵ هزار جمله \validation{} و ۱۰ هزار جمله دادگان آزمون است.
+\\
+\bff{\lr{Amazon Application-Book Review (Amazon)}}:
+این دادگان حاوی حدود ۲۲۰ هزار نظر کاربران راجع به کتاب و یا برنامه‌های موجود در فروشگاه \lr{Amazon} است که زیرمجموعه‌ای از دادگان اصلی است \cite{amazon_review}. در واقع این دادگان بر خلاف دو دادگان دیگر، دارای شروط مثبت و منفی نبوده و شروط آن موضوع نظر که شامل کتاب یا برنامه است، می‌باشد. حداکثر طول این جملات ۴۰ و اندازه واژگان ۶۲۸۲ بوده و شامل 174622 داده آموزشی، 19402 جمله \validation{} و 19436 داده آزمون است.
+\\
+لازم به ذکر است در تمامی دادگان فوق، تعداد داده‌های شروط مختلف یکسان است.
 \section{معیارهای ارزیابی} \label{chap4:metrics}
 در ابتدا لازم است تا متذکر شد، از آنجا که در مدل‌های با فضای نهان امکان محاسبه دقیق \likelihood{} وجود ندارد، این معیار از معیارهای ارزیابی حذف گردیده است. به عنوان جایگزین از معیار‌های مبتنی \ngramphrase{} استفاده خواهد شد.
 \subsection{\bleu{}}
@@ -19,7 +28,7 @@
 \subsection{\selfbleu{}}
 این معیار نیز بسیار به لحاظ محاسباتی شبیه معیار \bleu{} است اما حساس به تنوع جملات تولیدی و غیر حساس به کیفیت جملات است. در این معیار، شباهت هر جمله با سایر جملات تولیدی اندازه‌گیری می‌شود؛ واضح است که هر اندازه شباهت جملات به یکدیگر کمتر باشد، از نظر این معیار امتیاز بهتری کسب خواهد کرد. به طور دقیق‌تر شباهت \bleu{} هر جمله با در نظر گرفتن سایر جملات به عنوان مجموعه مرجع، معیار \selfbleu{} خواهد بود \cite{seqgan}. همان طور که از شرح معیار بر‌می‌آید، این معیار کیفیت جملات را در نظر نگرفته و تنها شباهت جملات تولیدی به یکدیگر و یا به عبارت دیگر تنوع جملات را اندازه‌گیری می‌کند \cite{jointly}. لازم به ذکر است که مدل با نمونه‌ها متنوع عددی نزدیک به صفر و مدل با نمونه‌های تنوع کم عددی نزدیک به یک کسب خواهد کرد.
 \subsection{\jaccard{}}
-از آنجا که دو معیار \bleu{} و \selfbleu{} هر کدام به تنهایی به ترتیب ارزیابی‌گر کیفیت و تنوع هستند، معیار دیگری به نام \jaccard{} وجود دارد که ترکیب کیفیت و تنوع را در نظر می‌گیرد \cite{jointly}. این معیار بر خلاف \bleu{} که هر جمله را مستقل از سایر جملات تولیدی با مجموعه مرجع مقایسه می‌کرد، شاخصه‌های کل مجموعه تولیدی را با شاخصه‌هایی از کل مجموعه مرجع (آزمون)‌مقایسه می‌کند. بنابراین اگر شاخصه‌ای از مجموعه تولیدی با مجموعه مرجع، چه به دلیل عدم رعایت کیفیت و چه عدم رعایت تنوع همخوانی نداشته باشد، از نظر این معیار جریمه خواهد شد \cite{jointly}.
+از آنجا که دو معیار \bleu{} و \selfbleu{} هر کدام به تنهایی به ترتیب ارزیابی‌گر کیفیت و تنوع هستند، معیار دیگری به نام \jaccard{} وجود دارد که ترکیب کیفیت و تنوع را در نظر می‌گیرد \cite{jointly}. این معیار بر خلاف \bleu{} که هر جمله را مستقل از سایر جملات تولیدی با مجموعه مرجع مقایسه می‌کرد، شاخصه‌های کل مجموعه تولیدی را با شاخصه‌هایی از کل مجموعه مرجع (آزمون)‌مقایسه می‌کند که این شاخصه تعداد تکرار هر \ngramphrase{} است. بنابراین اگر شاخصه‌ای از مجموعه تولیدی با مجموعه مرجع، چه به دلیل عدم رعایت کیفیت و چه عدم رعایت تنوع همخوانی نداشته باشد، از نظر این معیار جریمه خواهد شد \cite{jointly}.
 \subsection{درصد رعایت شرط}
 معیارهای معرفی شده تا به حال، کیفیت و تنوع جملات را مستقل از شرط بررسی می‌کردند. برای بررسی مدل‌ها از این جهت نیز می‌توان از یک \classifier{} قدرتمند بهره برد
 \cite{toward, sentigan}؛
@@ -27,9 +36,9 @@
 \cite{toward, sentigan}.
 در مقالات گذشته به دلیل معرفی نشدن مدل‌های \pretrain{} شده عظیم همچون \lr{BERT} از \classifier{}های دیگری استفاده می‌شد. این شبکه‌ها با
 \trans{\finetuning{}}{Fine-tuning}
-بر روی \task{}‌های مختلف، در بسیاری از \task{}ها موفق به کسب \stateoftheart{} شده‌اند \cite{bert}. اما نکته این دسته از مدل‌ها حجم زیاد آن‌هاست. بارگذاری  این مدل‌ها در \gpu{} و \finetuning{} آن‌ها به حافظه زیادی نیاز است. به همین هدف مدل‌های دیگری با اندازه کوچکتر با امکان بارگزاری در \gpu{}‌های در دسترس همه، امکان \finetuning{} را فراهم کرده‌اند. نسخه کم حجم شده \lr{BERT}،
+بر روی \task{}‌های مختلف، در بسیاری از \task{}ها موفق به کسب \stateoftheart{} شده‌اند \cite{bert}. اما نکته این دسته از مدل‌ها حجم زیاد آن‌هاست. بارگذاری  این مدل‌ها در \gpu{} و \finetuning{} آن‌ها به حافظه زیادی نیاز است. به همین هدف مدل‌های دیگری با اندازه کوچکتر با امکان بارگذاری در \gpu{}‌ در دسترس عموم، امکان \finetuning{} را فراهم کرده‌اند. نسخه کم حجم شده \lr{BERT}،
 \lr{DistilBERT}
-نام دارد که در دادگان \lr{SST} دقت ۹۴ درصد برای آن گزارش شده است \cite{distilbert}.
+نام دارد که در دادگان \lr{SST} دقت ۹۴ درصد برای آن گزارش شده است \cite{distilbert}. با استفاده از این شبکه و \finetuning{} آن بر روی هر دادگان به طور مجزا به درصد دقت‌های ۸۷، ۹۷ و ۹۹ در به ترتیب دادگان \sst{}، \yelp{} و \amazon{} رسیده شد.
 \iffalse
 	می‌توان به عنوان جایگزین از معیارهایی همچون \revperplexity{} استفاده نمود. این روش به این صورت است که یک مدل زبانی میانی با استفاده از نمونه‌های مدل آموزش داده شده و \likelihood{} نمونه‌های آموزشی در مدل آموزش داده شده اندازه‌گیری می‌شود. این معیار نیز حساس به کیفیت و تنوع است. اگر مدل میانی آموزش داده شده، چه به دلیل عدم تنوع  و یا عدم کیفیت نمونه‌های مدل مورد ارزیابی احتمال کمی به نمونه‌های آموزشی نسبت دهد، معیار حساس بوده و مدل را جریمه خواهد کرد. نکته قابل توجه این است که به دلیل اینکه معیار آموزش مدل میانی، بر اساس بیشینه کردن \likelihood{} است، این امکان وجود دارد تا مدل مورد آموزش رفتار \meanseeking{} از خود بروز داده و به نقاطی که نمونه آموزشی از آن‌ها وجود ندارد، احتمال بالایی نسبت دهد. اما این اتفاق زمانی رخ می‌دهد که ظرفیت مدل کمتر از پیچیدگی نمونه‌های آموزشی باشد؛ این در حالیست که این نمونه‌های آموزشی توسط مدل مشابهی با ظرفیت مشابه تولید شده اند و احتمالا چنین نگرانی‌ای وجود نخواهد داشت.
 \fi
@@ -74,8 +83,8 @@ $G(Z) = \argmax_{x} P_\psi(x|Z)$
 		\label{fig:chap4:archs_nll}
 	\end{subfigure}
 	\caption{
-		کارای معماری‌های مختلف در معیارهای \bleu[-2]{}، \selfbleu[-2]{}، \jaccard[-2]{} و خطای بازسازی.
-		نام \lr{x-y} به معنای آن است که در \encoder{} از معماری x و در \decoder{} معماری y استفاده شده است.}
+		کارایی معماری‌های مختلف در معیارهای \bleu[-2]{}، \selfbleu[-2]{}، \jaccard[-2]{} و خطای بازسازی.
+		نام \lr{x-y} به معنای آن است که در \encoder{} از معماری x و در \decoder{} معماری y استفاده شده است. محور افقی تعداد \lr{epoch} است.}
 	\label{fig:chap4:archs}
 \end{figure}
 
@@ -138,19 +147,69 @@ $G(Z) = \argmax_{x} P_\psi(x|Z)$
 \fi
 
 \subsubsection{نمودار‌های آموزش \wae{} و مولد شرطی}
-نمودار هزینه دسته‌بندی بردار‌های نهان تولید شده توسط \encoder{} و تابع هزینه آموزش مولد شرطی به ترتیب در شکل‌های \ref{fig:chap4:enc_cls} و \ref{fig:chap4:prior_flow_nll} آمده است که هر دو روندی نزولی دارند؛ کم شدن تابع هزینه در \ref{fig:chap4:enc_cls} را می‌توان به دسته‌بندی شدن جملات در فضای نهان نسبت به مقادیر شرط تعبیر نمود.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.5\textwidth]{images/figs/2019_12_31__11_03_46__enc_cond_cls_loss.png}
-    \caption{نمودار هزینه دسته‌بندی بردار‌های تولید شده توسط \encoder{} }
-    \label{fig:chap4:enc_cls}
+نمودارهای مربوط به آموزش \wae{} و مولد شرطی با دادگان \amazon{} به ترتیب در شکل‌های \ref{fig:chap4:amazon_cond} و \ref{fig:chap4:amazon_flow} آمده است. کم شدن تابع هزینه در \ref{fig:chap4:amazon_enc_cls} را می‌توان به میزان دسته‌بندی شدن جملات در فضای نهان نسبت به مقادیر شرط و افزایش معیار \jaccard{} در شکل \ref{fig:chap4:amazon_flow_jaccard} را به یادگیری مطلوب فضای نهان توسط شبکه مولد، تعبیر نمود.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\textheight}
+		\centering
+		\includegraphics[width=1.\textwidth]{images/figs/2020_01_03__19_09_40__cond_cls_loss.png}
+		\caption{}
+		\label{fig:chap4:amazon_enc_cls}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textheight}
+		\centering
+		\includegraphics[width=1.\textwidth]{images/figs/2020_01_03__19_09_40__jaccard2-random.png}
+		\caption{}
+		\label{fig:chap4:amazon_jaccard}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textheight}
+		\centering
+		\includegraphics[width=1.\textwidth]{images/figs/2020_01_03__19_09_40__mmd.png}
+		\caption{}
+		\label{fig:chap4:amazon_mmd}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textheight}
+		\centering
+		\includegraphics[width=1.\textwidth]{images/figs/2020_01_03__19_09_40__nll.png}
+		\caption{}
+		\label{fig:chap4:amazon_nll}
+	\end{subfigure}
+	\caption{
+		نمودار‌های آموزش \wae{} بر روی دادگان \amazon{}.
+		هزینه دسته‌بندی بردار‌های نهان تولید شده توسط \encoder{}
+		(\subref{fig:chap4:amazon_enc_cls})؛
+		کیفیت و تنوع جملات تولیدی با توجه به معیار \jaccard{}
+		(\subref{fig:chap4:amazon_jaccard})؛
+		فاصله توزیع \marginal{} \encoder{} و \priordist{} با توجه به معیار \mmd{}
+		(\subref{fig:chap4:amazon_mmd})؛
+		خطای بازسازی جملات
+		(\subref{fig:chap4:amazon_nll}).
+	}
+	\label{fig:chap4:amazon_cond}
 \end{figure}
-نیز به شرح زیر است.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.5\textwidth]{images/figs/2019_12_31__11_01_10__prior-flow-nll.png}
-    \caption{نمودار تابع هزینه  منفی لگاریتم \likelihood{} }
-    \label{fig:chap4:prior_flow_nll}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\textheight}
+		\centering
+		\includegraphics[width=1.\textwidth]{images/figs/2020_01_03__19_13_00__jaccard3-random.png}
+		\caption{}
+		\label{fig:chap4:amazon_flow_jaccard}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textheight}
+		\centering
+		\includegraphics[width=1.\textwidth]{images/figs/2020_01_03__19_13_00__prior-flow-nll.png}
+		\caption{}
+		\label{fig:chap4:amazon_flow_nll}
+	\end{subfigure}
+	\caption{
+		نمودار‌های آموزش مولد شرطی بر روی دادگان \amazon{}.
+		کیفیت و تنوع جملات تولیدی تولید شده توسط مدل مولد شرطی با توجه به معیار \jaccard{}
+		(\subref{fig:chap4:amazon_flow_jaccard})؛
+        		تابع هزینه آموزش مولد شرطی
+        (\subref{fig:chap4:amazon_flow_nll}).
+	}
+	\label{fig:chap4:amazon_flow}
 \end{figure}
 
 \section{نتایج و مقایسه با سایر مدل‌ها}
@@ -159,58 +218,126 @@ $G(Z) = \argmax_{x} P_\psi(x|Z)$
 همان طور که در بخش \ref{chap4:dataset} توضیح داده شد، مدل‌ها بر روی دادگان آموزشی \lr{SST} آموزش داده شده و سپس بر اساس معیارهای  دقت رعایت شرط، \bleu{} ، \selfbleu{} و \jaccard{} مورد ارزیابی قرار گرفته‌اند. نتایج در جدول \ref{table:mr15_result} گزارش شده است.
 
 \begin{table*}[!htb]
+	\centering
+	\caption{
+		ارزیابی مدل‌های پایه و ارائه شده آموزش داده شده بر روی دادگان \lr{AmazonAppBook}، بر اساس معیار‌های مختلف}
+	\label{table:amazon_result}
+	\small\tabcolsep=0.07cm
+	\begin{tabular}{||c||c c c|c c|c c|c c||}\hline\hline نام مدل & AC0                        & AC1                        & Total AC                   & BL2                        & BL5                        & SBL2                       & SBL5                       & JAC2                       & JAC5                       \\
+		\hline\hline
+		wae                                            & $0.921$                    & $0.911$                    & $0.916$                    & $0.861$                    & $0.207$                    & $0.884$                    & $\cellcolor{gray!25}0.244$ & $\cellcolor{gray!25}0.643$ & $0.192$                    \\
+		\hline
+		senti                                          & $\cellcolor{gray!25}0.991$ & $\cellcolor{gray!25}0.996$ & $\cellcolor{gray!25}0.994$ & $\cellcolor{gray!25}0.903$ & $\cellcolor{gray!25}0.422$ & $0.892$                    & $0.468$                    & $0.539$                    & $\cellcolor{gray!25}0.237$ \\
+		\hline
+		toward                                         & $0.725$                    & $0.757$                    & $0.741$                    & $0.898$                    & $0.340$                    & $\cellcolor{gray!25}0.878$ & $0.379$                    & $0.410$                    & $0.171$                    \\
+		\hline
+		\hline\end{tabular}\normalsize
+\end{table*}
+
+\begin{table*}[!htb]
+	\centering
+	\caption{
+		ارزیابی مدل‌های پایه و ارائه شده آموزش داده شده بر روی دادگان \lr{YelpRestaurant}، بر اساس معیار‌های مختلف}
+	\label{table:yelp_result}
+	\small\tabcolsep=0.07cm
+	\begin{tabular}{||c||c c c|c c|c c|c c||}\hline\hline نام مدل & AC0                        & AC1                        & Total AC                   & BL2                        & BL5                        & SBL2                       & SBL5                       & JAC2                       & JAC5                       \\
+		\hline\hline
+		wae                                            & $0.722$                    & $0.748$                    & $0.735$                    & $0.634$                    & $0.128$                    & $\cellcolor{gray!25}0.711$ & $\cellcolor{gray!25}0.147$ & $\cellcolor{gray!25}0.455$ & $0.082$                    \\
+		\hline
+		senti                                          & $\cellcolor{gray!25}0.942$ & $\cellcolor{gray!25}0.987$ & $\cellcolor{gray!25}0.965$ & $\cellcolor{gray!25}0.807$ & $\cellcolor{gray!25}0.302$ & $0.834$                    & $0.467$                    & $0.338$                    & $0.093$                    \\
+		\hline
+		toward                                         & $0.648$                    & $0.733$                    & $0.690$                    & $0.713$                    & $0.165$                    & $0.792$                    & $0.234$                    & $0.389$                    & $\cellcolor{gray!25}0.094$ \\
+		\hline
+		\hline\end{tabular}\normalsize
+\end{table*}
+همان طور که در جداول \ref{table:amazon_result} و \ref{table:yelp_result} مشخص است، عملکرد مدل پیشنهادی با اینکه در درصد رعایت شرط از مدل \sentigan{} عقب‌تر است اما از مدل مشابه فضای‌نهان‌دار \towardctg{} بهتر است. از حیث کیفیت و تنوع نیز در \jaccard[-2]{} از سایرین عملکرد بهتری داشته و در \jaccard[-5]{} نیز در دادگان \amazon{} از مدل \towardctg{} موفق‌تر بوده است.
+\\
+نکته قابل توجه و قابل بحث، اختلاف بیشتر درصد رعایت شرطِ مدل پیشنهادی از مدل \towardctg{} در دادگان \amazon{} است. علت این موضوع را شاید این طور بتوان جست‌وجو کرد که دادگان \amazon{} از دو موضوع تشکیل شده است؛ کتاب و برنامه. این دو موضوع چندان فضای مفهومی مشترکی ندارند؛ در حالی که دادگان \yelp{} همگی در مورد غذا و رستوران هستند. از این رو منطقی به نظر می‌رسد برای مدل اول فضای نهان $\bff{Z}$ تماما توسط شرط تعیین شود در حالی که در دادگان دیگر، مفاهیم و شرط می‌توانند مستقل از هم بوده و هر دو با هم یک جمله را تعیین کنند. مدل گرافی این دو دیدگاه در شکل \ref{fig:chap4:dataset_pgm} آمده است. 
+\begin{figure}[h]
     \centering
-    \caption{}\label{}
+        \begin{subfigure}{0.1\textheight}
+        \centering
+        \includegraphics[width=1.\textwidth]{images/pgm_disentangle.pdf}
+        \caption{}
+        \label{fig:chap4:dataset_pgm_d}
+    \end{subfigure}
+\hspace{1cm}
+    \begin{subfigure}{0.2\textheight}
+        \centering
+        \includegraphics[width=1.\textwidth]{images/pgm_hierarchical.pdf}
+        \caption{}
+        \label{fig:chap4:dataset_pgm_h}
+    \end{subfigure}
+\caption{
+    دو مدل گرافی متفاوتی که می‌توان برای یک \task{} شرطی در نظر گرفت.
+    فضای نهان و شرط مستقل از هم 
+    (\subref{fig:chap4:dataset_pgm_d}، دادگان \yelp{})؛
+    شرط به طور کامل فضای نهان را تعیین می‌کند
+    (\subref{fig:chap4:dataset_pgm_h}، دادگان \amazon{}).
+}
+\label{fig:chap4:dataset_pgm}
+\end{figure}
+با در نظر گرفتن این توضیحات، به دلیل آنکه مدل \towardctg{} به نوعی استقلال بین شرط و فضای نهان $\bff{Z}$ را ایجاد می‌کند، چندان همخوانی با ذات دادگان \amazon{} نداشته و عملکرد ضعیف‌تری را از خود نشان می‌دهد.
+
+\begin{table*}[!htb]
+    \centering
+    \caption{
+        ارزیابی مدل‌های پایه و ارائه شده آموزش داده شده بر روی دادگان \lr{SST}، بر اساس معیار‌های مختلف}
+    \label{table:mr15_result}
     \small\tabcolsep=0.07cm
-    \begin{tabular}{||c||c c c|c c|c c|c c||}\hline\hline نام مدل	& AC0	& AC1	& Total AC	& BL2	& BL5	& SBL2	& SBL5	& JAC2	& JAC5\\
+    \begin{tabular}{||c||c c c|c c|c c|c c||}\hline\hline نام مدل & AC0                        & AC1                        & Total AC                   & BL2                        & BL5                        & SBL2                       & SBL5                       & JAC2                       & JAC5                       \\
         \hline\hline
         مدل پیشنهادی
-        	& $0.359$	& $0.652$	& $0.505$	& $0.531$	& $0.089$	& $\cellcolor{gray!25}0.707$	& $\cellcolor{gray!25}0.134$	& $\cellcolor{gray!25}0.251$	& $0.025$ \\
+        & $0.359$                    & $0.652$                    & $0.505$                    & $0.531$                    & $0.089$                    & $\cellcolor{gray!25}0.707$ & $\cellcolor{gray!25}0.134$ & $\cellcolor{gray!25}0.251$ & $0.025$                    \\
         \hline
-        \sentigan{}	& $\cellcolor{gray!25}0.827$	& $\cellcolor{gray!25}0.919$	& $\cellcolor{gray!25}0.873$	& $\cellcolor{gray!25}0.583$	& $\cellcolor{gray!25}0.155$	& $0.799$	& $0.587$	& $0.228$	& $\cellcolor{gray!25}0.035$ \\
+        \sentigan{}                                    & $\cellcolor{gray!25}0.827$ & $\cellcolor{gray!25}0.919$ & $\cellcolor{gray!25}0.873$ & $\cellcolor{gray!25}0.583$ & $\cellcolor{gray!25}0.155$ & $0.799$                    & $0.587$                    & $0.228$                    & $\cellcolor{gray!25}0.035$ \\
         \hline
-        \towardctg{}	& $0.465$	& $0.603$	& $0.534$	& $0.513$	& $0.106$	& $0.772$	& $0.479$	& $0.251$	& $0.035$ \\
+        \towardctg{}                                   & $0.465$                    & $0.603$                    & $0.534$                    & $0.513$                    & $0.106$                    & $0.772$                    & $0.479$                    & $0.251$                    & $0.035$                    \\
         \hline
-        \hline\end{tabular}\normalsize 
-	\caption{ارزیابی مدل‌های پایه و ارائه شده بر اساس معیار‌های مختلف}\label{table:mr15_result}
-    \ref{table:mr15_result}
+        \hline\end{tabular}\normalsize
 \end{table*}
-همان طور که در جدول \ref{table:mr15_result} مشخص است، مدل ارائه شده در دقت یکی از دسته‌ها از مدل مشابه مبتنی بر فضای نهانِ \towardctg{} بهتر عمل کرده است؛ این در حالیست که در دقت دسته دیگر، عملکرد ضعیف و در دقت کلی مانند روش \towardctg{} بوده است. در مورد \bleu{} و \selfbleu{} نیز از لحاظ تنوع عملکرد بهتری داشته است. برای مثال در مورد \bleu[-5]{} و \selfbleu[-5]{}، با اینکه \bleu{} تقریبا نزدیک به سایرین نگه داشته شده است اما \selfbleu{}ی آن عدد پایینی داشته و تنوع بیشتری دارد. لازم به ذکر است که علی‌رقم این موضوع، در معیار \jaccard{} که ترکیب کیفیت و تنوع را در نظر می‌گیرد، با اینکه بهترین عملکرد \jaccard[-2]{} را داشته اما در \jaccard[-5]{} با فاصله از سایر مدل‌ها قرار گرفته است.
 
-\subsubsection{بررسی رفتار مولد شرطی}
-به منظور بررسی رفتار مولد شرطی، یک آزمایش ترتیب داده شد. همان طور که پیش‌تر توضیح داده شد، علت تقسیم کردن فضای نهان با توجه به مقادیر مختلف شرط، کم بودن ظرفیت مولد شرطی و ضعف آن در یادگیری هر توزیع پیچیده‌ای بود. در اینجا نیز عملکرد نسبتا مناسب آن در یک دسته و عکس آن در دسته دیگر می‌تواند احتمالا به این موضوع مرتبط باشد. به این منظور در تابع هزینه آموزش مولد شرطی تغییر کوچکی اعمال شد؛ به جای اینکه احتمال هر نمونه با شرط مرتبطش را در مولد شرطی بیشینه کنیم، احتمال همان نقاط اما با مقدار شرط دیگری را کمینه میکنیم. در واقع از نقاط با برچسب شرط نادرست به عنوان نمونه منفی بهره گرفته و انتظار داریم مولد شرطی به نمونه‌های منفی احتمال کم اما به نمونه‌های مثبت احتمال بالایی نسبت دهد. به صورت صوری تابع هزینه ذیل به تابع هزینه اصلی افزوده می‌شود:
-\begin{align}
-	\mathcal{L'}_c (F) = & \lambda_\text{neg} \expected_{c' \sim p_{C'\neq c}, \bff{x} \sim p_\text{Data}(\bff{X}|c), \bff{z} \sim q(\bff{Z}|\bff{x})} [\log p_F(\bff{z}|c')]
-\end{align}
-و تابع هزینه کلی به صورت زیر بدست می‌آید:
-\begin{align}
-	\mathcal{L}_c (F) = & - \expected_{\bff{x} \sim p_\text{Data}(\bff{X}|c), \bff{z} \sim q(\bff{Z}|\bff{x})} [\log p_F(\bff{z}|\bff{c})] +                                       \\
-	                    & \lambda_\text{neg} \expected_{c' \sim p_{C'\neq c}, \bff{x} \sim p_\text{Data}(\bff{X}|c), \bff{z} \sim q(\bff{Z}|\bff{x})} [\log p_F(\bff{z}|c')]
-\end{align}
-\begin{figure}[h]
-\centering
-\begin{subfigure}[t]{0.3\textheight}
-    \centering
-    \includegraphics[width=1.\textwidth]{images/figs/2019_12_31__11_06_03__prior-flow-nll.png}
-    \caption{}
-    \label{fig:chap4:negprior_prior_nll}
-\end{subfigure}
-\begin{subfigure}[t]{0.3\textheight}
-    \centering
-    \includegraphics[width=1.\textwidth]{images/figs/2019_12_31__11_06_03__neg_prior-flow-nll.png}
-    \caption{}
-    \label{fig:chap4:negprior_negprior_nll}
-\end{subfigure}
-\caption{
-                    منفی لگاریتم \likelihood{} نمونه‌های مثبت (باید کمینه گردد)
-                    (\subref{fig:chap4:negprior_prior_nll}).
-                    منفی لگاریتم \likelihood{} نمونه‌های منفی (باید بیشینه گردد)
-                    (\subref{fig:chap4:negprior_negprior_nll}).
-}
-    \label{fig:chap4:negprior}
-\end{figure}
-مطابق با شکل \ref{fig:chap4:negprior}، که نتیجه آموزش شبکه با توابع هزینه فوق با پارامتر 
-$\lambda_\text{neg} = 0.05$
- است (با ضرایب بالاتر، آموزش ناپایدار می‌شد)، بر خلاف انتظارات، هر دو تابع با هم کمینه شدند. این موضوع به این معنی است که مدل مولد شرطی توانایی انتساب احتمال بالا به نمونه‌های مثبت و احتمال کم به نمونه‌های منفی را ندارد و یا هر دو کاهش می‌یابند و یا هر دو افزایش. از این مشاهده این طور می‌توان نتیجه‌گیری نمود که اعمال محدودیت تقسیم شده فضای نهان به مقادیر مختلف شرط، چندان کارساز نبوده و همچنان مولد شرطی توانایی تفکیک این دو دسته از یکدیگر را نداشته و احتمالا رفتار \meanseeking{} از خود بروز می‌دهد.
+اما در مورد دادگان \sst{}، همان طور که در جدول \ref{table:mr15_result} مشخص است، مدل ارائه شده در دقت یکی از دسته‌ها از مدل مشابه مبتنی بر فضای نهانِ \towardctg{} بهتر عمل کرده است؛ این در حالیست که در دقت دسته دیگر، عملکرد ضعیف و در دقت کلی مانند روش \towardctg{} بوده است. در مورد \bleu{} و \selfbleu{} نیز از لحاظ تنوع عملکرد بهتری داشته است. برای مثال در مورد \bleu[-5]{} و \selfbleu[-5]{}، با اینکه \bleu{} تقریبا نزدیک به سایرین نگه داشته شده است اما \selfbleu{}ی آن عدد پایینی داشته و تنوع بیشتری دارد. لازم به ذکر است که علی‌رقم این موضوع، در معیار \jaccard{} که ترکیب کیفیت و تنوع را در نظر می‌گیرد، با اینکه بهترین عملکرد \jaccard[-2]{} را داشته اما در \jaccard[-5]{} با فاصله از سایر مدل‌ها قرار گرفته است.
+\\
+در مورد دلیل عملکرد ضعیف مدل پیشنهادی و همچنین \towardctg{} که هر دو مدل مبتنی بر فضای نهان هستند، باید گفت که احتمالا به دلیل کم بودن و از سوی دیگر پیچیده بودن آن، فضای نهان معنای متناسب با جملات را در خود نداشته و توابع هزینه‌ای که مبتنی بر معنای فضای نهان هستند به درستی عمل نمی‌کنند.
+\\
+در مورد موفق‌تر بودن مدل \sentigan{} نیز این طور می‌توان گفت که این مدل به ازای هر شرط یک مدل مولد مجزا در نظر گرفته است؛ بنابراین هر مولد وظیفه یادگیری بخش مربوط به خود را دارد؛ به عبارت دیگر مسئله شرطی را به صورت مسئله غیر شرطی حل کرده است و بنابراین احتمال رعایت نکردن شرط بسیار کمتر خواهد بود. فارغ از این موضوع، این مدل با افزایش تعداد شرط‌ها با مشکل مواجه خواهد شد.
 
+\iffalse
+	\subsubsection{بررسی رفتار مولد شرطی}
+	به منظور بررسی رفتار مولد شرطی، یک آزمایش ترتیب داده شد. همان طور که پیش‌تر توضیح داده شد، علت تقسیم کردن فضای نهان با توجه به مقادیر مختلف شرط، کم بودن ظرفیت مولد شرطی و ضعف آن در یادگیری هر توزیع پیچیده‌ای بود. در اینجا نیز عملکرد نسبتا مناسب آن در یک دسته و عکس آن در دسته دیگر می‌تواند احتمالا به این موضوع مرتبط باشد. به این منظور در تابع هزینه آموزش مولد شرطی تغییر کوچکی اعمال شد؛ به جای اینکه احتمال هر نمونه با شرط مرتبطش را در مولد شرطی بیشینه کنیم، احتمال همان نقاط اما با مقدار شرط دیگری را کمینه میکنیم. در واقع از نقاط با برچسب شرط نادرست به عنوان نمونه منفی بهره گرفته و انتظار داریم مولد شرطی به نمونه‌های منفی احتمال کم اما به نمونه‌های مثبت احتمال بالایی نسبت دهد. به صورت صوری تابع هزینه ذیل به تابع هزینه اصلی افزوده می‌شود:
+	\begin{align}
+		\mathcal{L'}_c (F) = & \lambda_\text{neg} \expected_{c' \sim p_{C'\neq c}, \bff{x} \sim p_\text{Data}(\bff{X}|c), \bff{z} \sim q(\bff{Z}|\bff{x})} [\log p_F(\bff{z}|c')]
+	\end{align}
+	و تابع هزینه کلی به صورت زیر بدست می‌آید:
+	\begin{align}
+		\mathcal{L}_c (F) = & - \expected_{\bff{x} \sim p_\text{Data}(\bff{X}|c), \bff{z} \sim q(\bff{Z}|\bff{x})} [\log p_F(\bff{z}|\bff{c})] +                                 \\
+		                    & \lambda_\text{neg} \expected_{c' \sim p_{C'\neq c}, \bff{x} \sim p_\text{Data}(\bff{X}|c), \bff{z} \sim q(\bff{Z}|\bff{x})} [\log p_F(\bff{z}|c')]
+	\end{align}
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[t]{0.3\textheight}
+			\centering
+			\includegraphics[width=1.\textwidth]{images/figs/2019_12_31__11_06_03__prior-flow-nll.png}
+			\caption{}
+			\label{fig:chap4:negprior_prior_nll}
+		\end{subfigure}
+		\begin{subfigure}[t]{0.3\textheight}
+			\centering
+			\includegraphics[width=1.\textwidth]{images/figs/2019_12_31__11_06_03__neg_prior-flow-nll.png}
+			\caption{}
+			\label{fig:chap4:negprior_negprior_nll}
+		\end{subfigure}
+		\caption{
+			منفی لگاریتم \likelihood{} نمونه‌های مثبت (باید کمینه گردد)
+			(\subref{fig:chap4:negprior_prior_nll}).
+			منفی لگاریتم \likelihood{} نمونه‌های منفی (باید بیشینه گردد)
+			(\subref{fig:chap4:negprior_negprior_nll}).
+		}
+		\label{fig:chap4:negprior}
+	\end{figure}
+	مطابق با شکل \ref{fig:chap4:negprior}، که نتیجه آموزش شبکه با توابع هزینه فوق با پارامتر
+	$\lambda_\text{neg} = 0.05$
+	است (با ضرایب بالاتر، آموزش ناپایدار می‌شد)، بر خلاف انتظارات، هر دو تابع با هم کمینه شدند. این موضوع به این معنی است که مدل مولد شرطی توانایی انتساب احتمال بالا به نمونه‌های مثبت و احتمال کم به نمونه‌های منفی را ندارد و یا هر دو کاهش می‌یابند و یا هر دو افزایش. از این مشاهده این طور می‌توان نتیجه‌گیری نمود که اعمال محدودیت تقسیم شده فضای نهان به مقادیر مختلف شرط، چندان کارساز نبوده و همچنان مولد شرطی توانایی تفکیک این دو دسته از یکدیگر را نداشته و احتمالا رفتار \meanseeking{} از خود بروز می‌دهد.
+\fi
 

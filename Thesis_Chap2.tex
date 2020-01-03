@@ -809,7 +809,7 @@ $W_i^Q \in \bb{R}^{d_\text{model} \times d_k},
 	\trans{\positionalembedding{}}{Positional Embedding}}
 از آنجا که ساختار معرفی شده، خاصیت \recurrence{} ندارد، در هیچ جایی اطلاعاتی راجع به فاصله کلمات نسبت به هم و موقعیتشان در جمله وارد مدل نمی‌شود؛ بنابراین نیاز است تا به نحوی موقعیت کلمات در بردار \embedding{} هر کلمه گنجانده شود که به آن \positionalembedding{} گفته می‌شود. بردار \positionalembedding{}
 $PE$
-که $d_model$ بُعدی است، به صورت زیر تعریف شده است \cite{transformer}:
+که $d_\text{model}$ بُعدی است، به صورت زیر تعریف شده است \cite{transformer}:
 \begin{align}
 	PE_{(pos, 2i)} = \sin ( pos / 10000^{2i/d_\text{model}}) \nonumber
 	\\
@@ -848,7 +848,7 @@ $PE$
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.7\textwidth]{images/cgan.png}
-	\caption{نمایی از \cgan{}}
+	\caption{نمایی از \cgan{} \cite{cgan}}
     \label{fig:chap2:cgan}
 \end{figure}
 لازم به ذکر است که مجددا در رابطه فوق مشکل گذر گرادیان وجود دارد و معمولا از روش‌هایی مانند آنچه در بخش \ref{chap2:seqgan} (بر پایه یادگیری تقویتی) است، استفاده می‌شود. نمایی از \cgan{} در شکل \ref{fig:chap2:cgan} آمده است.
@@ -901,7 +901,7 @@ $N'$
 \begin{align}
 	\text{Reward} (\bff{x}, c) =
 	\frac{2 D_R(\bff{x},c)D_C(c|\bff{x})}
-	{D_R(\bff{x},c)D_C(c|\bff{x})}
+	{D_R(\bff{x},c) + D_C(c|\bff{x})}
 \end{align}
 در واقع چه طبیعی نبودن جمله و چه عدم تعلق جمله مورد نظر به دسته شرط مورد نظر باعث جریمه مولد خواهد شد و بالعکس.
 \subsection{

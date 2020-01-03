@@ -5218,9 +5218,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:همسبتگی{}}{}%
+\ifglsentryexists{en:همبستگی{}}{}%
 {%
-\gls@defglossaryentry{en:همسبتگی{}}%
+\gls@defglossaryentry{en:همبستگی{}}%
 {%
 name={Correlation},%
 sort={Correlation},%
@@ -5229,8 +5229,8 @@ first={Correlation},%
 firstplural={Correlations},%
 text={Correlation},%
 plural={Correlations},%
-description={همسبتگی{}},%
-descriptionplural={همسبتگی{}},%
+description={همبستگی{}},%
+descriptionplural={همبستگی{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -5248,17 +5248,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:همسبتگی{}}{}%
+\ifglsentryexists{fa:همبستگی{}}{}%
 {%
-\gls@defglossaryentry{fa:همسبتگی{}}%
+\gls@defglossaryentry{fa:همبستگی{}}%
 {%
 name={\correlation {}},%
 sort={\correlation {}},%
 type={p2e-terms},%
-first={همسبتگی{}},%
-firstplural={همسبتگی{}‌ها},%
-text={همسبتگی{}},%
-plural={همسبتگی{}‌ها},%
+first={همبستگی{}},%
+firstplural={همبستگی{}‌ها},%
+text={همبستگی{}},%
+plural={همبستگی{}‌ها},%
 description={Correlation},%
 descriptionplural={Correlation},%
 symbol={\relax },%
