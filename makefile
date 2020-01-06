@@ -16,7 +16,7 @@ clean:
 	rm -f *.toc *.lof *.lot
 	rm -f *.thm *.out
 	rm -f *.ind *.idx *.ilg
-	rm -f *.glo
+	rm -f *.glo *.gls
  
 #$(latexfile).aux : $(latexfile).tex
 #	$(TEX) $(latexfile)

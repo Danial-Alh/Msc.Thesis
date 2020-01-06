@@ -538,9 +538,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:واحد پردازش‌گر گرافیک}{}%
+\ifglsentryexists{en:واحد پردازش‌گر گرافیک{}}{}%
 {%
-\gls@defglossaryentry{en:واحد پردازش‌گر گرافیک}%
+\gls@defglossaryentry{en:واحد پردازش‌گر گرافیک{}}%
 {%
 name={Graphics Processing Unit (GPU)},%
 sort={Graphics Processing Unit (GPU)},%
@@ -549,8 +549,8 @@ first={Graphics Processing Unit (GPU)},%
 firstplural={Graphics Processing Unit (GPU)s},%
 text={Graphics Processing Unit (GPU)},%
 plural={Graphics Processing Unit (GPU)s},%
-description={واحد پردازش‌گر گرافیک},%
-descriptionplural={واحد پردازش‌گر گرافیک},%
+description={واحد پردازش‌گر گرافیک{}},%
+descriptionplural={واحد پردازش‌گر گرافیک{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -568,17 +568,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:واحد پردازش‌گر گرافیک}{}%
+\ifglsentryexists{fa:واحد پردازش‌گر گرافیک{}}{}%
 {%
-\gls@defglossaryentry{fa:واحد پردازش‌گر گرافیک}%
+\gls@defglossaryentry{fa:واحد پردازش‌گر گرافیک{}}%
 {%
-name={\gpu },%
-sort={\gpu },%
+name={\gpu {}},%
+sort={\gpu {}},%
 type={p2e-terms},%
-first={واحد پردازش‌گر گرافیک},%
-firstplural={واحد پردازش‌گر گرافیک‌ها},%
-text={واحد پردازش‌گر گرافیک},%
-plural={واحد پردازش‌گر گرافیک‌ها},%
+first={واحد پردازش‌گر گرافیک{}},%
+firstplural={واحد پردازش‌گر گرافیک{}‌ها},%
+text={واحد پردازش‌گر گرافیک{}},%
+plural={واحد پردازش‌گر گرافیک{}‌ها},%
 description={Graphics Processing Unit (GPU)},%
 descriptionplural={Graphics Processing Unit (GPU)},%
 symbol={\relax },%
@@ -598,9 +598,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:افزودن داده}{}%
+\ifglsentryexists{en:افزودن داده{}}{}%
 {%
-\gls@defglossaryentry{en:افزودن داده}%
+\gls@defglossaryentry{en:افزودن داده{}}%
 {%
 name={Augmentation},%
 sort={Augmentation},%
@@ -609,8 +609,8 @@ first={Augmentation},%
 firstplural={Augmentations},%
 text={Augmentation},%
 plural={Augmentations},%
-description={افزودن داده},%
-descriptionplural={افزودن داده},%
+description={افزودن داده{}},%
+descriptionplural={افزودن داده{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -628,17 +628,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:افزودن داده}{}%
+\ifglsentryexists{fa:افزودن داده{}}{}%
 {%
-\gls@defglossaryentry{fa:افزودن داده}%
+\gls@defglossaryentry{fa:افزودن داده{}}%
 {%
-name={\augmentation },%
-sort={\augmentation },%
+name={\augmentation {}},%
+sort={\augmentation {}},%
 type={p2e-terms},%
-first={افزودن داده},%
-firstplural={افزودن داده‌ها},%
-text={افزودن داده},%
-plural={افزودن داده‌ها},%
+first={افزودن داده{}},%
+firstplural={افزودن داده{}‌ها},%
+text={افزودن داده{}},%
+plural={افزودن داده{}‌ها},%
 description={Augmentation},%
 descriptionplural={Augmentation},%
 symbol={\relax },%
@@ -658,19 +658,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:نیمه‌نظارتی{}}{}%
+\ifglsentryexists{en:ربات گفت‌گو}{}%
 {%
-\gls@defglossaryentry{en:نیمه‌نظارتی{}}%
+\gls@defglossaryentry{en:ربات گفت‌گو}%
 {%
-name={Semi-supervised},%
-sort={Semi-supervised},%
+name={Chatbot},%
+sort={Chatbot},%
 type={e2p-terms},%
-first={Semi-supervised},%
-firstplural={Semi-superviseds},%
-text={Semi-supervised},%
-plural={Semi-superviseds},%
-description={نیمه‌نظارتی{}},%
-descriptionplural={نیمه‌نظارتی{}},%
+first={Chatbot},%
+firstplural={Chatbots},%
+text={Chatbot},%
+plural={Chatbots},%
+description={ربات گفت‌گو},%
+descriptionplural={ربات گفت‌گو},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -688,19 +688,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:نیمه‌نظارتی{}}{}%
+\ifglsentryexists{fa:ربات گفت‌گو}{}%
 {%
-\gls@defglossaryentry{fa:نیمه‌نظارتی{}}%
+\gls@defglossaryentry{fa:ربات گفت‌گو}%
 {%
-name={\semisupervised {}},%
-sort={\semisupervised {}},%
+name={ربات گفت‌گو},%
+sort={ربات گفت‌گو},%
 type={p2e-terms},%
-first={نیمه‌نظارتی{}},%
-firstplural={نیمه‌نظارتی{}‌ها},%
-text={نیمه‌نظارتی{}},%
-plural={نیمه‌نظارتی{}‌ها},%
-description={Semi-supervised},%
-descriptionplural={Semi-supervised},%
+first={ربات گفت‌گو},%
+firstplural={ربات گفت‌گو‌ها},%
+text={ربات گفت‌گو},%
+plural={ربات گفت‌گو‌ها},%
+description={Chatbot},%
+descriptionplural={Chatbot},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1382,13 +1382,13 @@ parent={},%
 {%
 \gls@defglossaryentry{en:میانگین جویانه{}}%
 {%
-name={Mean-seeking},%
-sort={Mean-seeking},%
+name={Mean Seeking},%
+sort={Mean Seeking},%
 type={e2p-terms},%
-first={Mean-seeking},%
-firstplural={Mean-seekings},%
-text={Mean-seeking},%
-plural={Mean-seekings},%
+first={Mean Seeking},%
+firstplural={Mean Seekings},%
+text={Mean Seeking},%
+plural={Mean Seekings},%
 description={میانگین جویانه{}},%
 descriptionplural={میانگین جویانه{}},%
 symbol={\relax },%
@@ -1419,8 +1419,8 @@ first={میانگین جویانه{}},%
 firstplural={میانگین جویانه{}‌ها},%
 text={میانگین جویانه{}},%
 plural={میانگین جویانه{}‌ها},%
-description={Mean-seeking},%
-descriptionplural={Mean-seeking},%
+description={Mean Seeking},%
+descriptionplural={Mean Seeking},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1978,9 +1978,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:‎شبکه‌های تخاصمی مولد}{}%
+\ifglsentryexists{en:‎شبکه‌های تخاصمی مولد{}}{}%
 {%
-\gls@defglossaryentry{en:‎شبکه‌های تخاصمی مولد}%
+\gls@defglossaryentry{en:‎شبکه‌های تخاصمی مولد{}}%
 {%
 name={Generative adversarial networks},%
 sort={Generative adversarial networks},%
@@ -1989,8 +1989,8 @@ first={Generative adversarial networks},%
 firstplural={Generative adversarial networkss},%
 text={Generative adversarial networks},%
 plural={Generative adversarial networkss},%
-description={‎شبکه‌های تخاصمی مولد},%
-descriptionplural={‎شبکه‌های تخاصمی مولد},%
+description={‎شبکه‌های تخاصمی مولد{}},%
+descriptionplural={‎شبکه‌های تخاصمی مولد{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2008,17 +2008,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:‎شبکه‌های تخاصمی مولد}{}%
+\ifglsentryexists{fa:‎شبکه‌های تخاصمی مولد{}}{}%
 {%
-\gls@defglossaryentry{fa:‎شبکه‌های تخاصمی مولد}%
+\gls@defglossaryentry{fa:‎شبکه‌های تخاصمی مولد{}}%
 {%
-name={‎\gan },%
-sort={‎\gan },%
+name={‎\gan {}},%
+sort={‎\gan {}},%
 type={p2e-terms},%
-first={‎شبکه‌های تخاصمی مولد},%
-firstplural={‎شبکه‌های تخاصمی مولد‌ها},%
-text={‎شبکه‌های تخاصمی مولد},%
-plural={‎شبکه‌های تخاصمی مولد‌ها},%
+first={‎شبکه‌های تخاصمی مولد{}},%
+firstplural={‎شبکه‌های تخاصمی مولد{}‌ها},%
+text={‎شبکه‌های تخاصمی مولد{}},%
+plural={‎شبکه‌های تخاصمی مولد{}‌ها},%
 description={Generative adversarial networks},%
 descriptionplural={Generative adversarial networks},%
 symbol={\relax },%
@@ -2098,19 +2098,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:تمیزدهنده}{}%
+\ifglsentryexists{en:تمیزدهنده{}}{}%
 {%
-\gls@defglossaryentry{en:تمیزدهنده}%
+\gls@defglossaryentry{en:تمیزدهنده{}}%
 {%
-name={discriminator},%
-sort={discriminator},%
+name={Discriminator},%
+sort={Discriminator},%
 type={e2p-terms},%
-first={discriminator},%
-firstplural={discriminators},%
-text={discriminator},%
-plural={discriminators},%
-description={تمیزدهنده},%
-descriptionplural={تمیزدهنده},%
+first={Discriminator},%
+firstplural={Discriminators},%
+text={Discriminator},%
+plural={Discriminators},%
+description={تمیزدهنده{}},%
+descriptionplural={تمیزدهنده{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2128,19 +2128,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:تمیزدهنده}{}%
+\ifglsentryexists{fa:تمیزدهنده{}}{}%
 {%
-\gls@defglossaryentry{fa:تمیزدهنده}%
+\gls@defglossaryentry{fa:تمیزدهنده{}}%
 {%
-name={تمیزدهنده},%
-sort={تمیزدهنده},%
+name={\discriminator {}},%
+sort={\discriminator {}},%
 type={p2e-terms},%
-first={تمیزدهنده},%
-firstplural={تمیزدهنده‌ها},%
-text={تمیزدهنده},%
-plural={تمیزدهنده‌ها},%
-description={discriminator},%
-descriptionplural={discriminator},%
+first={تمیزدهنده{}},%
+firstplural={تمیزدهنده{}‌ها},%
+text={تمیزدهنده{}},%
+plural={تمیزدهنده{}‌ها},%
+description={Discriminator},%
+descriptionplural={Discriminator},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2758,9 +2758,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:استنتاج}{}%
+\ifglsentryexists{en:استنتاج{}}{}%
 {%
-\gls@defglossaryentry{en:استنتاج}%
+\gls@defglossaryentry{en:استنتاج{}}%
 {%
 name={Inference},%
 sort={Inference},%
@@ -2769,8 +2769,8 @@ first={Inference},%
 firstplural={Inferences},%
 text={Inference},%
 plural={Inferences},%
-description={استنتاج},%
-descriptionplural={استنتاج},%
+description={استنتاج{}},%
+descriptionplural={استنتاج{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2788,17 +2788,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:استنتاج}{}%
+\ifglsentryexists{fa:استنتاج{}}{}%
 {%
-\gls@defglossaryentry{fa:استنتاج}%
+\gls@defglossaryentry{fa:استنتاج{}}%
 {%
-name={\inference },%
-sort={\inference },%
+name={\inference {}},%
+sort={\inference {}},%
 type={p2e-terms},%
-first={استنتاج},%
-firstplural={استنتاج‌ها},%
-text={استنتاج},%
-plural={استنتاج‌ها},%
+first={استنتاج{}},%
+firstplural={استنتاج{}‌ها},%
+text={استنتاج{}},%
+plural={استنتاج{}‌ها},%
 description={Inference},%
 descriptionplural={Inference},%
 symbol={\relax },%
@@ -2818,9 +2818,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:متغیر نهان}{}%
+\ifglsentryexists{en:متغیر نهان{}}{}%
 {%
-\gls@defglossaryentry{en:متغیر نهان}%
+\gls@defglossaryentry{en:متغیر نهان{}}%
 {%
 name={Latent Variable},%
 sort={Latent Variable},%
@@ -2829,8 +2829,8 @@ first={Latent Variable},%
 firstplural={Latent Variables},%
 text={Latent Variable},%
 plural={Latent Variables},%
-description={متغیر نهان},%
-descriptionplural={متغیر نهان},%
+description={متغیر نهان{}},%
+descriptionplural={متغیر نهان{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2848,17 +2848,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:متغیر نهان}{}%
+\ifglsentryexists{fa:متغیر نهان{}}{}%
 {%
-\gls@defglossaryentry{fa:متغیر نهان}%
+\gls@defglossaryentry{fa:متغیر نهان{}}%
 {%
-name={\latentvar },%
-sort={\latentvar },%
+name={\latentvar {}},%
+sort={\latentvar {}},%
 type={p2e-terms},%
-first={متغیر نهان},%
-firstplural={متغیر نهان‌ها},%
-text={متغیر نهان},%
-plural={متغیر نهان‌ها},%
+first={متغیر نهان{}},%
+firstplural={متغیر نهان{}‌ها},%
+text={متغیر نهان{}},%
+plural={متغیر نهان{}‌ها},%
 description={Latent Variable},%
 descriptionplural={Latent Variable},%
 symbol={\relax },%
@@ -2998,9 +2998,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:حوزه تاثیر}{}%
+\ifglsentryexists{en:حوزه تاثیر{}}{}%
 {%
-\gls@defglossaryentry{en:حوزه تاثیر}%
+\gls@defglossaryentry{en:حوزه تاثیر{}}%
 {%
 name={Receiptive field},%
 sort={Receiptive field},%
@@ -3009,8 +3009,8 @@ first={Receiptive field},%
 firstplural={Receiptive fields},%
 text={Receiptive field},%
 plural={Receiptive fields},%
-description={حوزه تاثیر},%
-descriptionplural={حوزه تاثیر},%
+description={حوزه تاثیر{}},%
+descriptionplural={حوزه تاثیر{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -3028,17 +3028,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:حوزه تاثیر}{}%
+\ifglsentryexists{fa:حوزه تاثیر{}}{}%
 {%
-\gls@defglossaryentry{fa:حوزه تاثیر}%
+\gls@defglossaryentry{fa:حوزه تاثیر{}}%
 {%
-name={\receiptivefield },%
-sort={\receiptivefield },%
+name={\receiptivefield {}},%
+sort={\receiptivefield {}},%
 type={p2e-terms},%
-first={حوزه تاثیر},%
-firstplural={حوزه تاثیر‌ها},%
-text={حوزه تاثیر},%
-plural={حوزه تاثیر‌ها},%
+first={حوزه تاثیر{}},%
+firstplural={حوزه تاثیر{}‌ها},%
+text={حوزه تاثیر{}},%
+plural={حوزه تاثیر{}‌ها},%
 description={Receiptive field},%
 descriptionplural={Receiptive field},%
 symbol={\relax },%
@@ -3118,9 +3118,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:خودکدنگار تخاصمی}{}%
+\ifglsentryexists{en:خودکدنگار تخاصمی{}}{}%
 {%
-\gls@defglossaryentry{en:خودکدنگار تخاصمی}%
+\gls@defglossaryentry{en:خودکدنگار تخاصمی{}}%
 {%
 name={Adversarial autoencoder},%
 sort={Adversarial autoencoder},%
@@ -3129,8 +3129,8 @@ first={Adversarial autoencoder},%
 firstplural={Adversarial autoencoders},%
 text={Adversarial autoencoder},%
 plural={Adversarial autoencoders},%
-description={خودکدنگار تخاصمی},%
-descriptionplural={خودکدنگار تخاصمی},%
+description={خودکدنگار تخاصمی{}},%
+descriptionplural={خودکدنگار تخاصمی{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -3148,17 +3148,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:خودکدنگار تخاصمی}{}%
+\ifglsentryexists{fa:خودکدنگار تخاصمی{}}{}%
 {%
-\gls@defglossaryentry{fa:خودکدنگار تخاصمی}%
+\gls@defglossaryentry{fa:خودکدنگار تخاصمی{}}%
 {%
-name={\aae },%
-sort={\aae },%
+name={\aae {}},%
+sort={\aae {}},%
 type={p2e-terms},%
-first={خودکدنگار تخاصمی},%
-firstplural={خودکدنگار تخاصمی‌ها},%
-text={خودکدنگار تخاصمی},%
-plural={خودکدنگار تخاصمی‌ها},%
+first={خودکدنگار تخاصمی{}},%
+firstplural={خودکدنگار تخاصمی{}‌ها},%
+text={خودکدنگار تخاصمی{}},%
+plural={خودکدنگار تخاصمی{}‌ها},%
 description={Adversarial autoencoder},%
 descriptionplural={Adversarial autoencoder},%
 symbol={\relax },%
@@ -3178,9 +3178,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:حاشیه‌ای}{}%
+\ifglsentryexists{en:حاشیه‌ای{}}{}%
 {%
-\gls@defglossaryentry{en:حاشیه‌ای}%
+\gls@defglossaryentry{en:حاشیه‌ای{}}%
 {%
 name={Marginal},%
 sort={Marginal},%
@@ -3189,8 +3189,8 @@ first={Marginal},%
 firstplural={Marginals},%
 text={Marginal},%
 plural={Marginals},%
-description={حاشیه‌ای},%
-descriptionplural={حاشیه‌ای},%
+description={حاشیه‌ای{}},%
+descriptionplural={حاشیه‌ای{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -3208,17 +3208,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:حاشیه‌ای}{}%
+\ifglsentryexists{fa:حاشیه‌ای{}}{}%
 {%
-\gls@defglossaryentry{fa:حاشیه‌ای}%
+\gls@defglossaryentry{fa:حاشیه‌ای{}}%
 {%
-name={\marginal },%
-sort={\marginal },%
+name={\marginal {}},%
+sort={\marginal {}},%
 type={p2e-terms},%
-first={حاشیه‌ای},%
-firstplural={حاشیه‌ای‌ها},%
-text={حاشیه‌ای},%
-plural={حاشیه‌ای‌ها},%
+first={حاشیه‌ای{}},%
+firstplural={حاشیه‌ای{}‌ها},%
+text={حاشیه‌ای{}},%
+plural={حاشیه‌ای{}‌ها},%
 description={Marginal},%
 descriptionplural={Marginal},%
 symbol={\relax },%
@@ -3238,9 +3238,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:تخمین گر عمومی}{}%
+\ifglsentryexists{en:تخمین گر عمومی{}}{}%
 {%
-\gls@defglossaryentry{en:تخمین گر عمومی}%
+\gls@defglossaryentry{en:تخمین گر عمومی{}}%
 {%
 name={Universal approximator},%
 sort={Universal approximator},%
@@ -3249,8 +3249,8 @@ first={Universal approximator},%
 firstplural={Universal approximators},%
 text={Universal approximator},%
 plural={Universal approximators},%
-description={تخمین گر عمومی},%
-descriptionplural={تخمین گر عمومی},%
+description={تخمین گر عمومی{}},%
+descriptionplural={تخمین گر عمومی{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -3268,17 +3268,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:تخمین گر عمومی}{}%
+\ifglsentryexists{fa:تخمین گر عمومی{}}{}%
 {%
-\gls@defglossaryentry{fa:تخمین گر عمومی}%
+\gls@defglossaryentry{fa:تخمین گر عمومی{}}%
 {%
-name={\uniaprox },%
-sort={\uniaprox },%
+name={\uniaprox {}},%
+sort={\uniaprox {}},%
 type={p2e-terms},%
-first={تخمین گر عمومی},%
-firstplural={تخمین گر عمومی‌ها},%
-text={تخمین گر عمومی},%
-plural={تخمین گر عمومی‌ها},%
+first={تخمین گر عمومی{}},%
+firstplural={تخمین گر عمومی{}‌ها},%
+text={تخمین گر عمومی{}},%
+plural={تخمین گر عمومی{}‌ها},%
 description={Universal approximator},%
 descriptionplural={Universal approximator},%
 symbol={\relax },%
@@ -3298,9 +3298,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:‎واسرشتاین}{}%
+\ifglsentryexists{en:‎واسرشتاین{}}{}%
 {%
-\gls@defglossaryentry{en:‎واسرشتاین}%
+\gls@defglossaryentry{en:‎واسرشتاین{}}%
 {%
 name={Wasserstein},%
 sort={Wasserstein},%
@@ -3309,8 +3309,8 @@ first={Wasserstein},%
 firstplural={Wassersteins},%
 text={Wasserstein},%
 plural={Wassersteins},%
-description={‎واسرشتاین},%
-descriptionplural={‎واسرشتاین},%
+description={‎واسرشتاین{}},%
+descriptionplural={‎واسرشتاین{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -3328,17 +3328,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:‎واسرشتاین}{}%
+\ifglsentryexists{fa:‎واسرشتاین{}}{}%
 {%
-\gls@defglossaryentry{fa:‎واسرشتاین}%
+\gls@defglossaryentry{fa:‎واسرشتاین{}}%
 {%
-name={‎\wasser },%
-sort={‎\wasser },%
+name={‎\wasser {}},%
+sort={‎\wasser {}},%
 type={p2e-terms},%
-first={‎واسرشتاین},%
-firstplural={‎واسرشتاین‌ها},%
-text={‎واسرشتاین},%
-plural={‎واسرشتاین‌ها},%
+first={‎واسرشتاین{}},%
+firstplural={‎واسرشتاین{}‌ها},%
+text={‎واسرشتاین{}},%
+plural={‎واسرشتاین{}‌ها},%
 description={Wasserstein},%
 descriptionplural={Wasserstein},%
 symbol={\relax },%
@@ -3902,13 +3902,13 @@ parent={},%
 {%
 \gls@defglossaryentry{en:واحد پردازش‌گر گرافیک{}}%
 {%
-name={Graphics Processing Unit},%
-sort={Graphics Processing Unit},%
+name={Graphics Processing Unit (GPU)},%
+sort={Graphics Processing Unit (GPU)},%
 type={e2p-terms},%
-first={Graphics Processing Unit},%
-firstplural={Graphics Processing Units},%
-text={Graphics Processing Unit},%
-plural={Graphics Processing Units},%
+first={Graphics Processing Unit (GPU)},%
+firstplural={Graphics Processing Unit (GPU)s},%
+text={Graphics Processing Unit (GPU)},%
+plural={Graphics Processing Unit (GPU)s},%
 description={واحد پردازش‌گر گرافیک{}},%
 descriptionplural={واحد پردازش‌گر گرافیک{}},%
 symbol={\relax },%
@@ -3939,8 +3939,8 @@ first={واحد پردازش‌گر گرافیک{}},%
 firstplural={واحد پردازش‌گر گرافیک{}‌ها},%
 text={واحد پردازش‌گر گرافیک{}},%
 plural={واحد پردازش‌گر گرافیک{}‌ها},%
-description={Graphics Processing Unit},%
-descriptionplural={Graphics Processing Unit},%
+description={Graphics Processing Unit (GPU)},%
+descriptionplural={Graphics Processing Unit (GPU)},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -4378,9 +4378,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:نرمال‌کننده لایه}{}%
+\ifglsentryexists{en:نرمال‌کننده لایه{}}{}%
 {%
-\gls@defglossaryentry{en:نرمال‌کننده لایه}%
+\gls@defglossaryentry{en:نرمال‌کننده لایه{}}%
 {%
 name={Layer normalization},%
 sort={Layer normalization},%
@@ -4389,8 +4389,8 @@ first={Layer normalization},%
 firstplural={Layer normalizations},%
 text={Layer normalization},%
 plural={Layer normalizations},%
-description={نرمال‌کننده لایه},%
-descriptionplural={نرمال‌کننده لایه},%
+description={نرمال‌کننده لایه{}},%
+descriptionplural={نرمال‌کننده لایه{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -4408,17 +4408,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:نرمال‌کننده لایه}{}%
+\ifglsentryexists{fa:نرمال‌کننده لایه{}}{}%
 {%
-\gls@defglossaryentry{fa:نرمال‌کننده لایه}%
+\gls@defglossaryentry{fa:نرمال‌کننده لایه{}}%
 {%
-name={\layernormalization },%
-sort={\layernormalization },%
+name={\layernormalization {}},%
+sort={\layernormalization {}},%
 type={p2e-terms},%
-first={نرمال‌کننده لایه},%
-firstplural={نرمال‌کننده لایه‌ها},%
-text={نرمال‌کننده لایه},%
-plural={نرمال‌کننده لایه‌ها},%
+first={نرمال‌کننده لایه{}},%
+firstplural={نرمال‌کننده لایه{}‌ها},%
+text={نرمال‌کننده لایه{}},%
+plural={نرمال‌کننده لایه{}‌ها},%
 description={Layer normalization},%
 descriptionplural={Layer normalization},%
 symbol={\relax },%
@@ -4738,9 +4738,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:تعبیه}{}%
+\ifglsentryexists{en:تعبیه{}}{}%
 {%
-\gls@defglossaryentry{en:تعبیه}%
+\gls@defglossaryentry{en:تعبیه{}}%
 {%
 name={Embedding},%
 sort={Embedding},%
@@ -4749,8 +4749,8 @@ first={Embedding},%
 firstplural={Embeddings},%
 text={Embedding},%
 plural={Embeddings},%
-description={تعبیه},%
-descriptionplural={تعبیه},%
+description={تعبیه{}},%
+descriptionplural={تعبیه{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -4768,17 +4768,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:تعبیه}{}%
+\ifglsentryexists{fa:تعبیه{}}{}%
 {%
-\gls@defglossaryentry{fa:تعبیه}%
+\gls@defglossaryentry{fa:تعبیه{}}%
 {%
-name={\embedding },%
-sort={\embedding },%
+name={\embedding {}},%
+sort={\embedding {}},%
 type={p2e-terms},%
-first={تعبیه},%
-firstplural={تعبیه‌ها},%
-text={تعبیه},%
-plural={تعبیه‌ها},%
+first={تعبیه{}},%
+firstplural={تعبیه{}‌ها},%
+text={تعبیه{}},%
+plural={تعبیه{}‌ها},%
 description={Embedding},%
 descriptionplural={Embedding},%
 symbol={\relax },%
@@ -5338,9 +5338,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:کدگشایی حریصانه}{}%
+\ifglsentryexists{en:کدگشایی حریصانه{}}{}%
 {%
-\gls@defglossaryentry{en:کدگشایی حریصانه}%
+\gls@defglossaryentry{en:کدگشایی حریصانه{}}%
 {%
 name={Greedy decoding},%
 sort={Greedy decoding},%
@@ -5349,8 +5349,8 @@ first={Greedy decoding},%
 firstplural={Greedy decodings},%
 text={Greedy decoding},%
 plural={Greedy decodings},%
-description={کدگشایی حریصانه},%
-descriptionplural={کدگشایی حریصانه},%
+description={کدگشایی حریصانه{}},%
+descriptionplural={کدگشایی حریصانه{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -5368,17 +5368,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:کدگشایی حریصانه}{}%
+\ifglsentryexists{fa:کدگشایی حریصانه{}}{}%
 {%
-\gls@defglossaryentry{fa:کدگشایی حریصانه}%
+\gls@defglossaryentry{fa:کدگشایی حریصانه{}}%
 {%
-name={\greedydecoding },%
-sort={\greedydecoding },%
+name={\greedydecoding {}},%
+sort={\greedydecoding {}},%
 type={p2e-terms},%
-first={کدگشایی حریصانه},%
-firstplural={کدگشایی حریصانه‌ها},%
-text={کدگشایی حریصانه},%
-plural={کدگشایی حریصانه‌ها},%
+first={کدگشایی حریصانه{}},%
+firstplural={کدگشایی حریصانه{}‌ها},%
+text={کدگشایی حریصانه{}},%
+plural={کدگشایی حریصانه{}‌ها},%
 description={Greedy decoding},%
 descriptionplural={Greedy decoding},%
 symbol={\relax },%

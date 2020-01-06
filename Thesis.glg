@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 31.12.2019  23:14:12
-;; Indexstyle: "/tmp/VLooP3iQg1", Rawindex: "/tmp/dbsX8cQENh", Output: "Thesis.fa.gls"
+;; at 07.01.2020  00:57:59
+;; Indexstyle: "/tmp/QJ49Scj_dN", Rawindex: "/tmp/rq_gGQbQSY", Output: "Thesis.fa.gls"
 
 
 Building indexentry-tree:
@@ -19,7 +19,7 @@ Status report:
 
 Opening logfile "Thesis.glg" (done)
 Reading indexstyle...
-Loading module "/tmp/VLooP3iQg1"...
+Loading module "/tmp/QJ49Scj_dN"...
 Loading module "lang/english/utf8-lang.xdy"...
 Loading module "lang/english/utf8.xdy"...
 Finished loading module "lang/english/utf8.xdy".
@@ -28,51 +28,15 @@ Loading module "./Thesis.xdy"...
 Loading module "tex.xdy"...
 Finished loading module "tex.xdy".
 Finished loading module "./Thesis.xdy".
-Finished loading module "/tmp/VLooP3iQg1".
+Finished loading module "/tmp/QJ49Scj_dN".
 Finished reading indexstyle.
 Finalizing indexstyle... (done)
 
-Reading raw-index "/tmp/dbsX8cQENh"...
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
-WARNING: Would replace complete index key by empty string, ignoring
-         #<ordrule-regexp: '\\[a-zA-Z@]+ *' => '' :again NIL :only-at-start NIL>
+Reading raw-index "/tmp/rq_gGQbQSY"...
 Finished reading raw-index.
 
 Processing index...
 ERROR: CHAR: index 0 should be less than the length of the string
-
-Warnings:
-
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
-WARNING: Would replace complete index key by empty string, ignoring
 
 
 makeglossaries diagnostic messages:
@@ -80,27 +44,4 @@ makeglossaries diagnostic messages:
 Sort key required for entries only containing command names.
 Attempting to determine which entries have problem sort keys.
 Parsing 'Thesis.fa.glo'
-11 problematic entries found:
-
-Label: 'fa:تعبیه'. Sort value : 'fa:تعبیه'
-(Try adding sort={fa:تعبیه} to the definition.)
-Label: 'fa:متغیر نهان'. Sort value : 'fa:متغیر نهان'
-(Try adding sort={fa:متغیرنهان} to the definition.)
-Label: 'fa:نرمال‌کننده لایه'. Sort value : 'fa:نرمال‌کننده لایه'
-(Try adding sort={fa:نرمال‌کنندهلایه} to the definition.)
-Label: 'fa:خودکدنگار تخاصمی'. Sort value : 'fa:خودکدنگار تخاصمی'
-(Try adding sort={fa:خودکدنگارتخاصمی} to the definition.)
-Label: 'fa:تخمین گر عمومی'. Sort value : 'fa:تخمین گر عمومی'
-(Try adding sort={fa:تخمینگرعمومی} to the definition.)
-Label: 'fa:حاشیه‌ای'. Sort value : 'fa:حاشیه‌ای'
-(Try adding sort={fa:حاشیه‌ای} to the definition.)
-Label: 'fa:واحد پردازش‌گر گرافیک'. Sort value : 'fa:واحد پردازش‌گر گرافیک'
-(Try adding sort={fa:واحدپردازش‌گرگرافیک} to the definition.)
-Label: 'fa:استنتاج'. Sort value : 'fa:استنتاج'
-(Try adding sort={fa:استنتاج} to the definition.)
-Label: 'fa:افزودن داده'. Sort value : 'fa:افزودن داده'
-(Try adding sort={fa:افزودنداده} to the definition.)
-Label: 'fa:کدگشایی حریصانه'. Sort value : 'fa:کدگشایی حریصانه'
-(Try adding sort={fa:کدگشاییحریصانه} to the definition.)
-Label: 'fa:حوزه تاثیر'. Sort value : 'fa:حوزه تاثیر'
-(Try adding sort={fa:حوزهتاثیر} to the definition.)
+Couldn't find anything! Sorry, I'm stumped.

@@ -1,0 +1,62 @@
+makeglossaries Thesis
+makeglossaries version 4.41 (2018-07-23)
+added glossary type 'main' (glg,gls,glo)
+added glossary type 'p2e-terms' (glg,fa.gls,fa.glo)
+added glossary type 'e2p-terms' (glg,en.gls,en.glo)
+xindy  -L english -C utf8 -I xindy -M "Thesis" -t "Thesis.glg" -o "Thesis.en.gls" "Thesis.en.glo"
+Opening logfile "Thesis.glg" (done)
+Reading indexstyle...
+Loading module "/tmp/whp7sOcCq4"...
+Loading module "lang/english/utf8-lang.xdy"...
+Loading module "lang/english/utf8.xdy"...
+Finished loading module "lang/english/utf8.xdy".
+Finished loading module "lang/english/utf8-lang.xdy".
+Loading module "./Thesis.xdy"...
+Loading module "tex.xdy"...
+Finished loading module "tex.xdy".
+Finished loading module "./Thesis.xdy".
+Finished loading module "/tmp/whp7sOcCq4".
+Finished reading indexstyle.
+Finalizing indexstyle... (done)
+
+Reading raw-index "/tmp/kdWuLRq6jd"...
+Finished reading raw-index.
+
+Processing index... [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Finished processing index.
+
+Writing markup... [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Markup written into file "Thesis.en.gls".
+xindy  -L english -C utf8 -I xindy -M "Thesis" -t "Thesis.glg" -o "Thesis.fa.gls" "Thesis.fa.glo"
+
+***Call to xindy failed***
+
+Possible cause of problem:
+
+Sort key required for entries only containing command names.
+Attempting to determine which entries have problem sort keys.
+Parsing 'Thesis.fa.glo'
+Couldn't find anything! Sorry, I'm stumped.
+
+Check 'Thesis.glg' for details
+Opening logfile "Thesis.glg" (done)
+Reading indexstyle...
+Loading module "/tmp/wv8GzyDBdt"...
+Loading module "lang/english/utf8-lang.xdy"...
+Loading module "lang/english/utf8.xdy"...
+Finished loading module "lang/english/utf8.xdy".
+Finished loading module "lang/english/utf8-lang.xdy".
+Loading module "./Thesis.xdy"...
+Loading module "tex.xdy"...
+Finished loading module "tex.xdy".
+Finished loading module "./Thesis.xdy".
+Finished loading module "/tmp/wv8GzyDBdt".
+Finished reading indexstyle.
+Finalizing indexstyle... (done)
+
+Reading raw-index "/tmp/mhoN2T8lVa"...
+Finished reading raw-index.
+
+Processing index...
+ERROR: CHAR: index 0 should be less than the length of the string
+make: *** [makefile:45: Thesis.glo] Error 25

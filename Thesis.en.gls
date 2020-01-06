@@ -24,7 +24,7 @@
 \providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax\glsresetentrylist
-\glossentry{en:خودکدنگار تخاصمی}{\glossaryentrynumbers{\relax 
+\glossentry{en:خودکدنگار تخاصمی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
 \glossentry{en:هم‌نسبی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{34}}}\relax\glsresetentrylist
@@ -32,8 +32,8 @@
 \glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
 \glossentry{en:آرگومان بیشینه یابی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}}}\relax\glsresetentrylist
-\glossentry{en:افزودن داده}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}}}\relax\glsresetentrylist
+\glossentry{en:افزودن داده{}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
 \glossentry{en:خودکدنگار{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
 \glossentry{en:خودبرگشتی}{\glossaryentrynumbers{\relax 
@@ -44,13 +44,15 @@
 \glossentry{en:ماتریس مثلثی بلوکی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{32}}}\glsgroupskip
 \glsgroupheading{C}\relax\glsresetentrylist
+\glossentry{en:ربات گفت‌گو}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
 \glossentry{en:دسته‌بند{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{40}}}\relax\glsresetentrylist
 \glossentry{en:شرطی‌کننده{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{31}}}\relax\glsresetentrylist
 \glossentry{en:زمینه}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{22}}}\relax\glsresetentrylist
-\glossentry{en:همسبتگی{}}{\glossaryentrynumbers{\relax 
+\glossentry{en:همبستگی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{53}}}\relax\glsresetentrylist
 \glossentry{en:اتصالی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{31}}}\relax\glsresetentrylist
@@ -64,13 +66,12 @@
 \glossentry{en:انبساطی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{22}}}\relax\glsresetentrylist
 \glossentry{en:تمیزدهنده{}}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
-\glossentry{en:تمیزدهنده}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}\delimN 
 \glsXpageXglsnumberformat{}{14}}}\glsgroupskip
 \glsgroupheading{E}\relax\glsresetentrylist
 \glossentry{en:درایه‌گرا{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{30}}}\relax\glsresetentrylist
-\glossentry{en:تعبیه}{\glossaryentrynumbers{\relax 
+\glossentry{en:تعبیه{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{38}}}\relax\glsresetentrylist
 \glossentry{en:اریبی مواجهه}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{14}}}\glsgroupskip
@@ -83,19 +84,18 @@
 \glossentry{en:مخلوط گاوسی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{50}}}\relax\glsresetentrylist
 \glossentry{en:شبکه‌های تخاصمی مولد{}}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
-\glossentry{en:‎شبکه‌های تخاصمی مولد}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{4}}}\relax\glsresetentrylist
+\glossentry{en:‎شبکه‌های تخاصمی مولد{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
 \glossentry{en:مولد}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
 \glossentry{en:واحد پردازش‌گر گرافیک{}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{2}\delimN 
 \glsXpageXglsnumberformat{}{32}}}\relax\glsresetentrylist
-\glossentry{en:واحد پردازش‌گر گرافیک}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{2}}}\relax\glsresetentrylist
-\glossentry{en:کدگشایی حریصانه}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{54}}}\glsgroupskip
+\glossentry{en:کدگشایی حریصانه{}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{55}}}\glsgroupskip
 \glsgroupheading{I}\relax\glsresetentrylist
-\glossentry{en:استنتاج}{\glossaryentrynumbers{\relax 
+\glossentry{en:استنتاج{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{17}}}\relax\glsresetentrylist
 \glossentry{en:سخت}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{17}}}\glsgroupskip
@@ -105,14 +105,14 @@
 \glsgroupheading{L}\relax\glsresetentrylist
 \glossentry{en:مدل زبانی}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
-\glossentry{en:متغیر نهان}{\glossaryentrynumbers{\relax 
+\glossentry{en:متغیر نهان{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{17}}}\relax\glsresetentrylist
-\glossentry{en:نرمال‌کننده لایه}{\glossaryentrynumbers{\relax 
+\glossentry{en:نرمال‌کننده لایه{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{35}}}\relax\glsresetentrylist
 \glossentry{en:بهینه محلی}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{16}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
-\glossentry{en:حاشیه‌ای}{\glossaryentrynumbers{\relax 
+\glossentry{en:حاشیه‌ای{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
 \glossentry{en:نقاب{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
@@ -163,7 +163,7 @@
 \glsgroupheading{R}\relax\glsresetentrylist
 \glossentry{en:فراخوانی}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
-\glossentry{en:حوزه تاثیر}{\glossaryentrynumbers{\relax 
+\glossentry{en:حوزه تاثیر{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{22}}}\relax\glsresetentrylist
 \glossentry{en:یادگیری تقویتی}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{15}}}\relax\glsresetentrylist
@@ -184,8 +184,7 @@
 \glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
 \glossentry{en:تحلیل تمایل}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
-\glossentry{en:نیمه‌نظارتی{}}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{3}\delimN 
+\glossentry{en:نیمه‌نظارتی}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
 \glossentry{en:دنباله به دنباله{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{34}}}\relax\glsresetentrylist
@@ -210,7 +209,7 @@
 \glsgroupheading{U}\relax\glsresetentrylist
 \glossentry{en:نااریب}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
-\glossentry{en:تخمین گر عمومی}{\glossaryentrynumbers{\relax 
+\glossentry{en:تخمین گر عمومی{}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{25}\delimN 
 \glsXpageXglsnumberformat{}{33}}}\glsgroupskip
 \glsgroupheading{V}\relax\glsresetentrylist
