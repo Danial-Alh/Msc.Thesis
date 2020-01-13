@@ -5,7 +5,7 @@ latexfile = Thesis
 # TEX = latex -interaction=nonstopmode --src-specials
 # Use this line, if you want to use pdflatex command
 #TEX = pdflatex -interaction=nonstopmode --shell-escape --src-specials
- TEX = xelatex --shell-escape --src-specials
+ TEX = xelatex --shell-escape --src-specials -interaction=nonstopmode -synctex=1
  .PHONY : clean
 
 all : $(latexfile).pdf $(latexfile).aux
@@ -16,7 +16,7 @@ clean:
 	rm -f *.toc *.lof *.lot
 	rm -f *.thm *.out
 	rm -f *.ind *.idx *.ilg
-	rm -f *.glo *.gls
+	rm -f *.glo *.gls Thesis.glsdefs Thesis.glg
  
 #$(latexfile).aux : $(latexfile).tex
 #	$(TEX) $(latexfile)

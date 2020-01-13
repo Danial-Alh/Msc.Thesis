@@ -1,11 +1,11 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-1}مقدمه}{\reset@font\mtcSfont 52}{section.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-2}دادگان آموزشی}{\reset@font\mtcSfont 52}{section.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-3}معیارهای ارزیابی}{\reset@font\mtcSfont 53}{section.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-1}\bleu {}}{\reset@font\mtcSSfont 53}{subsection.4.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-2}\selfbleu {}}{\reset@font\mtcSSfont 53}{subsection.4.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-3}\jaccard {}}{\reset@font\mtcSSfont 54}{subsection.4.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-4}درصد رعایت شرط}{\reset@font\mtcSSfont 54}{subsection.4.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-4}آموزش مدل}{\reset@font\mtcSfont 54}{section.4.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode معماری‌های متفاوت در کدگذار{} و کدگشا{}}{\reset@font\mtcSSSfont 55}{section*.48}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode نمودار‌های آموزش خودکدنگار واسرشتاین{} و مولد شرطی}{\reset@font\mtcSSSfont 55}{section*.50}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-5}نتایج و مقایسه با سایر مدل‌ها}{\reset@font\mtcSfont 57}{section.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-1}مقدمه}{\reset@font\mtcSfont 55}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-2}دادگان آموزشی}{\reset@font\mtcSfont 55}{section.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-3}معیارهای ارزیابی}{\reset@font\mtcSfont 56}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-1}\bleu {}}{\reset@font\mtcSSfont 56}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-2}\selfbleu {}}{\reset@font\mtcSSfont 56}{subsection.4.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-3}\jaccard {}}{\reset@font\mtcSSfont 57}{subsection.4.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4-3-4}درصد رعایت شرط}{\reset@font\mtcSSfont 57}{subsection.4.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-4}آموزش مدل}{\reset@font\mtcSfont 57}{section.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode معماری‌های متفاوت در کدگذار{} و کدگشا{}}{\reset@font\mtcSSSfont 58}{section*.50}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode نمودار‌های آموزش خودکدنگار واسرشتاین{} و مولد شرطی}{\reset@font\mtcSSSfont 58}{section*.52}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4-5}نتایج و مقایسه با سایر مدل‌ها}{\reset@font\mtcSfont 60}{section.4.5}}

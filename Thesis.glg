@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 07.01.2020  00:57:59
-;; Indexstyle: "/tmp/QJ49Scj_dN", Rawindex: "/tmp/rq_gGQbQSY", Output: "Thesis.fa.gls"
+;; at 07.01.2020  08:13:50
+;; Indexstyle: "/tmp/mJ4l4h7sS0", Rawindex: "/tmp/etzUQ2kQWk", Output: "Thesis.fa.gls"
 
 
 Building indexentry-tree:
@@ -9,39 +9,3 @@ Hierdepth of index is :TREE
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 ERROR: CHAR: index 0 should be less than the length of the string
-
-
-*** Unable to execute: '"xindy"  -L english -C utf8 -I xindy -M "Thesis" -t "Thesis.glg" -o "Thesis.fa.gls" "Thesis.fa.glo"' ***
-
-Failed with error code 1.
-
-Status report:
-
-Opening logfile "Thesis.glg" (done)
-Reading indexstyle...
-Loading module "/tmp/QJ49Scj_dN"...
-Loading module "lang/english/utf8-lang.xdy"...
-Loading module "lang/english/utf8.xdy"...
-Finished loading module "lang/english/utf8.xdy".
-Finished loading module "lang/english/utf8-lang.xdy".
-Loading module "./Thesis.xdy"...
-Loading module "tex.xdy"...
-Finished loading module "tex.xdy".
-Finished loading module "./Thesis.xdy".
-Finished loading module "/tmp/QJ49Scj_dN".
-Finished reading indexstyle.
-Finalizing indexstyle... (done)
-
-Reading raw-index "/tmp/rq_gGQbQSY"...
-Finished reading raw-index.
-
-Processing index...
-ERROR: CHAR: index 0 should be less than the length of the string
-
-
-makeglossaries diagnostic messages:
-
-Sort key required for entries only containing command names.
-Attempting to determine which entries have problem sort keys.
-Parsing 'Thesis.fa.glo'
-Couldn't find anything! Sorry, I'm stumped.

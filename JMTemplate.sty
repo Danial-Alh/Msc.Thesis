@@ -5,6 +5,7 @@
 %\usepackage{nicefrac}
 %Required Packages
 %=======================================================
+\usepackage{xstring}
 \usepackage{fancybox}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
@@ -197,7 +198,7 @@
 %For defining of glossary items
 %%=======================================================
 \newcommand{\trans}[3][]{% Translation. params: translation, original latin term, optional rtl note
-\newtrans{#2}{#3}% add to glossary
+\newtrans[#2]{#2}{#3}% add to glossary
 \term[#1]{#2}%cite the added word
 }
 
