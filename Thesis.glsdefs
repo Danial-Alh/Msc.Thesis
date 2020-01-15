@@ -5458,3 +5458,123 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:بیش‌برازش}{}%
+{%
+\gls@defglossaryentry{en:بیش‌برازش}%
+{%
+name={Overfit},%
+sort={Overfit},%
+type={e2p-terms},%
+first={Overfit},%
+firstplural={Overfits},%
+text={Overfit},%
+plural={Overfits},%
+description={بیش‌برازش},%
+descriptionplural={بیش‌برازش},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:بیش‌برازش}{}%
+{%
+\gls@defglossaryentry{fa:بیش‌برازش}%
+{%
+name={بیش‌برازش},%
+sort={بیش‌برازش},%
+type={p2e-terms},%
+first={بیش‌برازش},%
+firstplural={بیش‌برازش‌ها},%
+text={بیش‌برازش},%
+plural={بیش‌برازش‌ها},%
+description={Overfit},%
+descriptionplural={Overfit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تعداد دفعات دیدن کل داده‌ها}{}%
+{%
+\gls@defglossaryentry{en:تعداد دفعات دیدن کل داده‌ها}%
+{%
+name={Epoch},%
+sort={Epoch},%
+type={e2p-terms},%
+first={Epoch},%
+firstplural={Epochs},%
+text={Epoch},%
+plural={Epochs},%
+description={تعداد دفعات دیدن کل داده‌ها},%
+descriptionplural={تعداد دفعات دیدن کل داده‌ها},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تعداد دفعات دیدن کل داده‌ها}{}%
+{%
+\gls@defglossaryentry{fa:تعداد دفعات دیدن کل داده‌ها}%
+{%
+name={تعداد دفعات دیدن کل داده‌ها},%
+sort={تعداد دفعات دیدن کل داده‌ها},%
+type={p2e-terms},%
+first={تعداد دفعات دیدن کل داده‌ها},%
+firstplural={تعداد دفعات دیدن کل داده‌ها‌ها},%
+text={تعداد دفعات دیدن کل داده‌ها},%
+plural={تعداد دفعات دیدن کل داده‌ها‌ها},%
+description={Epoch},%
+descriptionplural={Epoch},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
