@@ -598,6 +598,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{en:شبکه‌های با حافظه کوتاه مدت ماندگار}{}%
+{%
+\gls@defglossaryentry{en:شبکه‌های با حافظه کوتاه مدت ماندگار}%
+{%
+name={Long Short Term Memory (LSTM)},%
+sort={Long Short Term Memory (LSTM)},%
+type={e2p-terms},%
+first={Long Short Term Memory (LSTM)},%
+firstplural={Long Short Term Memory (LSTM)s},%
+text={Long Short Term Memory (LSTM)},%
+plural={Long Short Term Memory (LSTM)s},%
+description={شبکه‌های با حافظه کوتاه مدت ماندگار},%
+descriptionplural={شبکه‌های با حافظه کوتاه مدت ماندگار},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:شبکه‌های با حافظه کوتاه مدت ماندگار}{}%
+{%
+\gls@defglossaryentry{fa:شبکه‌های با حافظه کوتاه مدت ماندگار}%
+{%
+name={\lstm },%
+sort={\lstm },%
+type={p2e-terms},%
+first={شبکه‌های با حافظه کوتاه مدت ماندگار},%
+firstplural={شبکه‌های با حافظه کوتاه مدت ماندگار‌ها},%
+text={شبکه‌های با حافظه کوتاه مدت ماندگار},%
+plural={شبکه‌های با حافظه کوتاه مدت ماندگار‌ها},%
+description={Long Short Term Memory (LSTM)},%
+descriptionplural={Long Short Term Memory (LSTM)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{en:افزودن داده{}}{}%
 {%
 \gls@defglossaryentry{en:افزودن داده{}}%
@@ -761,6 +821,66 @@ text={پیشین},%
 plural={پیشین‌ها},%
 description={Prior},%
 descriptionplural={Prior},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:تیز}{}%
+{%
+\gls@defglossaryentry{en:تیز}%
+{%
+name={Sharp},%
+sort={Sharp},%
+type={e2p-terms},%
+first={Sharp},%
+firstplural={Sharps},%
+text={Sharp},%
+plural={Sharps},%
+description={تیز},%
+descriptionplural={تیز},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:تیز}{}%
+{%
+\gls@defglossaryentry{fa:تیز}%
+{%
+name={تیز},%
+sort={تیز},%
+type={p2e-terms},%
+first={تیز},%
+firstplural={تیز‌ها},%
+text={تیز},%
+plural={تیز‌ها},%
+description={Sharp},%
+descriptionplural={Sharp},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1258,9 +1378,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:تمیزدهنده{}}{}%
+\ifglsentryexists{en:تمییزدهنده{}}{}%
 {%
-\gls@defglossaryentry{en:تمیزدهنده{}}%
+\gls@defglossaryentry{en:تمییزدهنده{}}%
 {%
 name={Discriminator},%
 sort={Discriminator},%
@@ -1269,8 +1389,8 @@ first={Discriminator},%
 firstplural={Discriminators},%
 text={Discriminator},%
 plural={Discriminators},%
-description={تمیزدهنده{}},%
-descriptionplural={تمیزدهنده{}},%
+description={تمییزدهنده{}},%
+descriptionplural={تمییزدهنده{}},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1288,17 +1408,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:تمیزدهنده{}}{}%
+\ifglsentryexists{fa:تمییزدهنده{}}{}%
 {%
-\gls@defglossaryentry{fa:تمیزدهنده{}}%
+\gls@defglossaryentry{fa:تمییزدهنده{}}%
 {%
 name={\discriminator {}},%
 sort={\discriminator {}},%
 type={p2e-terms},%
-first={تمیزدهنده{}},%
-firstplural={تمیزدهنده{}‌ها},%
-text={تمیزدهنده{}},%
-plural={تمیزدهنده{}‌ها},%
+first={تمییزدهنده{}},%
+firstplural={تمییزدهنده{}‌ها},%
+text={تمییزدهنده{}},%
+plural={تمییزدهنده{}‌ها},%
 description={Discriminator},%
 descriptionplural={Discriminator},%
 symbol={\relax },%
@@ -2038,9 +2158,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:‎شبکه‌های تخاصمی مولد{}}{}%
+\ifglsentryexists{en:‎شبکه‌های تخاصمی مولد}{}%
 {%
-\gls@defglossaryentry{en:‎شبکه‌های تخاصمی مولد{}}%
+\gls@defglossaryentry{en:‎شبکه‌های تخاصمی مولد}%
 {%
 name={Generative adversarial networks},%
 sort={Generative adversarial networks},%
@@ -2049,8 +2169,8 @@ first={Generative adversarial networks},%
 firstplural={Generative adversarial networkss},%
 text={Generative adversarial networks},%
 plural={Generative adversarial networkss},%
-description={‎شبکه‌های تخاصمی مولد{}},%
-descriptionplural={‎شبکه‌های تخاصمی مولد{}},%
+description={‎شبکه‌های تخاصمی مولد},%
+descriptionplural={‎شبکه‌های تخاصمی مولد},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2068,17 +2188,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:‎شبکه‌های تخاصمی مولد{}}{}%
+\ifglsentryexists{fa:‎شبکه‌های تخاصمی مولد}{}%
 {%
-\gls@defglossaryentry{fa:‎شبکه‌های تخاصمی مولد{}}%
+\gls@defglossaryentry{fa:‎شبکه‌های تخاصمی مولد}%
 {%
-name={‎\gan {}},%
-sort={‎\gan {}},%
+name={‎\gan },%
+sort={‎\gan },%
 type={p2e-terms},%
-first={‎شبکه‌های تخاصمی مولد{}},%
-firstplural={‎شبکه‌های تخاصمی مولد{}‌ها},%
-text={‎شبکه‌های تخاصمی مولد{}},%
-plural={‎شبکه‌های تخاصمی مولد{}‌ها},%
+first={‎شبکه‌های تخاصمی مولد},%
+firstplural={‎شبکه‌های تخاصمی مولد‌ها},%
+text={‎شبکه‌های تخاصمی مولد},%
+plural={‎شبکه‌های تخاصمی مولد‌ها},%
 description={Generative adversarial networks},%
 descriptionplural={Generative adversarial networks},%
 symbol={\relax },%
@@ -2158,9 +2278,9 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{en:تمیزدهنده{}}{}%
+\ifglsentryexists{en:تمییزدهنده}{}%
 {%
-\gls@defglossaryentry{en:تمیزدهنده{}}%
+\gls@defglossaryentry{en:تمییزدهنده}%
 {%
 name={Discriminator},%
 sort={Discriminator},%
@@ -2169,8 +2289,8 @@ first={Discriminator},%
 firstplural={Discriminators},%
 text={Discriminator},%
 plural={Discriminators},%
-description={تمیزدهنده{}},%
-descriptionplural={تمیزدهنده{}},%
+description={تمییزدهنده},%
+descriptionplural={تمییزدهنده},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2188,17 +2308,17 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fa:تمیزدهنده{}}{}%
+\ifglsentryexists{fa:تمییزدهنده}{}%
 {%
-\gls@defglossaryentry{fa:تمیزدهنده{}}%
+\gls@defglossaryentry{fa:تمییزدهنده}%
 {%
-name={\discriminator {}},%
-sort={\discriminator {}},%
+name={\discriminator },%
+sort={\discriminator },%
 type={p2e-terms},%
-first={تمیزدهنده{}},%
-firstplural={تمیزدهنده{}‌ها},%
-text={تمیزدهنده{}},%
-plural={تمیزدهنده{}‌ها},%
+first={تمییزدهنده},%
+firstplural={تمییزدهنده‌ها},%
+text={تمییزدهنده},%
+plural={تمییزدهنده‌ها},%
 description={Discriminator},%
 descriptionplural={Discriminator},%
 symbol={\relax },%
@@ -2981,6 +3101,66 @@ text={سخت},%
 plural={سخت‌ها},%
 description={Intractable},%
 descriptionplural={Intractable},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:شبکه‌های عصبی پیچشی}{}%
+{%
+\gls@defglossaryentry{en:شبکه‌های عصبی پیچشی}%
+{%
+name={Convolutional Neural Networks (CNN)},%
+sort={Convolutional Neural Networks (CNN)},%
+type={e2p-terms},%
+first={Convolutional Neural Networks (CNN)},%
+firstplural={Convolutional Neural Networks (CNN)s},%
+text={Convolutional Neural Networks (CNN)},%
+plural={Convolutional Neural Networks (CNN)s},%
+description={شبکه‌های عصبی پیچشی},%
+descriptionplural={شبکه‌های عصبی پیچشی},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:شبکه‌های عصبی پیچشی}{}%
+{%
+\gls@defglossaryentry{fa:شبکه‌های عصبی پیچشی}%
+{%
+name={\cnn },%
+sort={\cnn },%
+type={p2e-terms},%
+first={شبکه‌های عصبی پیچشی},%
+firstplural={شبکه‌های عصبی پیچشی‌ها},%
+text={شبکه‌های عصبی پیچشی},%
+plural={شبکه‌های عصبی پیچشی‌ها},%
+description={Convolutional Neural Networks (CNN)},%
+descriptionplural={Convolutional Neural Networks (CNN)},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -4781,6 +4961,66 @@ text={تعبیه مکانی{}},%
 plural={تعبیه مکانی{}‌ها},%
 description={Positional Embedding},%
 descriptionplural={Positional Embedding},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{en:شبکه عصبی خودبازگشتی}{}%
+{%
+\gls@defglossaryentry{en:شبکه عصبی خودبازگشتی}%
+{%
+name={Recurrent Neural Network (RNN)},%
+sort={Recurrent Neural Network (RNN)},%
+type={e2p-terms},%
+first={Recurrent Neural Network (RNN)},%
+firstplural={Recurrent Neural Network (RNN)s},%
+text={Recurrent Neural Network (RNN)},%
+plural={Recurrent Neural Network (RNN)s},%
+description={شبکه عصبی خودبازگشتی},%
+descriptionplural={شبکه عصبی خودبازگشتی},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fa:شبکه عصبی خودبازگشتی}{}%
+{%
+\gls@defglossaryentry{fa:شبکه عصبی خودبازگشتی}%
+{%
+name={شبکه عصبی خودبازگشتی},%
+sort={شبکه عصبی خودبازگشتی},%
+type={p2e-terms},%
+first={شبکه عصبی خودبازگشتی},%
+firstplural={شبکه عصبی خودبازگشتی‌ها},%
+text={شبکه عصبی خودبازگشتی},%
+plural={شبکه عصبی خودبازگشتی‌ها},%
+description={Recurrent Neural Network (RNN)},%
+descriptionplural={Recurrent Neural Network (RNN)},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

@@ -1,443 +1,622 @@
-% Encoding: UTF-8
-
-@InProceedings{toward,
-  author    = {Zhiting Hu and Zichao Yang and Xiaodan Liang and Ruslan Salakhutdinov and Eric P. Xing},
-  title     = {Toward Controlled Generation of Text},
-  booktitle = {Proceedings of the 34th International Conference on Machine Learning, {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
-  year      = {2017},
-  editor    = {Doina Precup and Yee Whye Teh},
-  volume    = {70},
-  series    = {Proceedings of Machine Learning Research},
-  pages     = {1587--1596},
-  publisher = {{PMLR}},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/icml/HuYLSX17},
-  url       = {http://proceedings.mlr.press/v70/hu17e.html},
-}
-
-@InProceedings{transformer,
-  author    = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
-  title     = {Attention is All you Need},
-  booktitle = {Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}},
-  year      = {2017},
-  editor    = {Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett},
-  pages     = {5998--6008},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/VaswaniSPUJGKP17},
-  url       = {http://papers.nips.cc/paper/7181-attention-is-all-you-need},
-}
-
-@Article{flow_survey,
-  author        = {Ivan Kobyzev and Simon Prince and Marcus A. Brubaker},
-  title         = {Normalizing Flows: Introduction and Ideas},
-  journal       = {CoRR},
-  year          = {2019},
-  volume        = {abs/1908.09257},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/journals/corr/abs-1908-09257},
-  eprint        = {1908.09257},
-  url           = {http://arxiv.org/abs/1908.09257},
-}
-
-@InProceedings{vae_dialated,
-  author    = {Zichao Yang and Zhiting Hu and Ruslan Salakhutdinov and Taylor Berg{-}Kirkpatrick},
-  title     = {Improved Variational Autoencoders for Text Modeling using Dilated Convolutions},
-  booktitle = {Proceedings of the 34th International Conference on Machine Learning, {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
-  year      = {2017},
-  editor    = {Doina Precup and Yee Whye Teh},
-  volume    = {70},
-  series    = {Proceedings of Machine Learning Research},
-  pages     = {3881--3890},
-  publisher = {{PMLR}},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/icml/YangHSB17},
-  url       = {http://proceedings.mlr.press/v70/yang17d.html},
-}
-
-@InProceedings{vae_lossy,
-  author    = {Xi Chen and Diederik P. Kingma and Tim Salimans and Yan Duan and Prafulla Dhariwal and John Schulman and Ilya Sutskever and Pieter Abbeel},
-  title     = {Variational Lossy Autoencoder},
-  booktitle = {5th International Conference on Learning Representations, {ICLR} 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings},
-  year      = {2017},
-  publisher = {OpenReview.net},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/iclr/0022KSDDSSA17},
-  url       = {https://openreview.net/forum?id=BysvGP5ee},
-}
-
-@Article{dirichlet_vae,
-  author        = {Yijun Xiao and Tiancheng Zhao and William Yang Wang},
-  title         = {Dirichlet Variational Autoencoder for Text Modeling},
-  journal       = {CoRR},
-  year          = {2018},
-  volume        = {abs/1811.00135},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/journals/corr/abs-1811-00135},
-  eprint        = {1811.00135},
-  url           = {http://arxiv.org/abs/1811.00135},
-}
-
-@InProceedings{vae_multilevel,
-  author    = {Dinghan Shen and Asli {\c{C}}elikyilmaz and Yizhe Zhang and Liqun Chen and Xin Wang and Jianfeng Gao and Lawrence Carin},
-  title     = {Towards Generating Long and Coherent Text with Multi-Level Latent Variable Models},
-  booktitle = {Proceedings of the 57th Conference of the Association for Computational Linguistics, {ACL} 2019, Florence, Italy, July 28- August 2, 2019, Volume 1: Long Papers},
-  year      = {2019},
-  editor    = {Anna Korhonen and David R. Traum and Llu{\'{\i}}s M{\`{a}}rquez},
-  pages     = {2079--2089},
-  publisher = {Association for Computational Linguistics},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/acl/ShenCZCWGC19},
-  url       = {https://www.aclweb.org/anthology/P19-1200/},
-}
-
-@InProceedings{vae_spherical,
-  author    = {Jiacheng Xu and Greg Durrett},
-  title     = {Spherical Latent Spaces for Stable Variational Autoencoders},
-  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Brussels, Belgium, October 31 - November 4, 2018},
-  year      = {2018},
-  editor    = {Ellen Riloff and David Chiang and Julia Hockenmaier and Jun'ichi Tsujii},
-  pages     = {4503--4513},
-  publisher = {Association for Computational Linguistics},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/emnlp/XuD18},
-  url       = {https://www.aclweb.org/anthology/D18-1480/},
-}
-
-@InProceedings{savae,
-  author    = {Yoon Kim and Sam Wiseman and Andrew C. Miller and David A. Sontag and Alexander M. Rush},
-  title     = {Semi-Amortized Variational Autoencoders},
-  booktitle = {Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15, 2018},
-  year      = {2018},
-  editor    = {Jennifer G. Dy and Andreas Krause},
-  volume    = {80},
-  series    = {Proceedings of Machine Learning Research},
-  pages     = {2683--2692},
-  publisher = {{PMLR}},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/icml/KimWMSR18},
-  url       = {http://proceedings.mlr.press/v80/kim18e.html},
-}
-
-@Article{topic_flow_vae,
-  author        = {Wenlin Wang and Zhe Gan and Hongteng Xu and Ruiyi Zhang and Guoyin Wang and Dinghan Shen and Changyou Chen and Lawrence Carin},
-  title         = {Topic-Guided Variational Autoencoders for Text Generation},
-  journal       = {CoRR},
-  year          = {2019},
-  volume        = {abs/1903.07137},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/journals/corr/abs-1903-07137},
-  eprint        = {1903.07137},
-  url           = {http://arxiv.org/abs/1903.07137},
-}
-
-@InProceedings{vae_decflow,
-  author    = {Zachary M. Ziegler and Alexander M. Rush},
-  title     = {Latent Normalizing Flows for Discrete Sequences},
-  booktitle = {Proceedings of the 36th International Conference on Machine Learning, {ICML} 2019, 9-15 June 2019, Long Beach, California, {USA}},
-  year      = {2019},
-  editor    = {Kamalika Chaudhuri and Ruslan Salakhutdinov},
-  volume    = {97},
-  series    = {Proceedings of Machine Learning Research},
-  pages     = {7673--7682},
-  publisher = {{PMLR}},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/icml/ZieglerR19},
-  url       = {http://proceedings.mlr.press/v97/ziegler19a.html},
-}
-
-@InProceedings{vae_lagging,
-  author    = {Junxian He and Daniel Spokoyny and Graham Neubig and Taylor Berg{-}Kirkpatrick},
-  title     = {Lagging Inference Networks and Posterior Collapse in Variational Autoencoders},
-  booktitle = {7th International Conference on Learning Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019},
-  year      = {2019},
-  publisher = {OpenReview.net},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/iclr/HeSNB19},
-  url       = {https://openreview.net/forum?id=rylDfnCqF7},
-}
-
-@InProceedings{infovae,
-  author    = {Shengjia Zhao and Jiaming Song and Stefano Ermon},
-  title     = {InfoVAE: Balancing Learning and Inference in Variational Autoencoders},
-  booktitle = {The Thirty-Third {AAAI} Conference on Artificial Intelligence, {AAAI} 2019, The Thirty-First Innovative Applications of Artificial Intelligence Conference, {IAAI} 2019, The Ninth {AAAI} Symposium on Educational Advances in Artificial Intelligence, {EAAI} 2019, Honolulu, Hawaii, USA, January 27 - February 1, 2019},
-  year      = {2019},
-  pages     = {5885--5892},
-  publisher = {{AAAI} Press},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/aaai/ZhaoSE19},
-  doi       = {10.1609/aaai.v33i01.33015885},
-}
-
-@InProceedings{wae_text_reg,
-  author    = {Junbo Jake Zhao and Yoon Kim and Kelly Zhang and Alexander M. Rush and Yann LeCun},
-  title     = {Adversarially Regularized Autoencoders},
-  booktitle = {Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15, 2018},
-  year      = {2018},
-  editor    = {Jennifer G. Dy and Andreas Krause},
-  volume    = {80},
-  series    = {Proceedings of Machine Learning Research},
-  pages     = {5897--5906},
-  publisher = {{PMLR}},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/icml/ZhaoKZRL18},
-  url       = {http://proceedings.mlr.press/v80/zhao18b.html},
-}
-
-@Article{wgan,
-  author        = {Mart{\'{\i}}n Arjovsky and Soumith Chintala and L{\'{e}}on Bottou},
-  title         = {Wasserstein {GAN}},
-  journal       = {CoRR},
-  year          = {2017},
-  volume        = {abs/1701.07875},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/journals/corr/ArjovskyCB17},
-  eprint        = {1701.07875},
-  url           = {http://arxiv.org/abs/1701.07875},
-}
-
-@InProceedings{wgan_gp,
-  author    = {Ishaan Gulrajani and Faruk Ahmed and Mart{\'{\i}}n Arjovsky and Vincent Dumoulin and Aaron C. Courville},
-  title     = {Improved Training of Wasserstein GANs},
-  booktitle = {Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}},
-  year      = {2017},
-  editor    = {Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett},
-  pages     = {5767--5777},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/GulrajaniAADC17},
-  url       = {http://papers.nips.cc/paper/7159-improved-training-of-wasserstein-gans},
-}
-
-@InProceedings{wae,
-  author    = {Ilya O. Tolstikhin and Olivier Bousquet and Sylvain Gelly and Bernhard Sch{\"{o}}lkopf},
-  title     = {Wasserstein Auto-Encoders},
-  booktitle = {6th International Conference on Learning Representations, {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
-  year      = {2018},
-  publisher = {OpenReview.net},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/iclr/TolstikhinBGS18},
-  url       = {https://openreview.net/forum?id=HkL7n1-0b},
-}
-
-@InProceedings{vae,
-  author    = {Diederik P. Kingma and Max Welling},
-  title     = {Auto-Encoding Variational Bayes},
-  booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
-  year      = {2014},
-  editor    = {Yoshua Bengio and Yann LeCun},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/KingmaW13},
-  url       = {http://arxiv.org/abs/1312.6114},
-}
-
-@InProceedings{realnvp,
-  author    = {Lantao Yu and Weinan Zhang and Jun Wang and Yong Yu},
-  title     = {SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient},
-  booktitle = {Proceedings of the Thirty-First {AAAI} Conference on Artificial Intelligence, February 4-9, 2017, San Francisco, California, {USA}},
-  year      = {2017},
-  editor    = {Satinder P. Singh and Shaul Markovitch},
-  pages     = {2852--2858},
-  publisher = {{AAAI} Press},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/aaai/YuZWY17},
-  url       = {http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14344},
-}
-
-@InProceedings{maf,
-  author    = {George Papamakarios and Iain Murray and Theo Pavlakou},
-  title     = {Masked Autoregressive Flow for Density Estimation},
-  booktitle = {Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}},
-  year      = {2017},
-  editor    = {Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett},
-  pages     = {2338--2347},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/PapamakariosMP17},
-  url       = {http://papers.nips.cc/paper/6828-masked-autoregressive-flow-for-density-estimation},
-}
-
-@InProceedings{iaf,
-  author    = {Kingma, Durk P and Salimans, Tim and Jozefowicz, Rafal and Chen, Xi and Sutskever, Ilya and Welling, Max},
-  title     = {Improved variational inference with inverse autoregressive flow},
-  booktitle = {Advances in neural information processing systems},
-  year      = {2016},
-  pages     = {4743--4751},
-}
-
-@InProceedings{glow,
-  author    = {Diederik P. Kingma and Prafulla Dhariwal},
-  title     = {Glow: Generative Flow with Invertible 1x1 Convolutions},
-  booktitle = {Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, NeurIPS 2018, 3-8 December 2018, Montr{\'{e}}al, Canada},
-  year      = {2018},
-  editor    = {Samy Bengio and Hanna M. Wallach and Hugo Larochelle and Kristen Grauman and Nicol{\`{o}} Cesa{-}Bianchi and Roman Garnett},
-  pages     = {10236--10245},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/KingmaD18},
-  url       = {http://papers.nips.cc/paper/8224-glow-generative-flow-with-invertible-1x1-convolutions},
-}
-
-@InProceedings{gan,
-  author    = {Ian J. Goodfellow and Jean Pouget{-}Abadie and Mehdi Mirza and Bing Xu and David Warde{-}Farley and Sherjil Ozair and Aaron C. Courville and Yoshua Bengio},
-  title     = {Generative Adversarial Nets},
-  booktitle = {Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada},
-  year      = {2014},
-  editor    = {Zoubin Ghahramani and Max Welling and Corinna Cortes and Neil D. Lawrence and Kilian Q. Weinberger},
-  pages     = {2672--2680},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/GoodfellowPMXWOCB14},
-  url       = {http://papers.nips.cc/paper/5423-generative-adversarial-nets},
-}
-
-@Article{cgan,
-  author        = {Mehdi Mirza and Simon Osindero},
-  title         = {Conditional Generative Adversarial Nets},
-  journal       = {CoRR},
-  year          = {2014},
-  volume        = {abs/1411.1784},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/journals/corr/MirzaO14},
-  eprint        = {1411.1784},
-  url           = {http://arxiv.org/abs/1411.1784},
-}
-
-@InProceedings{cvae,
-  author    = {Kihyuk Sohn and Honglak Lee and Xinchen Yan},
-  title     = {Learning Structured Output Representation using Deep Conditional Generative Models},
-  booktitle = {Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada},
-  year      = {2015},
-  editor    = {Corinna Cortes and Neil D. Lawrence and Daniel D. Lee and Masashi Sugiyama and Roman Garnett},
-  pages     = {3483--3491},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/SohnLY15},
-  url       = {http://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models},
-}
-
-@InProceedings{vae_text,
-  author    = {Samuel R. Bowman and Luke Vilnis and Oriol Vinyals and Andrew M. Dai and Rafal J{\'{o}}zefowicz and Samy Bengio},
-  title     = {Generating Sentences from a Continuous Space},
-  booktitle = {Proceedings of the 20th {SIGNLL} Conference on Computational Natural Language Learning, CoNLL 2016, Berlin, Germany, August 11-12, 2016},
-  year      = {2016},
-  editor    = {Yoav Goldberg and Stefan Riezler},
-  pages     = {10--21},
-  publisher = {{ACL}},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/conll/BowmanVVDJB16},
-  url       = {https://www.aclweb.org/anthology/K16-1002/},
-}
-
-@InProceedings{bert,
-  author    = {Jacob Devlin and Ming{-}Wei Chang and Kenton Lee and Kristina Toutanova},
-  title     = {{BERT:} Pre-training of Deep Bidirectional Transformers for Language Understanding},
-  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, {NAACL-HLT} 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers)},
-  year      = {2019},
-  editor    = {Jill Burstein and Christy Doran and Thamar Solorio},
-  pages     = {4171--4186},
-  publisher = {Association for Computational Linguistics},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/naacl/DevlinCLT19},
-  url       = {https://www.aclweb.org/anthology/N19-1423/},
-}
-
-@InProceedings{cvae_semi,
-  author    = {Diederik P. Kingma and Shakir Mohamed and Danilo Jimenez Rezende and Max Welling},
-  title     = {Semi-supervised Learning with Deep Generative Models},
-  booktitle = {Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada},
-  year      = {2014},
-  editor    = {Zoubin Ghahramani and Max Welling and Corinna Cortes and Neil D. Lawrence and Kilian Q. Weinberger},
-  pages     = {3581--3589},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/KingmaMRW14},
-  url       = {http://papers.nips.cc/paper/5352-semi-supervised-learning-with-deep-generative-models},
-}
-
-@InProceedings{DBLP:journals/corr/RanzatoCAZ15,
-  author    = {Marc'Aurelio Ranzato and Sumit Chopra and Michael Auli and Wojciech Zaremba},
-  title     = {Sequence Level Training with Recurrent Neural Networks},
-  booktitle = {4th International Conference on Learning Representations, {ICLR} 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings},
-  year      = {2016},
-  editor    = {Yoshua Bengio and Yann LeCun},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/RanzatoCAZ15},
-  url       = {http://arxiv.org/abs/1511.06732},
-}
-
-@InProceedings{DBLP:conf/emnlp/SemeniutaSB17,
-  author    = {Stanislau Semeniuta and Aliaksei Severyn and Erhardt Barth},
-  title     = {A Hybrid Convolutional Variational Autoencoder for Text Generation},
-  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2017, Copenhagen, Denmark, September 9-11, 2017},
-  year      = {2017},
-  editor    = {Martha Palmer and Rebecca Hwa and Sebastian Riedel},
-  pages     = {627--637},
-  publisher = {Association for Computational Linguistics},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/emnlp/SemeniutaSB17},
-  url       = {https://www.aclweb.org/anthology/D17-1066/},
-}
-
-@InProceedings{s_sampling,
-  author    = {Samy Bengio and Oriol Vinyals and Navdeep Jaitly and Noam Shazeer},
-  title     = {Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks},
-  booktitle = {Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada},
-  year      = {2015},
-  editor    = {Corinna Cortes and Neil D. Lawrence and Daniel D. Lee and Masashi Sugiyama and Roman Garnett},
-  pages     = {1171--1179},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/BengioVJS15},
-  url       = {http://papers.nips.cc/paper/5956-scheduled-sampling-for-sequence-prediction-with-recurrent-neural-networks},
-}
-
-@InProceedings{prof_force,
-  author    = {Anirudh Goyal and Alex Lamb and Ying Zhang and Saizheng Zhang and Aaron C. Courville and Yoshua Bengio},
-  title     = {Professor Forcing: {A} New Algorithm for Training Recurrent Networks},
-  booktitle = {Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain},
-  year      = {2016},
-  editor    = {Daniel D. Lee and Masashi Sugiyama and Ulrike von Luxburg and Isabelle Guyon and Roman Garnett},
-  pages     = {4601--4609},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/conf/nips/GoyalLZZCB16},
-  url       = {http://papers.nips.cc/paper/6099-professor-forcing-a-new-algorithm-for-training-recurrent-networks},
-}
-
-@Article{teacher_force,
-  author    = {Ronald J. Williams and David Zipser},
-  title     = {A Learning Algorithm for Continually Running Fully Recurrent Neural Networks},
-  journal   = {Neural Computation},
-  year      = {1989},
-  volume    = {1},
-  number    = {2},
-  pages     = {270--280},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/bib/journals/neco/WilliamsZ89},
-  doi       = {10.1162/neco.1989.1.2.270},
-}
-
-@Article{perplexity,
-  author        = {Peter F. Brown and Stephen Della Pietra and Vincent J. Della Pietra and Jennifer C. Lai and Robert L. Mercer},
-  title         = {An Estimate of an Upper Bound for the Entropy of English},
-  journal       = {Computational Linguistics},
-  year          = {1992},
-  volume        = {18},
-  number        = {1},
-  pages         = {31--40},
-  __markedentry = {[danial:]},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/journals/coling/BrownPPLM92},
-}
-
-@InProceedings{bleu,
-  author        = {Kishore Papineni and Salim Roukos and Todd Ward and Wei{-}Jing Zhu},
-  title         = {Bleu: a Method for Automatic Evaluation of Machine Translation},
-  booktitle     = {Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics, July 6-12, 2002, Philadelphia, PA, {USA}},
-  year          = {2002},
-  pages         = {311--318},
-  publisher     = {{ACL}},
-  __markedentry = {[danial:6]},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/bib/conf/acl/PapineniRWZ02},
-  url           = {https://www.aclweb.org/anthology/P02-1040/},
-}
-
-@Comment{jabref-meta: databaseType:bibtex;}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<file xmlns="http://bibtexml.sf.net/">
+    <entry id="nonautoregressive">
+        <inproceedings>
+            <author>Jiatao Gu and James Bradbury and Caiming Xiong and Victor O. K. Li and Richard Socher</author>
+            <title>Non-Autoregressive Neural Machine Translation</title>
+            <booktitle>6th International Conference on Learning Representations, {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings</booktitle>
+            <year>2018</year>
+            <publisher>OpenReview.net</publisher>
+            <url>https://openreview.net/forum?id=B1l8BtlCb</url>
+        </inproceedings>
+    </entry>
+    <entry id="toward">
+        <inproceedings>
+            <author>Zhiting Hu and Zichao Yang and Xiaodan Liang and Ruslan Salakhutdinov and Eric P. Xing</author>
+            <title>Toward Controlled Generation of Text</title>
+            <booktitle>Proceedings of the 34th International Conference on Machine Learning, {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017</booktitle>
+            <year>2017</year>
+            <editor>Doina Precup and Yee Whye Teh</editor>
+            <volume>70</volume>
+            <series>Proceedings of Machine Learning Research</series>
+            <pages>1587--1596</pages>
+            <publisher>{PMLR}</publisher>
+            <url>http://proceedings.mlr.press/v70/hu17e.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="transformer">
+        <inproceedings>
+            <author>Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin</author>
+            <title>Attention is All you Need</title>
+            <booktitle>Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}</booktitle>
+            <year>2017</year>
+            <editor>Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett</editor>
+            <pages>5998--6008</pages>
+            <url>http://papers.nips.cc/paper/7181-attention-is-all-you-need</url>
+        </inproceedings>
+    </entry>
+    <entry id="flow_survey">
+        <article>
+            <author>Ivan Kobyzev and Simon Prince and Marcus A. Brubaker</author>
+            <title>Normalizing Flows: Introduction and Ideas</title>
+            <journal>CoRR</journal>
+            <year>2019</year>
+            <volume>abs/1908.09257</volume>
+            <url>http://arxiv.org/abs/1908.09257</url>
+        </article>
+    </entry>
+    <entry id="vae_dialated">
+        <inproceedings>
+            <author>Zichao Yang and Zhiting Hu and Ruslan Salakhutdinov and Taylor Berg{-}Kirkpatrick</author>
+            <title>Improved Variational Autoencoders for Text Modeling using Dilated Convolutions</title>
+            <booktitle>Proceedings of the 34th International Conference on Machine Learning, {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017</booktitle>
+            <year>2017</year>
+            <editor>Doina Precup and Yee Whye Teh</editor>
+            <volume>70</volume>
+            <series>Proceedings of Machine Learning Research</series>
+            <pages>3881--3890</pages>
+            <publisher>{PMLR}</publisher>
+            <url>http://proceedings.mlr.press/v70/yang17d.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="vae_lossy">
+        <inproceedings>
+            <author>Xi Chen and Diederik P. Kingma and Tim Salimans and Yan Duan and Prafulla Dhariwal and John Schulman and Ilya Sutskever and Pieter Abbeel</author>
+            <title>Variational Lossy Autoencoder</title>
+            <booktitle>5th International Conference on Learning Representations, {ICLR} 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings</booktitle>
+            <year>2017</year>
+            <publisher>OpenReview.net</publisher>
+            <url>https://openreview.net/forum?id=BysvGP5ee</url>
+        </inproceedings>
+    </entry>
+    <entry id="dirichlet_vae">
+        <article>
+            <author>Yijun Xiao and Tiancheng Zhao and William Yang Wang</author>
+            <title>Dirichlet Variational Autoencoder for Text Modeling</title>
+            <journal>CoRR</journal>
+            <year>2018</year>
+            <volume>abs/1811.00135</volume>
+            <url>http://arxiv.org/abs/1811.00135</url>
+        </article>
+    </entry>
+    <entry id="vae_multilevel">
+        <inproceedings>
+            <author>Dinghan Shen and Asli {\c{C}}elikyilmaz and Yizhe Zhang and Liqun Chen and Xin Wang and Jianfeng Gao and Lawrence Carin</author>
+            <title>Towards Generating Long and Coherent Text with Multi-Level Latent Variable Models</title>
+            <booktitle>Proceedings of the 57th Conference of the Association for Computational Linguistics, {ACL} 2019, Florence, Italy, July 28- August 2, 2019, Volume 1: Long Papers</booktitle>
+            <year>2019</year>
+            <editor>Anna Korhonen and David R. Traum and Llu{\'{\i}}s M{\`{a}}rquez</editor>
+            <pages>2079--2089</pages>
+            <publisher>Association for Computational Linguistics</publisher>
+            <url>https://www.aclweb.org/anthology/P19-1200/</url>
+        </inproceedings>
+    </entry>
+    <entry id="vae_spherical">
+        <inproceedings>
+            <author>Jiacheng Xu and Greg Durrett</author>
+            <title>Spherical Latent Spaces for Stable Variational Autoencoders</title>
+            <booktitle>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Brussels, Belgium, October 31 - November 4, 2018</booktitle>
+            <year>2018</year>
+            <editor>Ellen Riloff and David Chiang and Julia Hockenmaier and Jun'ichi Tsujii</editor>
+            <pages>4503--4513</pages>
+            <publisher>Association for Computational Linguistics</publisher>
+            <url>https://www.aclweb.org/anthology/D18-1480/</url>
+        </inproceedings>
+    </entry>
+    <entry id="savae">
+        <inproceedings>
+            <author>Yoon Kim and Sam Wiseman and Andrew C. Miller and David A. Sontag and Alexander M. Rush</author>
+            <title>Semi-Amortized Variational Autoencoders</title>
+            <booktitle>Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15, 2018</booktitle>
+            <year>2018</year>
+            <editor>Jennifer G. Dy and Andreas Krause</editor>
+            <volume>80</volume>
+            <series>Proceedings of Machine Learning Research</series>
+            <pages>2683--2692</pages>
+            <publisher>{PMLR}</publisher>
+            <url>http://proceedings.mlr.press/v80/kim18e.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="topic_flow_vae">
+        <article>
+            <author>Wenlin Wang and Zhe Gan and Hongteng Xu and Ruiyi Zhang and Guoyin Wang and Dinghan Shen and Changyou Chen and Lawrence Carin</author>
+            <title>Topic-Guided Variational Autoencoders for Text Generation</title>
+            <journal>CoRR</journal>
+            <year>2019</year>
+            <volume>abs/1903.07137</volume>
+            <url>http://arxiv.org/abs/1903.07137</url>
+        </article>
+    </entry>
+    <entry id="vae_decflow">
+        <inproceedings>
+            <author>Zachary M. Ziegler and Alexander M. Rush</author>
+            <title>Latent Normalizing Flows for Discrete Sequences</title>
+            <booktitle>Proceedings of the 36th International Conference on Machine Learning, {ICML} 2019, 9-15 June 2019, Long Beach, California, {USA}</booktitle>
+            <year>2019</year>
+            <editor>Kamalika Chaudhuri and Ruslan Salakhutdinov</editor>
+            <volume>97</volume>
+            <series>Proceedings of Machine Learning Research</series>
+            <pages>7673--7682</pages>
+            <publisher>{PMLR}</publisher>
+            <url>http://proceedings.mlr.press/v97/ziegler19a.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="vae_lagging">
+        <inproceedings>
+            <author>Junxian He and Daniel Spokoyny and Graham Neubig and Taylor Berg{-}Kirkpatrick</author>
+            <title>Lagging Inference Networks and Posterior Collapse in Variational Autoencoders</title>
+            <booktitle>7th International Conference on Learning Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019</booktitle>
+            <year>2019</year>
+            <publisher>OpenReview.net</publisher>
+            <url>https://openreview.net/forum?id=rylDfnCqF7</url>
+        </inproceedings>
+    </entry>
+    <entry id="infovae">
+        <inproceedings>
+            <author>Shengjia Zhao and Jiaming Song and Stefano Ermon</author>
+            <title>InfoVAE: Balancing Learning and Inference in Variational Autoencoders</title>
+            <booktitle>The Thirty-Third {AAAI} Conference on Artificial Intelligence, {AAAI} 2019, The Thirty-First Innovative Applications of Artificial Intelligence Conference, {IAAI} 2019, The Ninth {AAAI} Symposium on Educational Advances in Artificial Intelligence, {EAAI} 2019, Honolulu, Hawaii, USA, January 27 - February 1, 2019</booktitle>
+            <year>2019</year>
+            <pages>5885--5892</pages>
+            <publisher>{AAAI} Press</publisher>
+            <doi>10.1609/aaai.v33i01.33015885</doi>
+        </inproceedings>
+    </entry>
+    <entry id="wae_text_reg">
+        <inproceedings>
+            <author>Junbo Jake Zhao and Yoon Kim and Kelly Zhang and Alexander M. Rush and Yann LeCun</author>
+            <title>Adversarially Regularized Autoencoders</title>
+            <booktitle>Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15, 2018</booktitle>
+            <year>2018</year>
+            <editor>Jennifer G. Dy and Andreas Krause</editor>
+            <volume>80</volume>
+            <series>Proceedings of Machine Learning Research</series>
+            <pages>5897--5906</pages>
+            <publisher>{PMLR}</publisher>
+            <url>http://proceedings.mlr.press/v80/zhao18b.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="wgan">
+        <article>
+            <author>Mart{\'{\i}}n Arjovsky and Soumith Chintala and L{\'{e}}on Bottou</author>
+            <title>Wasserstein {GAN}</title>
+            <journal>CoRR</journal>
+            <year>2017</year>
+            <volume>abs/1701.07875</volume>
+            <url>http://arxiv.org/abs/1701.07875</url>
+        </article>
+    </entry>
+    <entry id="wgan_gp">
+        <inproceedings>
+            <author>Ishaan Gulrajani and Faruk Ahmed and Mart{\'{\i}}n Arjovsky and Vincent Dumoulin and Aaron C. Courville</author>
+            <title>Improved Training of Wasserstein GANs</title>
+            <booktitle>Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}</booktitle>
+            <year>2017</year>
+            <editor>Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett</editor>
+            <pages>5767--5777</pages>
+            <url>http://papers.nips.cc/paper/7159-improved-training-of-wasserstein-gans</url>
+        </inproceedings>
+    </entry>
+    <entry id="wae">
+        <inproceedings>
+            <author>Ilya O. Tolstikhin and Olivier Bousquet and Sylvain Gelly and Bernhard Sch{\"{o}}lkopf</author>
+            <title>Wasserstein Auto-Encoders</title>
+            <booktitle>6th International Conference on Learning Representations, {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings</booktitle>
+            <year>2018</year>
+            <publisher>OpenReview.net</publisher>
+            <url>https://openreview.net/forum?id=HkL7n1-0b</url>
+        </inproceedings>
+    </entry>
+    <entry id="vae">
+        <inproceedings>
+            <author>Diederik P. Kingma and Max Welling</author>
+            <title>Auto-Encoding Variational Bayes</title>
+            <booktitle>2nd International Conference on Learning Representations, {ICLR} 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings</booktitle>
+            <year>2014</year>
+            <editor>Yoshua Bengio and Yann LeCun</editor>
+            <url>http://arxiv.org/abs/1312.6114</url>
+        </inproceedings>
+    </entry>
+    <entry id="seqgan">
+        <inproceedings>
+            <author>Lantao Yu and Weinan Zhang and Jun Wang and Yong Yu</author>
+            <title>SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient</title>
+            <booktitle>Proceedings of the Thirty-First {AAAI} Conference on Artificial Intelligence, February 4-9, 2017, San Francisco, California, {USA}</booktitle>
+            <year>2017</year>
+            <editor>Satinder P. Singh and Shaul Markovitch</editor>
+            <pages>2852--2858</pages>
+            <publisher>{AAAI} Press</publisher>
+            <url>http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14344</url>
+        </inproceedings>
+    </entry>
+    <entry id="maf">
+        <inproceedings>
+            <author>George Papamakarios and Iain Murray and Theo Pavlakou</author>
+            <title>Masked Autoregressive Flow for Density Estimation</title>
+            <booktitle>Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}</booktitle>
+            <year>2017</year>
+            <editor>Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett</editor>
+            <pages>2338--2347</pages>
+            <url>http://papers.nips.cc/paper/6828-masked-autoregressive-flow-for-density-estimation</url>
+        </inproceedings>
+    </entry>
+    <entry id="glow">
+        <inproceedings>
+            <author>Diederik P. Kingma and Prafulla Dhariwal</author>
+            <title>Glow: Generative Flow with Invertible 1x1 Convolutions</title>
+            <booktitle>Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, NeurIPS 2018, 3-8 December 2018, Montr{\'{e}}al, Canada</booktitle>
+            <year>2018</year>
+            <editor>Samy Bengio and Hanna M. Wallach and Hugo Larochelle and Kristen Grauman and Nicol{\`{o}} Cesa{-}Bianchi and Roman Garnett</editor>
+            <pages>10236--10245</pages>
+            <url>http://papers.nips.cc/paper/8224-glow-generative-flow-with-invertible-1x1-convolutions</url>
+        </inproceedings>
+    </entry>
+    <entry id="gan">
+        <inproceedings>
+            <author>Ian J. Goodfellow and Jean Pouget{-}Abadie and Mehdi Mirza and Bing Xu and David Warde{-}Farley and Sherjil Ozair and Aaron C. Courville and Yoshua Bengio</author>
+            <title>Generative Adversarial Nets</title>
+            <booktitle>Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada</booktitle>
+            <year>2014</year>
+            <editor>Zoubin Ghahramani and Max Welling and Corinna Cortes and Neil D. Lawrence and Kilian Q. Weinberger</editor>
+            <pages>2672--2680</pages>
+            <url>http://papers.nips.cc/paper/5423-generative-adversarial-nets</url>
+        </inproceedings>
+    </entry>
+    <entry id="cgan">
+        <article>
+            <author>Mehdi Mirza and Simon Osindero</author>
+            <title>Conditional Generative Adversarial Nets</title>
+            <journal>CoRR</journal>
+            <year>2014</year>
+            <volume>abs/1411.1784</volume>
+            <url>http://arxiv.org/abs/1411.1784</url>
+        </article>
+    </entry>
+    <entry id="cvae">
+        <inproceedings>
+            <author>Kihyuk Sohn and Honglak Lee and Xinchen Yan</author>
+            <title>Learning Structured Output Representation using Deep Conditional Generative Models</title>
+            <booktitle>Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada</booktitle>
+            <year>2015</year>
+            <editor>Corinna Cortes and Neil D. Lawrence and Daniel D. Lee and Masashi Sugiyama and Roman Garnett</editor>
+            <pages>3483--3491</pages>
+            <url>http://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models</url>
+        </inproceedings>
+    </entry>
+    <entry id="vae_text">
+        <inproceedings>
+            <author>Samuel R. Bowman and Luke Vilnis and Oriol Vinyals and Andrew M. Dai and Rafal J{\'{o}}zefowicz and Samy Bengio</author>
+            <title>Generating Sentences from a Continuous Space</title>
+            <booktitle>Proceedings of the 20th {SIGNLL} Conference on Computational Natural Language Learning, CoNLL 2016, Berlin, Germany, August 11-12, 2016</booktitle>
+            <year>2016</year>
+            <editor>Yoav Goldberg and Stefan Riezler</editor>
+            <pages>10--21</pages>
+            <publisher>{ACL}</publisher>
+            <url>https://www.aclweb.org/anthology/K16-1002/</url>
+        </inproceedings>
+    </entry>
+    <entry id="bert">
+        <inproceedings>
+            <author>Jacob Devlin and Ming{-}Wei Chang and Kenton Lee and Kristina Toutanova</author>
+            <title>{BERT:} Pre-training of Deep Bidirectional Transformers for Language Understanding</title>
+            <booktitle>Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, {NAACL-HLT} 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers)</booktitle>
+            <year>2019</year>
+            <editor>Jill Burstein and Christy Doran and Thamar Solorio</editor>
+            <pages>4171--4186</pages>
+            <publisher>Association for Computational Linguistics</publisher>
+            <url>https://www.aclweb.org/anthology/N19-1423/</url>
+        </inproceedings>
+    </entry>
+    <entry id="cvae_semi">
+        <inproceedings>
+            <author>Diederik P. Kingma and Shakir Mohamed and Danilo Jimenez Rezende and Max Welling</author>
+            <title>Semi-supervised Learning with Deep Generative Models</title>
+            <booktitle>Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014, December 8-13 2014, Montreal, Quebec, Canada</booktitle>
+            <year>2014</year>
+            <editor>Zoubin Ghahramani and Max Welling and Corinna Cortes and Neil D. Lawrence and Kilian Q. Weinberger</editor>
+            <pages>3581--3589</pages>
+            <url>http://papers.nips.cc/paper/5352-semi-supervised-learning-with-deep-generative-models</url>
+        </inproceedings>
+    </entry>
+    <entry id="pg_bleu">
+        <inproceedings>
+            <author>Marc'Aurelio Ranzato and Sumit Chopra and Michael Auli and Wojciech Zaremba</author>
+            <title>Sequence Level Training with Recurrent Neural Networks</title>
+            <booktitle>4th International Conference on Learning Representations, {ICLR} 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings</booktitle>
+            <year>2016</year>
+            <editor>Yoshua Bengio and Yann LeCun</editor>
+            <url>http://arxiv.org/abs/1511.06732</url>
+        </inproceedings>
+    </entry>
+    <entry id="vae_hybrid">
+        <inproceedings>
+            <author>Stanislau Semeniuta and Aliaksei Severyn and Erhardt Barth</author>
+            <title>A Hybrid Convolutional Variational Autoencoder for Text Generation</title>
+            <booktitle>Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2017, Copenhagen, Denmark, September 9-11, 2017</booktitle>
+            <year>2017</year>
+            <editor>Martha Palmer and Rebecca Hwa and Sebastian Riedel</editor>
+            <pages>627--637</pages>
+            <publisher>Association for Computational Linguistics</publisher>
+            <url>https://www.aclweb.org/anthology/D17-1066/</url>
+        </inproceedings>
+    </entry>
+    <entry id="s_sampling">
+        <inproceedings>
+            <author>Samy Bengio and Oriol Vinyals and Navdeep Jaitly and Noam Shazeer</author>
+            <title>Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks</title>
+            <booktitle>Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems 2015, December 7-12, 2015, Montreal, Quebec, Canada</booktitle>
+            <year>2015</year>
+            <editor>Corinna Cortes and Neil D. Lawrence and Daniel D. Lee and Masashi Sugiyama and Roman Garnett</editor>
+            <pages>1171--1179</pages>
+            <url>http://papers.nips.cc/paper/5956-scheduled-sampling-for-sequence-prediction-with-recurrent-neural-networks</url>
+        </inproceedings>
+    </entry>
+    <entry id="prof_force">
+        <inproceedings>
+            <author>Anirudh Goyal and Alex Lamb and Ying Zhang and Saizheng Zhang and Aaron C. Courville and Yoshua Bengio</author>
+            <title>Professor Forcing: {A} New Algorithm for Training Recurrent Networks</title>
+            <booktitle>Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain</booktitle>
+            <year>2016</year>
+            <editor>Daniel D. Lee and Masashi Sugiyama and Ulrike von Luxburg and Isabelle Guyon and Roman Garnett</editor>
+            <pages>4601--4609</pages>
+            <url>http://papers.nips.cc/paper/6099-professor-forcing-a-new-algorithm-for-training-recurrent-networks</url>
+        </inproceedings>
+    </entry>
+    <entry id="teacher_force">
+        <article>
+            <author>Ronald J. Williams and David Zipser</author>
+            <title>A Learning Algorithm for Continually Running Fully Recurrent Neural Networks</title>
+            <journal>Neural Computation</journal>
+            <year>1989</year>
+            <volume>1</volume>
+            <number>2</number>
+            <pages>270--280</pages>
+            <doi>10.1162/neco.1989.1.2.270</doi>
+        </article>
+    </entry>
+    <entry id="perplexity">
+        <article>
+            <author>Peter F. Brown and Stephen Della Pietra and Vincent J. Della Pietra and Jennifer C. Lai and Robert L. Mercer</author>
+            <title>An Estimate of an Upper Bound for the Entropy of English</title>
+            <journal>Computational Linguistics</journal>
+            <year>1992</year>
+            <volume>18</volume>
+            <number>1</number>
+            <pages>31--40</pages>
+        </article>
+    </entry>
+    <entry id="bleu">
+        <inproceedings>
+            <author>Kishore Papineni and Salim Roukos and Todd Ward and Wei{-}Jing Zhu</author>
+            <title>Bleu: a Method for Automatic Evaluation of Machine Translation</title>
+            <booktitle>Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics, July 6-12, 2002, Philadelphia, PA, {USA}</booktitle>
+            <year>2002</year>
+            <pages>311--318</pages>
+            <publisher>{ACL}</publisher>
+            <url>https://www.aclweb.org/anthology/P02-1040/</url>
+        </inproceedings>
+    </entry>
+    <entry id="realnvp">
+        <inproceedings>
+            <author>Laurent Dinh and Jascha Sohl{-}Dickstein and Samy Bengio</author>
+            <title>Density estimation using Real {NVP}</title>
+            <booktitle>5th International Conference on Learning Representations, {ICLR} 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings</booktitle>
+            <year>2017</year>
+            <publisher>OpenReview.net</publisher>
+            <url>https://openreview.net/forum?id=HkpbnH9lx</url>
+        </inproceedings>
+    </entry>
+    <entry id="gumbel">
+        <inproceedings>
+            <author>Eric Jang and Shixiang Gu and Ben Poole</author>
+            <title>Categorical Reparameterization with Gumbel-Softmax</title>
+            <booktitle>5th International Conference on Learning Representations, {ICLR} 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings</booktitle>
+            <year>2017</year>
+            <publisher>OpenReview.net</publisher>
+            <url>https://openreview.net/forum?id=rkE3y85ee</url>
+        </inproceedings>
+    </entry>
+    <entry id="aae">
+        <article>
+            <author>Alireza Makhzani and Jonathon Shlens and Navdeep Jaitly and Ian J. Goodfellow</author>
+            <title>Adversarial Autoencoders</title>
+            <journal>CoRR</journal>
+            <year>2015</year>
+            <volume>abs/1511.05644</volume>
+            <url>http://arxiv.org/abs/1511.05644</url>
+        </article>
+    </entry>
+    <entry id="sentigan">
+        <inproceedings>
+            <author>Ke Wang and Xiaojun Wan</author>
+            <title>SentiGAN: Generating Sentimental Texts via Mixture Adversarial Networks</title>
+            <booktitle>Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence, {IJCAI} 2018, July 13-19, 2018, Stockholm, Sweden</booktitle>
+            <year>2018</year>
+            <editor>J{\'{e}}r{\^{o}}me Lang</editor>
+            <pages>4446--4452</pages>
+            <publisher>ijcai.org</publisher>
+            <doi>10.24963/ijcai.2018/618</doi>
+        </inproceedings>
+    </entry>
+    <entry id="csgan">
+        <article>
+            <author>Yang Li and Quan Pan and Suhang Wang and Tao Yang and Erik Cambria</author>
+            <title>A Generative Model for category text generation</title>
+            <journal>Inf. Sci.</journal>
+            <year>2018</year>
+            <volume>450</volume>
+            <pages>301--315</pages>
+            <doi>10.1016/j.ins.2018.03.050</doi>
+        </article>
+    </entry>
+    <entry id="made">
+        <inproceedings>
+            <author>Mathieu Germain and Karol Gregor and Iain Murray and Hugo Larochelle</author>
+            <title>{MADE:} Masked Autoencoder for Distribution Estimation</title>
+            <booktitle>Proceedings of the 32nd International Conference on Machine Learning, {ICML} 2015, Lille, France, 6-11 July 2015</booktitle>
+            <year>2015</year>
+            <editor>Francis R. Bach and David M. Blei</editor>
+            <volume>37</volume>
+            <series>{JMLR} Workshop and Conference Proceedings</series>
+            <pages>881--889</pages>
+            <publisher>JMLR.org</publisher>
+            <url>http://proceedings.mlr.press/v37/germain15.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="lstm">
+        <article>
+            <author>Sepp Hochreiter and J{\"{u}}rgen Schmidhuber</author>
+            <title>Long Short-Term Memory</title>
+            <journal>Neural Computation</journal>
+            <year>1997</year>
+            <volume>9</volume>
+            <number>8</number>
+            <pages>1735--1780</pages>
+            <doi>10.1162/neco.1997.9.8.1735</doi>
+        </article>
+    </entry>
+    <entry id="molecule">
+        <article>
+            <author>Daniel C. Elton and Zois Boukouvalas and Mark D. Fuge and Peter W. Chung</author>
+            <title>Deep learning for molecular generation and optimization - a review of the state of the art</title>
+            <journal>CoRR</journal>
+            <year>2019</year>
+            <volume>abs/1903.04388</volume>
+            <url>http://arxiv.org/abs/1903.04388</url>
+        </article>
+    </entry>
+    <entry id="music">
+        <article>
+            <author>Allen Huang and Raymond Wu</author>
+            <title>Deep Learning for Music</title>
+            <journal>CoRR</journal>
+            <year>2016</year>
+            <volume>abs/1606.04930</volume>
+            <url>http://arxiv.org/abs/1606.04930</url>
+        </article>
+    </entry>
+    <entry id="deep_walk">
+        <inproceedings>
+            <author>Bryan Perozzi and Rami Al{-}Rfou and Steven Skiena</author>
+            <title>DeepWalk: online learning of social representations</title>
+            <booktitle>The 20th {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining, {KDD} '14, New York, NY, {USA} - August 24 - 27, 2014</booktitle>
+            <year>2014</year>
+            <editor>Sofus A. Macskassy and Claudia Perlich and Jure Leskovec and Wei Wang and Rayid Ghani</editor>
+            <pages>701--710</pages>
+            <publisher>{ACM}</publisher>
+            <doi>10.1145/2623330.2623732</doi>
+        </inproceedings>
+    </entry>
+    <entry id="vae_music">
+        <inproceedings>
+            <author>Adam Roberts and Jesse H. Engel and Colin Raffel and Curtis Hawthorne and Douglas Eck</author>
+            <title>A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music</title>
+            <booktitle>Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15, 2018</booktitle>
+            <year>2018</year>
+            <editor>Jennifer G. Dy and Andreas Krause</editor>
+            <volume>80</volume>
+            <series>Proceedings of Machine Learning Research</series>
+            <pages>4361--4370</pages>
+            <publisher>{PMLR}</publisher>
+            <url>http://proceedings.mlr.press/v80/roberts18a.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="gan_nvidia">
+        <inproceedings>
+            <author>Tero Karras and Samuli Laine and Timo Aila</author>
+            <title>A Style-Based Generator Architecture for Generative Adversarial Networks</title>
+            <booktitle>{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2019, Long Beach, CA, USA, June 16-20, 2019</booktitle>
+            <year>2019</year>
+            <pages>4401--4410</pages>
+            <publisher>Computer Vision Foundation / {IEEE}</publisher>
+            <url>http://openaccess.thecvf.com/content\_CVPR\_2019/html/Karras\_A\_Style-Based\_Generator\_Architecture\_for\_Generative\_Adversarial\_Networks\_CVPR\_2019\_paper.html</url>
+        </inproceedings>
+    </entry>
+    <entry id="sst">
+        <inproceedings>
+            <author>Richard Socher and Alex Perelygin and Jean Wu and Jason Chuang and Christopher D. Manning and Andrew Y. Ng and Christopher Potts</author>
+            <title>Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank</title>
+            <booktitle>Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2013, 18-21 October 2013, Grand Hyatt Seattle, Seattle, Washington, USA, {A} meeting of SIGDAT, a Special Interest Group of the {ACL}</booktitle>
+            <year>2013</year>
+            <pages>1631--1642</pages>
+            <publisher>{ACL}</publisher>
+            <url>https://www.aclweb.org/anthology/D13-1170/</url>
+        </inproceedings>
+    </entry>
+    <entry id="jointly">
+        <inproceedings>
+            <author>Alihosseini, Danial and Montahaei, Ehsan and Baghshah, Mahdieh Soleymani</author>
+            <title>Jointly Measuring Diversity and Quality in Text Generation Models</title>
+            <booktitle>Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation</booktitle>
+            <year>2019</year>
+            <pages>90--98</pages>
+        </inproceedings>
+    </entry>
+    <entry id="iaf">
+        <inproceedings>
+            <author>Diederik P. Kingma and Tim Salimans and Rafal J{\'{o}}zefowicz and Xi Chen and Ilya Sutskever and Max Welling</author>
+            <title>Improving Variational Autoencoders with Inverse Autoregressive Flow</title>
+            <booktitle>Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain</booktitle>
+            <year>2016</year>
+            <editor>Daniel D. Lee and Masashi Sugiyama and Ulrike von Luxburg and Isabelle Guyon and Roman Garnett</editor>
+            <pages>4736--4744</pages>
+            <url>http://papers.nips.cc/paper/6581-improving-variational-autoencoders-with-inverse-autoregressive-flow</url>
+        </inproceedings>
+    </entry>
+    <entry id="distilbert">
+        <article>
+            <author>Victor Sanh and Lysandre Debut and Julien Chaumond and Thomas Wolf</author>
+            <title>DistilBERT, a distilled version of {BERT:} smaller, faster, cheaper and lighter</title>
+            <journal>CoRR</journal>
+            <year>2019</year>
+            <volume>abs/1910.01108</volume>
+            <url>http://arxiv.org/abs/1910.01108</url>
+        </article>
+    </entry>
+    <entry id="yelp_style_transfer">
+        <inproceedings>
+            <author>Tianxiao Shen and Tao Lei and Regina Barzilay and Tommi S. Jaakkola</author>
+            <title>Style Transfer from Non-Parallel Text by Cross-Alignment</title>
+            <booktitle>Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}</booktitle>
+            <year>2017</year>
+            <editor>Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett</editor>
+            <pages>6830--6841</pages>
+            <url>http://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment</url>
+        </inproceedings>
+    </entry>
+    <entry id="amazon_review">
+        <inproceedings>
+            <author>Julian J. McAuley and Jure Leskovec</author>
+            <title>Hidden factors and hidden topics: understanding rating dimensions with review text</title>
+            <booktitle>Seventh {ACM} Conference on Recommender Systems, RecSys '13, Hong Kong, China, October 12-16, 2013</booktitle>
+            <year>2013</year>
+            <editor>Qiang Yang and Irwin King and Qing Li and Pearl Pu and George Karypis</editor>
+            <pages>165--172</pages>
+            <publisher>{ACM}</publisher>
+            <doi>10.1145/2507157.2507163</doi>
+        </inproceedings>
+    </entry>
+    <entry id="numerics_gan">
+        <inproceedings>
+            <author>Lars M. Mescheder and Sebastian Nowozin and Andreas Geiger</author>
+            <title>The Numerics of GANs</title>
+            <booktitle>Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, CA, {USA}</booktitle>
+            <year>2017</year>
+            <editor>Isabelle Guyon and Ulrike von Luxburg and Samy Bengio and Hanna M. Wallach and Rob Fergus and S. V. N. Vishwanathan and Roman Garnett</editor>
+            <pages>1825--1835</pages>
+            <url>http://papers.nips.cc/paper/6779-the-numerics-of-gans</url>
+        </inproceedings>
+    </entry>
+    <entry id="wasser_text_kl">
+        <inproceedings>
+            <author>Hareesh Bahuleyan and Lili Mou and Hao Zhou and Olga Vechtomova</author>
+            <title>Stochastic Wasserstein Autoencoder for Probabilistic Sentence Generation</title>
+            <booktitle>Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, {NAACL-HLT} 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers)</booktitle>
+            <year>2019</year>
+            <editor>Jill Burstein and Christy Doran and Thamar Solorio</editor>
+            <pages>4068--4076</pages>
+            <publisher>Association for Computational Linguistics</publisher>
+            <url>https://www.aclweb.org/anthology/N19-1411/</url>
+        </inproceedings>
+    </entry>
+</file>
