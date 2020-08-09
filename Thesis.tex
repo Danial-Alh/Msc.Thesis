@@ -4,10 +4,12 @@
 
 %\documentclass[twoside, openright, a4paper,12pt]{report} % Two side 
 \documentclass[oneside,a4paper,12pt]{book} 
+
+\setcounter{secnumdepth}{3}
+
 \usepackage{pdfpages}
 \usepackage{JMTemplate}
 \usepackage{tikz}
-\usepackage{pgfplots}
 \usetikzlibrary{automata,positioning}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -15,8 +17,10 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{dsfont}
+\usepackage{array}
 \usepackage{pgfplots}
 \usepackage{color}
+
 \definecolor{darkgreen}{RGB}{47,109,79}
 \definecolor{darkblue}{RGB}{57,79,99}
 \definecolor{rosso}{RGB}{220,57,18}
@@ -58,10 +62,11 @@
 %=======================================================
 \include{Thesis_Cover_fa}
 \cleardoublepage % terminates the current paragraph and page, the same way as a report document.
-%\include{Thesis_Confirm}
+\include{confirm}
+\include{esalat}
 %\includepdf[pages=-]{Confirm.pdf}
 %\includepdf[pages=-]{Esalat.pdf}
-%\input{Thesis_Ack}
+\input{Thesis_Ack}
 \input{Thesis_Abstract_fa}
 \thispagestyle{empty}
 \cleardoublepage %
@@ -87,24 +92,22 @@
 \include{Thesis_Chap2}
 \include{Thesis_Chap3}
 \include{Thesis_Chap4}
-%\include{Thesis_Chap5}
-\include{Thesis_Chap6}
+\include{Thesis_Chap5}
 % Appendices, Glossaries and Refrences
 %=======================================================
 \begin{appendices}
 	%\resettranslations % reset the first-use flag of tranlsation glossareis
 \include{Thesis_App1}
-	%\include{Thesis_App2}
-	%\include{Thesis_App3}
+
 \end{appendices}
 \include{Thesis_References}
 
 %\makeglossaries
 \cleardoublepage
 \resettranslations
-\printenglishglossary
-\cleardoublepage
 \printpersianglossary
+\cleardoublepage
+\printenglishglossary
 
 \include{Thesis_Abstract_en}
 \include{Thesis_Cover_en}

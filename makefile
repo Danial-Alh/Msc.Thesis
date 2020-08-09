@@ -11,12 +11,15 @@ latexfile = Thesis
 all : $(latexfile).pdf $(latexfile).aux
  
 clean:
-	rm -f *.aux *.log *.dvi $(latexfile).ps *.bak $(latexfile).ps.gz $(latexfile).ps.bz2
+	rm -f *.aux *.log *.dvi $(latexfile).ps *.bak $(latexfile).ps.gz $(latexfile).ps.bz2 $(latexfile).synctex.gz $(latexfile).pdf 
+	rm -f $(latexfile).mtc* $(latexfile).maf
 	rm -f *.bbl *.blg
 	rm -f *.toc *.lof *.lot
 	rm -f *.thm *.out
 	rm -f *.ind *.idx *.ilg
 	rm -f *.glo *.gls Thesis.glsdefs Thesis.glg
+	rm -f *.xdy
+	rm -rf data refs
  
 #$(latexfile).aux : $(latexfile).tex
 #	$(TEX) $(latexfile)

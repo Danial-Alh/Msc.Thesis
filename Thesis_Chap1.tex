@@ -63,14 +63,14 @@ $\argmax_{\bff{x_1}, \bff{x_2}, ..., \bff{x_T}} P_\theta(X_1, X_2, ... , X_T|Z)$
 بهره برد که به دلیل کُند بودن چندان در مدل‌های زبانی مورد استفاده قرار نگرفته است. لازم به ذکر است، منظور از فضای نهان در این رساله، فضای نهان یک متغیره است و نه مدل‌هایی که فضای نهان چند متغیره دارند \cite{vae_multilevel}.
 \\
 برای تغییر تعاریف فوق به حالت شرطی تنها بایستی توزیع‌ها مشروط گردند. اگر شرط با $C \in \{0,1,2,...K\}$ نشان داده شود، مدل زبانی شرطی بدون فضای نهان به صورت
-\begin{align}
+\begin{align} \label{eq:chap1:conditional_without_latent}
 	P_\theta(X_1, X_2, ... , X_T|C) = P_\theta(X_1|C) P_\theta(X_2|X_1,C) P_\theta(X_3|X_2, X_1,C) ... P_\theta(X_T|X_1, ..., X_{T-1},C)
 \end{align}
 و با فضای نهان به صورت
-\begin{align}
+\begin{align} \label{eq:chap1:conditional_with_latent}
 	P_\theta(X_1, X_2, ... , X_T,Z|C) = & P(Z|C) P_\theta(X_1|Z,C) P_\theta(X_2|X_1,Z,C) P_\theta(X_3|X_2, X_1,Z,C) ... \nonumber \\& P_\theta(X_T|X_1, ..., X_{T-1},Z,C)
 \end{align}
-تعریف می‌شود.
+تعریف می‌شود. بنابراین هدف در این پروژه، یادگیری مدلی شرطی بدون/با فضای نهان است که به ترتیب به صورت رابطه \ref{eq:chap1:conditional_without_latent} و \ref{eq:chap1:conditional_with_latent} فرمول‌بندی می‌شوند.
 \section{مقایسه مدل‌های زبانی با فضای نهان و بدون فضای نهان} \label{chap1:latent_or_not}
 مدل‌های زبانی با فضای نهان به این صورت هستند که فرض شده است، جملات در فضای نهان ‎کد شده و شبکه 
 \trans{‎کدگشا}{Decoder}یی 
